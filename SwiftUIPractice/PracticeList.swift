@@ -19,6 +19,8 @@ struct PracticeList: View {
                                  CarouselView.self,
                                  StockView.self,
                                  TouchAnimationView.self,
+                                 TikTokView.self,
+                                 MovieVerticalView.self,
                                  TestView.self]
 
     func buildView(types: [Any], index: Int) -> AnyView {
@@ -35,6 +37,10 @@ struct PracticeList: View {
             return AnyView( StockView() )
         case is TouchAnimationView.Type:
             return AnyView( TouchAnimationView() )
+        case is TikTokView.Type:
+            return AnyView( TikTokView() )
+        case is MovieVerticalView.Type:
+            return AnyView( MovieVerticalView() )
         default: return AnyView(EmptyView())
         }
     }

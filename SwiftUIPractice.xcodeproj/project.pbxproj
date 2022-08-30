@@ -28,6 +28,16 @@
 		40A1C7C128BAFAF500AAFF2F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7C028BAFAF500AAFF2F /* SearchView.swift */; };
 		40A1C7C328BB004300AAFF2F /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7C228BB004300AAFF2F /* StockListView.swift */; };
 		40A1C7C628BB64B100AAFF2F /* TouchAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7C528BB64B100AAFF2F /* TouchAnimationView.swift */; };
+		40A1C7C928BCF3F100AAFF2F /* TikTokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7C828BCF3F100AAFF2F /* TikTokView.swift */; };
+		40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7CB28BCF7C700AAFF2F /* TikTokVideo.swift */; };
+		40A1C7CE28BCF8CF00AAFF2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7CD28BCF8CF00AAFF2F /* HomeView.swift */; };
+		40A1C7D228BCFC1400AAFF2F /* video3.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7CF28BCFC1300AAFF2F /* video3.MOV */; };
+		40A1C7D328BCFC1400AAFF2F /* video1.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D028BCFC1300AAFF2F /* video1.MOV */; };
+		40A1C7D428BCFC1400AAFF2F /* video2.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D128BCFC1400AAFF2F /* video2.MOV */; };
+		40A1C7D728BE5AD300AAFF2F /* MovieVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7D628BE5AD300AAFF2F /* MovieVerticalView.swift */; };
+		40A1C7DB28BE71D500AAFF2F /* video5.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D828BE71D500AAFF2F /* video5.MOV */; };
+		40A1C7DC28BE71D500AAFF2F /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D928BE71D500AAFF2F /* video4.MOV */; };
+		40A1C7DD28BE71D500AAFF2F /* video6.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7DA28BE71D500AAFF2F /* video6.MOV */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
 		40F577112883A44800AC1285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577102883A44800AC1285 /* ContentView.swift */; };
 		40F577132883A44A00AC1285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F577122883A44A00AC1285 /* Assets.xcassets */; };
@@ -59,6 +69,16 @@
 		40A1C7C028BAFAF500AAFF2F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		40A1C7C228BB004300AAFF2F /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		40A1C7C528BB64B100AAFF2F /* TouchAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAnimationView.swift; sourceTree = "<group>"; };
+		40A1C7C828BCF3F100AAFF2F /* TikTokView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokView.swift; sourceTree = "<group>"; };
+		40A1C7CB28BCF7C700AAFF2F /* TikTokVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokVideo.swift; sourceTree = "<group>"; };
+		40A1C7CD28BCF8CF00AAFF2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		40A1C7CF28BCFC1300AAFF2F /* video3.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video3.MOV; sourceTree = "<group>"; };
+		40A1C7D028BCFC1300AAFF2F /* video1.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video1.MOV; sourceTree = "<group>"; };
+		40A1C7D128BCFC1400AAFF2F /* video2.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video2.MOV; sourceTree = "<group>"; };
+		40A1C7D628BE5AD300AAFF2F /* MovieVerticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVerticalView.swift; sourceTree = "<group>"; };
+		40A1C7D828BE71D500AAFF2F /* video5.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video5.MOV; sourceTree = "<group>"; };
+		40A1C7D928BE71D500AAFF2F /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
+		40A1C7DA28BE71D500AAFF2F /* video6.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video6.MOV; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		40F577102883A44800AC1285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -175,6 +195,46 @@
 			path = TouchAnimation;
 			sourceTree = "<group>";
 		};
+		40A1C7C728BCF3A300AAFF2F /* TikTokView */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7DE28BE71DC00AAFF2F /* Videos */,
+				40A1C7CA28BCF7B200AAFF2F /* Model */,
+				40A1C7C828BCF3F100AAFF2F /* TikTokView.swift */,
+				40A1C7CD28BCF8CF00AAFF2F /* HomeView.swift */,
+			);
+			path = TikTokView;
+			sourceTree = "<group>";
+		};
+		40A1C7CA28BCF7B200AAFF2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7CB28BCF7C700AAFF2F /* TikTokVideo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7D628BE5AD300AAFF2F /* MovieVerticalView.swift */,
+			);
+			path = MovieVerticalView;
+			sourceTree = "<group>";
+		};
+		40A1C7DE28BE71DC00AAFF2F /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7D028BCFC1300AAFF2F /* video1.MOV */,
+				40A1C7D128BCFC1400AAFF2F /* video2.MOV */,
+				40A1C7CF28BCFC1300AAFF2F /* video3.MOV */,
+				40A1C7D928BE71D500AAFF2F /* video4.MOV */,
+				40A1C7D828BE71D500AAFF2F /* video5.MOV */,
+				40A1C7DA28BE71D500AAFF2F /* video6.MOV */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		40F577022883A44800AC1285 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +261,8 @@
 				40A1C7A528BA9E7700AAFF2F /* ListColorChange */,
 				40A1C7B228BAEDD700AAFF2F /* StocksAppSwiftUI */,
 				40A1C7C428BB648200AAFF2F /* TouchAnimation */,
+				40A1C7C728BCF3A300AAFF2F /* TikTokView */,
+				40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */,
 				40F577102883A44800AC1285 /* ContentView.swift */,
 				40F577122883A44A00AC1285 /* Assets.xcassets */,
 				40F577172883A44A00AC1285 /* Persistence.swift */,
@@ -281,8 +343,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A1C7D228BCFC1400AAFF2F /* video3.MOV in Resources */,
 				40F577162883A44A00AC1285 /* Preview Assets.xcassets in Resources */,
+				40A1C7DD28BE71D500AAFF2F /* video6.MOV in Resources */,
 				40F577132883A44A00AC1285 /* Assets.xcassets in Resources */,
+				40A1C7D428BCFC1400AAFF2F /* video2.MOV in Resources */,
+				40A1C7DB28BE71D500AAFF2F /* video5.MOV in Resources */,
+				40A1C7DC28BE71D500AAFF2F /* video4.MOV in Resources */,
+				40A1C7D328BCFC1400AAFF2F /* video1.MOV in Resources */,
 				40A1C7A228BA986200AAFF2F /* videoData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A1C7C928BCF3F100AAFF2F /* TikTokView.swift in Sources */,
+				40A1C7CE28BCF8CF00AAFF2F /* HomeView.swift in Sources */,
 				40A1C7A028BA980F00AAFF2F /* VideoView.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
@@ -311,6 +381,7 @@
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				40A1C7C128BAFAF500AAFF2F /* SearchView.swift in Sources */,
 				40A1C7BA28BAF26500AAFF2F /* StockListViewModel.swift in Sources */,
+				40A1C7D728BE5AD300AAFF2F /* MovieVerticalView.swift in Sources */,
 				40A1C7B728BAEE5B00AAFF2F /* WebService.swift in Sources */,
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				40A1C7A428BA98BA00AAFF2F /* VideoGridView.swift in Sources */,
@@ -319,6 +390,7 @@
 				40A1C79D28BA980F00AAFF2F /* QureyTag.swift in Sources */,
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
+				40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
