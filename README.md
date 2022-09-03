@@ -13,3 +13,8 @@ SwiftUI Practice
 - MVVM 아키택쳐로 API 호출 및 List 
 ## TouchAnimationView 
 - 터치를 이용한 애니메이션 Gird 활용
+## TikTokView
+- 틱톡 방식의 세로스크롤 영상 플레이
+## ReelsApp
+- VideoGridView 예제를 통한 인스타 릴스 동영상 UI 구현
+

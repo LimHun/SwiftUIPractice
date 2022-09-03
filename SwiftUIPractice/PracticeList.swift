@@ -21,6 +21,7 @@ struct PracticeList: View {
                                  TouchAnimationView.self,
                                  TikTokView.self,
                                  MovieVerticalView.self,
+                                 ReelsApp.self,
                                  TestView.self]
 
     func buildView(types: [Any], index: Int) -> AnyView {
@@ -41,6 +42,8 @@ struct PracticeList: View {
             return AnyView( TikTokView() )
         case is MovieVerticalView.Type:
             return AnyView( MovieVerticalView() )
+        case is ReelsApp.Type:
+            return AnyView( ReelsApp() )
         default: return AnyView(EmptyView())
         }
     }
@@ -72,6 +75,8 @@ struct PracticeList: View {
             .navigationBarTitle(isActive ? "" : "SwiftUI Study")
             .navigationBarBackButtonHidden(true)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+
     }
 }
 

@@ -16,6 +16,7 @@ struct MovieVerticalView: View {
         ZStack {
             VStack {
 
+                // MARK: Following & For You
                 HStack(spacing:15) {
                     Button {
                         self.top = 0
@@ -34,11 +35,11 @@ struct MovieVerticalView: View {
                             .fontWeight(self.top == 1 ? .bold : .none)
                             .padding(.vertical)
                     }
-
                 }
 
                 Spacer()
 
+                // MARK: 우측 하단 버튼 (좋아요 수, 댓글 수, 공유하기)
                 HStack {
 
                     Spacer()
@@ -92,6 +93,8 @@ struct MovieVerticalView: View {
                         .padding(.bottom, 55)
                         .padding(.trailing)
                 }
+
+                // MARK: 하단탭
                 HStack(spacing: 0) {
                     Button {
                         print("button")

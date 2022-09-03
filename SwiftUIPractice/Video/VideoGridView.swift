@@ -13,7 +13,7 @@ struct VideoGridView: View {
     var colum = [GridItem(.adaptive(minimum: 160, maximum: 300), spacing: 20)]
 
     var body: some View {
-        //NavigationView {
+//        NavigationView {
             VStack {
                 HStack {
                     ForEach(Query.allCases, id: \.self) { searchQuery in
@@ -43,8 +43,8 @@ struct VideoGridView: View {
                 .frame(width: .infinity)
             }
             .background(Color("AccentColor"))
-          //  .navigationBarHidden(true)
-        //}
+//            .navigationBarHidden(true)
+//        }
     }
 }
 

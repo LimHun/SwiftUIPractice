@@ -38,6 +38,14 @@
 		40A1C7DB28BE71D500AAFF2F /* video5.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D828BE71D500AAFF2F /* video5.MOV */; };
 		40A1C7DC28BE71D500AAFF2F /* video4.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7D928BE71D500AAFF2F /* video4.MOV */; };
 		40A1C7DD28BE71D500AAFF2F /* video6.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 40A1C7DA28BE71D500AAFF2F /* video6.MOV */; };
+		40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7DF28C24B2200AAFF2F /* ReelsView.swift */; };
+		40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7E228C24C3200AAFF2F /* MediaFile.swift */; };
+		40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C7E628C24ED700AAFF2F /* ReelsApp.swift */; };
+		40C19C0A28C254AD00988606 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0928C254AD00988606 /* Reel.swift */; };
+		40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */; };
+		40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */; };
+		40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C1228C3683C00988606 /* ReelsAPIView.swift */; };
+		40C19C1528C386A900988606 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40C19C1428C386A900988606 /* README.md */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
 		40F577112883A44800AC1285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577102883A44800AC1285 /* ContentView.swift */; };
 		40F577132883A44A00AC1285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F577122883A44A00AC1285 /* Assets.xcassets */; };
@@ -79,6 +87,14 @@
 		40A1C7D828BE71D500AAFF2F /* video5.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video5.MOV; sourceTree = "<group>"; };
 		40A1C7D928BE71D500AAFF2F /* video4.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video4.MOV; sourceTree = "<group>"; };
 		40A1C7DA28BE71D500AAFF2F /* video6.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video6.MOV; sourceTree = "<group>"; };
+		40A1C7DF28C24B2200AAFF2F /* ReelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsView.swift; sourceTree = "<group>"; };
+		40A1C7E228C24C3200AAFF2F /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
+		40A1C7E628C24ED700AAFF2F /* ReelsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsApp.swift; sourceTree = "<group>"; };
+		40C19C0928C254AD00988606 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
+		40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
+		40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabBarButton.swift; sourceTree = "<group>"; };
+		40C19C1228C3683C00988606 /* ReelsAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsAPIView.swift; sourceTree = "<group>"; };
+		40C19C1428C386A900988606 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		40F577102883A44800AC1285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -198,7 +214,6 @@
 		40A1C7C728BCF3A300AAFF2F /* TikTokView */ = {
 			isa = PBXGroup;
 			children = (
-				40A1C7DE28BE71DC00AAFF2F /* Videos */,
 				40A1C7CA28BCF7B200AAFF2F /* Model */,
 				40A1C7C828BCF3F100AAFF2F /* TikTokView.swift */,
 				40A1C7CD28BCF8CF00AAFF2F /* HomeView.swift */,
@@ -217,7 +232,7 @@
 		40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */ = {
 			isa = PBXGroup;
 			children = (
-				40A1C7D628BE5AD300AAFF2F /* MovieVerticalView.swift */,
+				40A1C7E428C24CC300AAFF2F /* View */,
 			);
 			path = MovieVerticalView;
 			sourceTree = "<group>";
@@ -235,9 +250,48 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		40A1C7E128C24C1600AAFF2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7E228C24C3200AAFF2F /* MediaFile.swift */,
+				40C19C0928C254AD00988606 /* Reel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40A1C7E428C24CC300AAFF2F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7D628BE5AD300AAFF2F /* MovieVerticalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40A1C7E528C24E8E00AAFF2F /* ReelsApp */ = {
+			isa = PBXGroup;
+			children = (
+				40C19C0B28C2D4BA00988606 /* View */,
+				40A1C7E128C24C1600AAFF2F /* Model */,
+			);
+			path = ReelsApp;
+			sourceTree = "<group>";
+		};
+		40C19C0B28C2D4BA00988606 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40A1C7DF28C24B2200AAFF2F /* ReelsView.swift */,
+				40A1C7E628C24ED700AAFF2F /* ReelsApp.swift */,
+				40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */,
+				40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */,
+				40C19C1228C3683C00988606 /* ReelsAPIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		40F577022883A44800AC1285 = {
 			isa = PBXGroup;
 			children = (
+				40C19C1428C386A900988606 /* README.md */,
 				40F5770D2883A44800AC1285 /* SwiftUIPractice */,
 				40F5770C2883A44800AC1285 /* Products */,
 			);
@@ -263,8 +317,10 @@
 				40A1C7C428BB648200AAFF2F /* TouchAnimation */,
 				40A1C7C728BCF3A300AAFF2F /* TikTokView */,
 				40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */,
+				40A1C7E528C24E8E00AAFF2F /* ReelsApp */,
 				40F577102883A44800AC1285 /* ContentView.swift */,
 				40F577122883A44A00AC1285 /* Assets.xcassets */,
+				40A1C7DE28BE71DC00AAFF2F /* Videos */,
 				40F577172883A44A00AC1285 /* Persistence.swift */,
 				40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */,
 				40F577142883A44A00AC1285 /* Preview Content */,
@@ -345,6 +401,7 @@
 			files = (
 				40A1C7D228BCFC1400AAFF2F /* video3.MOV in Resources */,
 				40F577162883A44A00AC1285 /* Preview Assets.xcassets in Resources */,
+				40C19C1528C386A900988606 /* README.md in Resources */,
 				40A1C7DD28BE71D500AAFF2F /* video6.MOV in Resources */,
 				40F577132883A44A00AC1285 /* Assets.xcassets in Resources */,
 				40A1C7D428BCFC1400AAFF2F /* video2.MOV in Resources */,
@@ -366,18 +423,24 @@
 				40A1C7CE28BCF8CF00AAFF2F /* HomeView.swift in Sources */,
 				40A1C7A028BA980F00AAFF2F /* VideoView.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
+				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
+				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
 				40A1C7BE28BAF38400AAFF2F /* StockViewModel.swift in Sources */,
+				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
 				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
 				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
+				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
 				40A1C7C328BB004300AAFF2F /* StockListView.swift in Sources */,
+				40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */,
 				40A1C7B528BAEE0200AAFF2F /* Stock.swift in Sources */,
 				40A1C7C628BB64B100AAFF2F /* TouchAnimationView.swift in Sources */,
 				40A1C7BC28BAF29A00AAFF2F /* StockView.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
+				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				40A1C7C128BAFAF500AAFF2F /* SearchView.swift in Sources */,
 				40A1C7BA28BAF26500AAFF2F /* StockListViewModel.swift in Sources */,
@@ -385,6 +448,7 @@
 				40A1C7B728BAEE5B00AAFF2F /* WebService.swift in Sources */,
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				40A1C7A428BA98BA00AAFF2F /* VideoGridView.swift in Sources */,
+				40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */,
 				40A1C79F28BA980F00AAFF2F /* VideoManager.swift in Sources */,
 				40A1C79E28BA980F00AAFF2F /* ModelData.swift in Sources */,
 				40A1C79D28BA980F00AAFF2F /* QureyTag.swift in Sources */,

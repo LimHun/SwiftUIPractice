@@ -14,7 +14,8 @@ enum Query: String, CaseIterable {
 let apiToken : String = "563492ad6f9170000100000151ddee10d23e42b89502a3591245af3d"
 
 class VideoManager : ObservableObject {
-    @Published private(set) var videos : [Video] = []
+
+    @Published var videos : [Video] = []
     @Published var selectedQuery: Query = Query.nature {
         // 변수 변경시 마다 api 신규 호출하도록 함
         didSet {
@@ -46,9 +47,16 @@ class VideoManager : ObservableObject {
                 fatalError("Error while fetching data")
             }
 
+            print("data:")
+            print(data)
+            print("response:")
+            print(response)
+
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodeData = try decoder.decode(ResponseBody.self, from: data)
+
+            print(decodeData)
 
             DispatchQueue.main.async {
                 self.videos = []
