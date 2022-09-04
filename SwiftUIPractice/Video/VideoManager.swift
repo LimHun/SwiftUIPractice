@@ -26,6 +26,9 @@ class VideoManager : ObservableObject {
         }
     }
 
+    var page : Int = 1  // 페이지
+    var per_page : Int = 15 // 페이지당 데이터 수
+
     // findVideos는 비동기 함수이기 때문에 init 함수 안에 Task dot init를 추가해야 합니다.
     init() {
         Task.init {
@@ -33,11 +36,23 @@ class VideoManager : ObservableObject {
         }
     }
 
+    func nextPage() {
+        page += 1
+        Task {
+            await findVideos(topic: selectedQuery)
+        }
+    }
+
     func findVideos(topic: Query) async {
         do {
-            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=10&orientation=portrait") else {
+//            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=1&orientation=portrait") else {
+//                fatalError("Missing URL")
+//            }
+
+            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&page=\(page)&per_page=\(per_page)&orientation=portrait&size=small") else {
                 fatalError("Missing URL")
             }
+
 
             var urlRequest = URLRequest(url: url)
             urlRequest.setValue(apiToken, forHTTPHeaderField: "Authorization")
@@ -47,11 +62,6 @@ class VideoManager : ObservableObject {
                 fatalError("Error while fetching data")
             }
 
-            print("data:")
-            print(data)
-            print("response:")
-            print(response)
-
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodeData = try decoder.decode(ResponseBody.self, from: data)
@@ -59,8 +69,13 @@ class VideoManager : ObservableObject {
             print(decodeData)
 
             DispatchQueue.main.async {
-                self.videos = []
-                self.videos = decodeData.videos
+                if self.page == 1 {
+                    self.videos = []
+                    self.videos = decodeData.videos
+                } else {
+                    self.videos += decodeData.videos
+                }
+
             }
         } catch {
             print("Error fetch data from pexels : \(error)")

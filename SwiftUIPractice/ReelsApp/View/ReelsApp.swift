@@ -24,12 +24,8 @@ struct ReelsApp: View {
                     .tag("house.fill")
                 Text("Search")
                     .tag("magnifyingglass")
-
-                ReelsView(videos: $videoManager.videos)
+                ReelsView(videos: $videoManager.videos, videoManager: videoManager)// (videos: $videoManager.videos)
                     .tag("Profile")
-//                ReelsApiView(videos: $videoManager.videos)
-//                    .tag("Profile")
-
                 Text("Liked")
                     .tag("suit.heart")
                 Text("Profile")

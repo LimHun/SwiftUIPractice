@@ -11,6 +11,7 @@ import AVFoundation
 struct ReelsView: View {
 
     @Binding var videos : [Video]
+    @ObservedObject var videoManager : VideoManager
     @State var currentReel = ""
     @State var reels = MediaFileJSON.map { item -> Reel in
         let url = Bundle.main.path(forResource: item.url, ofType: "MOV") ?? ""
@@ -18,12 +19,15 @@ struct ReelsView: View {
         return Reel(player: player, mediaFile: item)
     }
 
+    @State var selectedIndex: Int = 0
+
     var body: some View {
 
         GeometryReader { proxy in
             let size = proxy.size
 
-            TabView(selection: $currentReel) {
+//            TabView(selection: $currentReel) {
+            TabView(selection: $selectedIndex) {
 
 //                ForEach($reels) { $reel in
 //
@@ -37,24 +41,21 @@ struct ReelsView: View {
                 ForEach(videos) { video in
                     let avPlayer = AVPlayer(url: URL(string: video.videoFiles[0].link)!)
                     ReelsAPIView(player: avPlayer)
+                        .frame(width: size.width)
+                        .rotationEffect(.init(degrees: -90))
+                        .ignoresSafeArea(.all, edges: .top)
+                        .tag(video.id)
                 }
-//                if videos.count > 0 {
-//                    ForEach(videos[0].videoFiles, id: \.id) { video in
-//                        if let link = video.link {
-//                            let avPlayer = AVPlayer(url: URL(string: link)!)
-//                            ReelsAPIView(player: avPlayer)
-//                        }
-//                    }
-//                }
-
-//                ForEach(videos, id: \.id) { video in
-//                    ReelsPlayer(reel: $reel, currentReel: $currentReel)
-//                        .frame(width: size.width)
-//                        .rotationEffect(.init(degrees: -90))
-//                        .ignoresSafeArea(.all, edges: .top)
-//                        .tag(reel.id)
-//                }
             }
+            .onChange(of: selectedIndex, perform: { index in
+                print("index : \(index)")
+                if let lastElement = videos.last {
+                    if lastElement.id == index {
+                        print("lastElement.id == index \(lastElement.id)")
+                        videoManager.nextPage()
+                    }
+                }
+            })
             .rotationEffect(.init(degrees: 90))
             .frame(width: size.height)
             .tabViewStyle(.page(indexDisplayMode: .never))
@@ -83,11 +84,8 @@ struct ReelsPlayer: View {
     @State var isMuted = false
     @State var volumeAnimation = false
 
-
-    var sampleText : String = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
-
     var body: some View {
-        ZStack{
+        ZStack {
             if let player = reel.player {
 
                 CustomVideoPlayer(player: player)

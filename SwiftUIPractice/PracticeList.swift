@@ -22,6 +22,7 @@ struct PracticeList: View {
                                  TikTokView.self,
                                  MovieVerticalView.self,
                                  ReelsApp.self,
+                                 StickyContentView.self,
                                  TestView.self]
 
     func buildView(types: [Any], index: Int) -> AnyView {
@@ -44,6 +45,8 @@ struct PracticeList: View {
             return AnyView( MovieVerticalView() )
         case is ReelsApp.Type:
             return AnyView( ReelsApp() )
+        case is StickyContentView.Type:
+            return AnyView( StickyContentView() )
         default: return AnyView(EmptyView())
         }
     }
