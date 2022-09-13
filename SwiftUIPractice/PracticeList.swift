@@ -23,6 +23,7 @@ struct PracticeList: View {
                                  MovieVerticalView.self,
                                  ReelsApp.self,
                                  StickyContentView.self,
+                                 ResponsiveContent.self,
                                  TestView.self]
 
     func buildView(types: [Any], index: Int) -> AnyView {
@@ -47,6 +48,8 @@ struct PracticeList: View {
             return AnyView( ReelsApp() )
         case is StickyContentView.Type:
             return AnyView( StickyContentView() )
+        case is ResponsiveContent.Type:
+            return AnyView( ResponsiveContent() )
         default: return AnyView(EmptyView())
         }
     }

@@ -53,6 +53,12 @@
 		40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */; };
 		40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C1228C3683C00988606 /* ReelsAPIView.swift */; };
 		40C19C1528C386A900988606 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40C19C1428C386A900988606 /* README.md */; };
+		40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDD728C64BEF00A35FF4 /* Info.swift */; };
+		40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDD928C64CF500A35FF4 /* Trending.swift */; };
+		40CDCDDC28C64D0000A35FF4 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDDB28C64D0000A35FF4 /* Sale.swift */; };
+		40CDCDDF28C64E0600A35FF4 /* ResponsiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDDE28C64E0600A35FF4 /* ResponsiveView.swift */; };
+		40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDE028C650A500A35FF4 /* ResponsiveHome.swift */; };
+		40CDCDE328C650F200A35FF4 /* ResponsiveContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDE228C650F200A35FF4 /* ResponsiveContent.swift */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
 		40F577112883A44800AC1285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577102883A44800AC1285 /* ContentView.swift */; };
 		40F577132883A44A00AC1285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F577122883A44A00AC1285 /* Assets.xcassets */; };
@@ -109,6 +115,12 @@
 		40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabBarButton.swift; sourceTree = "<group>"; };
 		40C19C1228C3683C00988606 /* ReelsAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsAPIView.swift; sourceTree = "<group>"; };
 		40C19C1428C386A900988606 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40CDCDD728C64BEF00A35FF4 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		40CDCDD928C64CF500A35FF4 /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
+		40CDCDDB28C64D0000A35FF4 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
+		40CDCDDE28C64E0600A35FF4 /* ResponsiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveView.swift; sourceTree = "<group>"; };
+		40CDCDE028C650A500A35FF4 /* ResponsiveHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveHome.swift; sourceTree = "<group>"; };
+		40CDCDE228C650F200A35FF4 /* ResponsiveContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveContent.swift; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		40F577102883A44800AC1285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -340,6 +352,35 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		40CDCDD528C64BB300A35FF4 /* ResponsiveUI */ = {
+			isa = PBXGroup;
+			children = (
+				40CDCDDD28C64DF300A35FF4 /* View */,
+				40CDCDD628C64BDC00A35FF4 /* Model */,
+			);
+			path = ResponsiveUI;
+			sourceTree = "<group>";
+		};
+		40CDCDD628C64BDC00A35FF4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40CDCDD728C64BEF00A35FF4 /* Info.swift */,
+				40CDCDD928C64CF500A35FF4 /* Trending.swift */,
+				40CDCDDB28C64D0000A35FF4 /* Sale.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40CDCDDD28C64DF300A35FF4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40CDCDDE28C64E0600A35FF4 /* ResponsiveView.swift */,
+				40CDCDE028C650A500A35FF4 /* ResponsiveHome.swift */,
+				40CDCDE228C650F200A35FF4 /* ResponsiveContent.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		40F577022883A44800AC1285 = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +412,7 @@
 				40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */,
 				40A1C7E528C24E8E00AAFF2F /* ReelsApp */,
 				402805C428C4822700FDA092 /* StickyHeader */,
+				40CDCDD528C64BB300A35FF4 /* ResponsiveUI */,
 				40F577102883A44800AC1285 /* ContentView.swift */,
 				40F577122883A44A00AC1285 /* Assets.xcassets */,
 				40A1C7DE28BE71DC00AAFF2F /* Videos */,
@@ -478,12 +520,14 @@
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
+				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
 				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
 				40A1C7BE28BAF38400AAFF2F /* StockViewModel.swift in Sources */,
 				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
 				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
+				40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
 				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
 				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
@@ -493,6 +537,7 @@
 				40A1C7B528BAEE0200AAFF2F /* Stock.swift in Sources */,
 				40A1C7C628BB64B100AAFF2F /* TouchAnimationView.swift in Sources */,
 				40A1C7BC28BAF29A00AAFF2F /* StockView.swift in Sources */,
+				40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
@@ -508,13 +553,16 @@
 				40A1C7A428BA98BA00AAFF2F /* VideoGridView.swift in Sources */,
 				40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */,
 				40A1C79F28BA980F00AAFF2F /* VideoManager.swift in Sources */,
+				40CDCDDF28C64E0600A35FF4 /* ResponsiveView.swift in Sources */,
 				40A1C79E28BA980F00AAFF2F /* ModelData.swift in Sources */,
 				402805D628C4981500FDA092 /* MessageCardView.swift in Sources */,
+				40CDCDDC28C64D0000A35FF4 /* Sale.swift in Sources */,
 				40A1C79D28BA980F00AAFF2F /* QureyTag.swift in Sources */,
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
 				402805CF28C48D0600FDA092 /* OffsetModifier.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
 				40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */,
+				40CDCDE328C650F200A35FF4 /* ResponsiveContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +619,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -625,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
