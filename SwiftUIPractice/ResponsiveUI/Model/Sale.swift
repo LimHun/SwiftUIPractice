@@ -10,18 +10,18 @@ import SwiftUI
 struct Sale: Identifiable {
     var id : String = UUID().uuidString
     var sales : Int
-    var title : String
+    var time : String
 }
 
-var dialySales: [Sale] = [
-    .init(sales: 20, title: "11:00"),
-    .init(sales: 40, title: "12:00"),
-    .init(sales: 40, title: "1:00"),
-    .init(sales: 150, title: "2:00"),
-    .init(sales: 260, title: "3:00"),
-    .init(sales: 80, title: "4:00"),
-    .init(sales: 120, title: "5:00"),
-    .init(sales: 50, title: "6:00"),
-    .init(sales: 30, title: "7:00"),
+var dailySales: [Sale] = [
+    .init(sales: 20, time: "11:00"),
+    .init(sales: 40, time: "12:00"),
+    .init(sales: 40, time: "1:00"),
+    .init(sales: 150, time: "2:00"),
+    .init(sales: 260, time: "3:00"),
+    .init(sales: 80, time: "4:00"),
+    .init(sales: 120, time: "5:00"),
+    .init(sales: 50, time: "6:00"),
+    .init(sales: 30, time: "7:00"),
 ]
 

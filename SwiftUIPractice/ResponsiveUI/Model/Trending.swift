@@ -16,9 +16,9 @@ struct Trending: Identifiable {
 }
 
 var trendingDishes: [Trending] = [
-    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Pizza1"),
-    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Pizza1"),
-    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Pizza1"),
-    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Pizza1"),
-    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Pizza1"),
+    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Hun"),
+    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Hun"),
+    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Hun"),
+    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Hun"),
+    Trending(title: "american Favoruite", subTitle: "Order", count: 120, image: "Hun"),
 ]
