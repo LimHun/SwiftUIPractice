@@ -24,6 +24,8 @@ struct PracticeList: View {
                                  ReelsApp.self,
                                  StickyContentView.self,
                                  ResponsiveContent.self,
+                                 FoodDeliveryHome.self,
+                                 RollingView.self,
                                  TestView.self]
 
     func buildView(types: [Any], index: Int) -> AnyView {
@@ -50,6 +52,10 @@ struct PracticeList: View {
             return AnyView( StickyContentView() )
         case is ResponsiveContent.Type:
             return AnyView( ResponsiveContent() )
+        case is FoodDeliveryHome.Type:
+            return AnyView( FoodDeliveryHome() )
+        case is RollingView.Type:
+            return AnyView( RollingView() )
         default: return AnyView(EmptyView())
         }
     }
@@ -77,8 +83,9 @@ struct PracticeList: View {
                     }
                 }
             }
-            .listStyle(DefaultListStyle())
-            .navigationBarTitle(isActive ? "" : "SwiftUI Study")
+            .listStyle(.automatic)
+            //.listStyle(DefaultListStyle())
+            //.navigationBarTitle(isActive ? "" : "SwiftUI Study")
             .navigationBarBackButtonHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
