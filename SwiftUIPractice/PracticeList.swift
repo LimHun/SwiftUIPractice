@@ -13,7 +13,7 @@ struct CustomViewType: Identifiable {
 }
 
 struct PracticeList: View {
-
+    
     let practiceViews : [Any] = [ListColorChange.self,
                                  VideoGridView.self,
                                  CarouselView.self,
@@ -26,48 +26,57 @@ struct PracticeList: View {
                                  ResponsiveContent.self,
                                  FoodDeliveryHome.self,
                                  RollingView.self,
+                                 VideoPlayerTest.self,
+                                 VideoNavi.self,
+                                 AutoFocusTextFeild.self,
                                  TestView.self]
-
+    
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
-        case is ListColorChange.Type:
-            return AnyView( ListColorChange() )
-        case is VideoGridView.Type:
-            return AnyView( VideoGridView())
-        case is TestView.Type:
-            return AnyView( TestView() )
-        case is CarouselView.Type:
-            return AnyView( CarouselView() )
-        case is StockView.Type:
-            return AnyView( StockView() )
-        case is TouchAnimationView.Type:
-            return AnyView( TouchAnimationView() )
-        case is TikTokView.Type:
-            return AnyView( TikTokView() )
-        case is MovieVerticalView.Type:
-            return AnyView( MovieVerticalView() )
-        case is ReelsApp.Type:
-            return AnyView( ReelsApp() )
-        case is StickyContentView.Type:
-            return AnyView( StickyContentView() )
-        case is ResponsiveContent.Type:
-            return AnyView( ResponsiveContent() )
-        case is FoodDeliveryHome.Type:
-            return AnyView( FoodDeliveryHome() )
-        case is RollingView.Type:
-            return AnyView( RollingView() )
-        default: return AnyView(EmptyView())
+            case is ListColorChange.Type:
+                return AnyView( ListColorChange() )
+            case is VideoGridView.Type:
+                return AnyView( VideoGridView())
+            case is TestView.Type:
+                return AnyView( TestView() )
+            case is CarouselView.Type:
+                return AnyView( CarouselView() )
+            case is StockView.Type:
+                return AnyView( StockView() )
+            case is TouchAnimationView.Type:
+                return AnyView( TouchAnimationView() )
+            case is TikTokView.Type:
+                return AnyView( TikTokView() )
+            case is MovieVerticalView.Type:
+                return AnyView( MovieVerticalView() )
+            case is ReelsApp.Type:
+                return AnyView( ReelsApp() )
+            case is StickyContentView.Type:
+                return AnyView( StickyContentView() )
+            case is ResponsiveContent.Type:
+                return AnyView( ResponsiveContent() )
+            case is FoodDeliveryHome.Type:
+                return AnyView( FoodDeliveryHome() )
+            case is RollingView.Type:
+                return AnyView( RollingView() )
+            case is VideoPlayerTest.Type:
+                return AnyView( VideoPlayerTest() )
+            case is VideoNavi.Type:
+                return AnyView( VideoNavi() )
+            case is AutoFocusTextFeild.Type :
+                return AnyView( AutoFocusTextFeild() )
+            default: return AnyView(EmptyView())
         }
     }
-
+    
     @State private var selectedItem: String = ""
     @State private var isActive: Bool = false
-
+    
     var body: some View {
         NavigationView {
             List {
                 ForEach(0..<practiceViews.count, id: \.self) { index in
-
+                    
                     let studyTitle : String = String(describing: practiceViews[index])
                     NavigationLink {
                         buildView(types: practiceViews, index: index)
@@ -89,7 +98,7 @@ struct PracticeList: View {
             .navigationBarBackButtonHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
-
+        
     }
 }
 

@@ -7,12 +7,29 @@
 
 import SwiftUI
 
+struct FruitType : Identifiable{
+    var id = UUID()
+    var fruitName : String
+}
+
 struct TestView: View {
+    //var array : [String] = ["🍎", "🥝", "🍐", "🍊", "🍏", "🍒", "🍉", "🍇", "🫐"]
+    
+    var array : [FruitType] = [FruitType(fruitName: "🍎"),
+                               FruitType(fruitName: "🥝"),
+                               FruitType(fruitName: "🍐"),
+                               FruitType(fruitName: "🍊"),
+                               FruitType(fruitName: "🍏"),
+                               FruitType(fruitName: "🍒"),
+                               FruitType(fruitName: "🍉"),
+                               FruitType(fruitName: "🍇"),
+                               FruitType(fruitName: "🫐")]
+    
     var body: some View {
-        VStack {
-            Text("Hello, World!")
-            Text("Hello, World!")
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            ForEach(array) { fruit in
+                Text("array: \(fruit.fruitName)")
+            }
         }
     }
 }
