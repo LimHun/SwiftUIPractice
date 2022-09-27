@@ -51,6 +51,8 @@
 		40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */; };
 		40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */; };
 		40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C1228C3683C00988606 /* ReelsAPIView.swift */; };
+		40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C554DD28E32B9000825FBF /* CoreLoactionUI.swift */; };
+		40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C554E028E3400700825FBF /* StateBindingTest.swift */; };
 		40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDD728C64BEF00A35FF4 /* Info.swift */; };
 		40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDD928C64CF500A35FF4 /* Trending.swift */; };
 		40CDCDDC28C64D0000A35FF4 /* Sale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CDCDDB28C64D0000A35FF4 /* Sale.swift */; };
@@ -127,6 +129,8 @@
 		40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabBarButton.swift; sourceTree = "<group>"; };
 		40C19C1228C3683C00988606 /* ReelsAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsAPIView.swift; sourceTree = "<group>"; };
 		40C19C1428C386A900988606 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		40C554DD28E32B9000825FBF /* CoreLoactionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLoactionUI.swift; sourceTree = "<group>"; };
+		40C554E028E3400700825FBF /* StateBindingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBindingTest.swift; sourceTree = "<group>"; };
 		40CDCDD728C64BEF00A35FF4 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		40CDCDD928C64CF500A35FF4 /* Trending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trending.swift; sourceTree = "<group>"; };
 		40CDCDDB28C64D0000A35FF4 /* Sale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sale.swift; sourceTree = "<group>"; };
@@ -409,6 +413,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		40C554DC28E32B0000825FBF /* CoreLocationUI */ = {
+			isa = PBXGroup;
+			children = (
+				40C554DD28E32B9000825FBF /* CoreLoactionUI.swift */,
+			);
+			path = CoreLocationUI;
+			sourceTree = "<group>";
+		};
+		40C554DF28E33FDB00825FBF /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				40C554E028E3400700825FBF /* StateBindingTest.swift */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
 		40CDCDD528C64BB300A35FF4 /* ResponsiveUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +503,8 @@
 				40D2DA7C28D9EF230023F733 /* Rolling */,
 				4057CCAA28DB37FD00942641 /* VideoPlayerTest */,
 				407777C028DCA81E00145D3A /* AutoFocusTextFeild */,
+				40C554DC28E32B0000825FBF /* CoreLocationUI */,
+				40C554DF28E33FDB00825FBF /* Blog */,
 				40F577102883A44800AC1285 /* ContentView.swift */,
 				40F577122883A44A00AC1285 /* Assets.xcassets */,
 				40A1C7DE28BE71DC00AAFF2F /* Videos */,
@@ -592,6 +614,7 @@
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
 				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
 				40A1C7BE28BAF38400AAFF2F /* StockViewModel.swift in Sources */,
+				40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */,
 				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
@@ -611,6 +634,7 @@
 				40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
+				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				402805C828C4839900FDA092 /* StickyContentView.swift in Sources */,

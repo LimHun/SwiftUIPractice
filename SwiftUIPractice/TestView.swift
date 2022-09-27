@@ -12,8 +12,17 @@ struct FruitType : Identifiable{
     var fruitName : String
 }
 
+class Student : ObservableObject {
+    var name : String
+    init(name: String) {
+        self.name = name
+    }
+}
+
 struct TestView: View {
-    //var array : [String] = ["🍎", "🥝", "🍐", "🍊", "🍏", "🍒", "🍉", "🍇", "🫐"]
+     
+    @State var age : Int = 0
+    @StateObject var student = Student(name: "name")
     
     var array : [FruitType] = [FruitType(fruitName: "🍎"),
                                FruitType(fruitName: "🥝"),
@@ -30,6 +39,12 @@ struct TestView: View {
             ForEach(array) { fruit in
                 Text("array: \(fruit.fruitName)")
             }
+            Button {
+                age += 1
+            } label: {
+                Text("age add Button👍")
+            }
+
         }
     }
 }
