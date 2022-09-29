@@ -17,6 +17,8 @@
 		402805D228C496D100FDA092 /* StickyTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D128C496D100FDA092 /* StickyTopBar.swift */; };
 		402805D428C4977C00FDA092 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D328C4977C00FDA092 /* Message.swift */; };
 		402805D628C4981500FDA092 /* MessageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D528C4981500FDA092 /* MessageCardView.swift */; };
+		402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AE06E28E5E31B0050EBC3 /* MultiView.swift */; };
+		403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E1F3828E49C6E003D757B /* EnvironmentTest.swift */; };
 		4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */; };
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
 		407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */; };
@@ -87,6 +89,8 @@
 		402805D128C496D100FDA092 /* StickyTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyTopBar.swift; sourceTree = "<group>"; };
 		402805D328C4977C00FDA092 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		402805D528C4981500FDA092 /* MessageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCardView.swift; sourceTree = "<group>"; };
+		402AE06E28E5E31B0050EBC3 /* MultiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiView.swift; sourceTree = "<group>"; };
+		403E1F3828E49C6E003D757B /* EnvironmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
 		4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTest.swift; sourceTree = "<group>"; };
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
 		407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextFeild.swift; sourceTree = "<group>"; };
@@ -222,6 +226,14 @@
 				402805D528C4981500FDA092 /* MessageCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		402AE06D28E5E2E90050EBC3 /* MultipleDismiss */ = {
+			isa = PBXGroup;
+			children = (
+				402AE06E28E5E31B0050EBC3 /* MultiView.swift */,
+			);
+			path = MultipleDismiss;
 			sourceTree = "<group>";
 		};
 		4057CCAA28DB37FD00942641 /* VideoPlayerTest */ = {
@@ -425,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				40C554E028E3400700825FBF /* StateBindingTest.swift */,
+				403E1F3828E49C6E003D757B /* EnvironmentTest.swift */,
 			);
 			path = Blog;
 			sourceTree = "<group>";
@@ -504,6 +517,7 @@
 				4057CCAA28DB37FD00942641 /* VideoPlayerTest */,
 				407777C028DCA81E00145D3A /* AutoFocusTextFeild */,
 				40C554DC28E32B0000825FBF /* CoreLocationUI */,
+				402AE06D28E5E2E90050EBC3 /* MultipleDismiss */,
 				40C554DF28E33FDB00825FBF /* Blog */,
 				40F577102883A44800AC1285 /* ContentView.swift */,
 				40F577122883A44A00AC1285 /* Assets.xcassets */,
@@ -609,6 +623,7 @@
 				40A1C7A028BA980F00AAFF2F /* VideoView.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
+				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
@@ -657,6 +672,7 @@
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
 				4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */,
 				402805CF28C48D0600FDA092 /* OffsetModifier.swift in Sources */,
+				402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */,
 				40D2DA8028D9EF730023F733 /* RollingView.swift in Sources */,
 				40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,

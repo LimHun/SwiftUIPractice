@@ -30,7 +30,9 @@ struct PracticeList: View {
                                  VideoNavi.self,
                                  AutoFocusTextFeild.self,
                                  CoreLoactionUI.self,
-                                 TestView.self]
+                                 TestView.self,
+                                 TestView1.self,
+                                 EnvironmentTest.self]
     
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
@@ -68,6 +70,10 @@ struct PracticeList: View {
                 return AnyView( AutoFocusTextFeild() )
             case is CoreLoactionUI.Type:
                 return AnyView( CoreLoactionUI() )
+            case is EnvironmentTest.Type:
+                return AnyView( EnvironmentTest() )
+            case is TestView1.Type:
+                return AnyView( TestView1() )
             default: return AnyView(EmptyView())
         }
     }
