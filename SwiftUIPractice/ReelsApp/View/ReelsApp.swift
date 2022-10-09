@@ -13,6 +13,7 @@ struct ReelsApp: View {
         UITabBar.appearance().isHidden = true
     }
 
+    @StateObject var reelsViewModel = ReelsViewModel()
     @StateObject var videoManager = VideoManager()
     @State var currentTab = "house.fill"
 
@@ -24,8 +25,11 @@ struct ReelsApp: View {
                     .tag("house.fill")
                 Text("Search")
                     .tag("magnifyingglass")
-                ReelsView(videos: $videoManager.videos, videoManager: videoManager)// (videos: $videoManager.videos)
+                ReelsView2()
+                    .environmentObject(reelsViewModel)
                     .tag("Profile")
+//                ReelsView(videos: $videoManager.videos, videoManager: videoManager)
+//                    .tag("Profile")
                 Text("Liked")
                     .tag("suit.heart")
                 Text("Profile")
@@ -39,9 +43,10 @@ struct ReelsApp: View {
             }
             .padding(.horizontal)
             .padding(.vertical, 10)
-
             .overlay(Divider(), alignment: .top)
             .background(currentTab == "Profile" ? .black : .clear)
+        }
+        .onAppear {
         }
     }
 }

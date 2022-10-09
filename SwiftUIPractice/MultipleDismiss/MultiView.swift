@@ -11,7 +11,7 @@ var rainbowColors = [Color.red, Color.orange, Color.yellow, Color.green, Color.c
 
 class MutiViewModel : ObservableObject {
     var viewsPresentation : [Binding<PresentationMode>] = []
-    var isShowViewList : [Bool] = []
+    @Published var isShowViewList : [Bool] = []
 }
 
 struct TestView1 : View {
@@ -187,10 +187,6 @@ struct TestViewEnd : View {
                 for presentView in mutiViewModel.viewsPresentation {
                     presentView.wrappedValue.dismiss()
                 }
-                
-//                for show in mutiViewModel.isShowViewList {
-//                    show.toggle()
-//                }
             } label: {
                 Text("TestViewEnd")
                     .font(.largeTitle)

@@ -36,8 +36,7 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
     }
 
     class Coordinator: NSObject {
-        var parent : CustomVideoPlayer
-
+        var parent : CustomVideoPlayer 
         init(parent: CustomVideoPlayer) {
             self.parent = parent
         }

@@ -9,7 +9,6 @@ import Foundation
 import AVFoundation
 
 struct Reel: Identifiable {
-
     var id = UUID().uuidString
     var player: AVPlayer?
     var mediaFile: MediaFile

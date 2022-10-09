@@ -28,9 +28,10 @@ struct ReelsAPIView: View {
                 DispatchQueue.main.async {
                     if -minY < (size.height / 2) && minY < (size.height / 2) {
                         player.play()
-
+//                        print("PLAY")
                     } else {
                         player.pause()
+//                        print("PAUSE")
 //                        if showMore {
 //                            withAnimation {
 //                                showMore = false

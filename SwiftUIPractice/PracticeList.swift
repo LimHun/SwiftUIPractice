@@ -31,8 +31,11 @@ struct PracticeList: View {
                                  AutoFocusTextFeild.self,
                                  CoreLoactionUI.self,
                                  TestView.self,
-                                 TestView1.self,
-                                 EnvironmentTest.self]
+                                 MultiView.self,
+                                 LandingScreenView.self,
+                                 GestureTest.self,
+                                 EnvironmentTest.self,
+                                 ProSwiftUIView.self]
     
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
@@ -72,8 +75,14 @@ struct PracticeList: View {
                 return AnyView( CoreLoactionUI() )
             case is EnvironmentTest.Type:
                 return AnyView( EnvironmentTest() )
-            case is TestView1.Type:
-                return AnyView( TestView1() )
+            case is MultiView.Type:
+                return AnyView( MultiView() )
+            case is LandingScreenView.Type:
+                return AnyView( LandingScreenView() )
+            case is GestureTest.Type:
+                return AnyView(GestureTest())
+            case is ProSwiftUIView.Type:
+                return AnyView(ProSwiftUIView())
             default: return AnyView(EmptyView())
         }
     }
