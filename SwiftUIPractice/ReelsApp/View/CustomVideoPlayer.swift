@@ -12,7 +12,9 @@ import AVKit
 struct CustomVideoPlayer: UIViewControllerRepresentable {
 
     var player : AVPlayer
-
+    var videoPlayerSlider: UISlider = UISlider()
+    var videoPlayerLabel: UILabel = UILabel()
+    
     func makeCoordinator() -> Coordinator {
         return Coordinator(parent: self)
     }
@@ -27,6 +29,7 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
         player.actionAtItemEnd = .none
 
         NotificationCenter.default.addObserver(context.coordinator, selector: #selector(context.coordinator.restartPlayback), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+          
 
         return controller
     }
@@ -34,9 +37,9 @@ struct CustomVideoPlayer: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
 
     }
-
+    
     class Coordinator: NSObject {
-        var parent : CustomVideoPlayer 
+        var parent : CustomVideoPlayer
         init(parent: CustomVideoPlayer) {
             self.parent = parent
         }

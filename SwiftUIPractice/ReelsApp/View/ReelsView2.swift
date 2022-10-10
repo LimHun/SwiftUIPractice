@@ -19,9 +19,7 @@ struct ReelsView2: View {
         GeometryReader { proxy in
             let size = proxy.size
             TabView(selection: $selectedIndex) {
-                ForEach(reelsViewModel.reelsList, id: \.self) { reelsItem in 
-//                    let url = URL(string: "\(WeegleServer.convertedAWS)/\(reelsItem.videoFilename)")
-//                    let avPlayer = AVPlayer(url: url!)
+                ForEach(reelsViewModel.reelsList, id: \.self) { reelsItem in
                     ReelsAPIView(player: reelsItem.avPlayer!)
                         .frame(width: size.width)
                         .rotationEffect(.init(degrees: -90))
@@ -38,13 +36,7 @@ struct ReelsView2: View {
                             await reelsViewModel.requestFeedList(reelsViewModel.reelsList.count)
                         }
                     }
-                }
-//                if let lastElement = videos.last {
-//                    if lastElement.id == index {
-//                        print("lastElement.id == index \(lastElement.id)")
-//                        videoManager.nextPage()
-//                    }
-//                }
+                } 
             })
             .rotationEffect(.init(degrees: 90))
             .frame(width: size.height)
