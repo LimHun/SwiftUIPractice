@@ -21,6 +21,9 @@
 		402805D428C4977C00FDA092 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D328C4977C00FDA092 /* Message.swift */; };
 		402805D628C4981500FDA092 /* MessageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D528C4981500FDA092 /* MessageCardView.swift */; };
 		402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AE06E28E5E31B0050EBC3 /* MultiView.swift */; };
+		403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9829067E23008B0CD7 /* SnapCarousel.swift */; };
+		403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */; };
+		403BEE9E29067F4D008B0CD7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9D29067F4D008B0CD7 /* Post.swift */; };
 		403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E1F3828E49C6E003D757B /* EnvironmentTest.swift */; };
 		4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */; };
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
@@ -105,6 +108,9 @@
 		402805D328C4977C00FDA092 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		402805D528C4981500FDA092 /* MessageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCardView.swift; sourceTree = "<group>"; };
 		402AE06E28E5E31B0050EBC3 /* MultiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiView.swift; sourceTree = "<group>"; };
+		403BEE9829067E23008B0CD7 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
+		403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
+		403BEE9D29067F4D008B0CD7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		403E1F3828E49C6E003D757B /* EnvironmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
 		4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTest.swift; sourceTree = "<group>"; };
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
@@ -266,6 +272,24 @@
 				402AE06E28E5E31B0050EBC3 /* MultiView.swift */,
 			);
 			path = MultipleDismiss;
+			sourceTree = "<group>";
+		};
+		403BEE9729067E08008B0CD7 /* SnapCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				403BEE9C29067F3F008B0CD7 /* Model */,
+				403BEE9829067E23008B0CD7 /* SnapCarousel.swift */,
+				403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */,
+			);
+			path = SnapCarousel;
+			sourceTree = "<group>";
+		};
+		403BEE9C29067F3F008B0CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				403BEE9D29067F4D008B0CD7 /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4057CCAA28DB37FD00942641 /* VideoPlayerTest */ = {
@@ -560,6 +584,7 @@
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
 				40A1C7A628BA9FE300AAFF2F /* Carousel */,
+				403BEE9729067E08008B0CD7 /* SnapCarousel */,
 				40A1C78F28BA97C900AAFF2F /* Video */,
 				40A1C7A528BA9E7700AAFF2F /* ListColorChange */,
 				40A1C7B228BAEDD700AAFF2F /* StocksAppSwiftUI */,
@@ -710,6 +735,7 @@
 				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
 				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
 				40A1C7C328BB004300AAFF2F /* StockListView.swift in Sources */,
+				403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */,
 				4017CE7E28D4FB5E00048A90 /* FoodDeliveryTab.swift in Sources */,
 				40CCA7CA28E9C68800C4A2CB /* HomeScreen.swift in Sources */,
 				40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */,
@@ -720,6 +746,7 @@
 				4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */,
 				40A1C7BC28BAF29A00AAFF2F /* StockView.swift in Sources */,
 				40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */,
+				403BEE9E29067F4D008B0CD7 /* Post.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
@@ -737,6 +764,7 @@
 				402805CA28C485EA00FDA092 /* CustomCornner.swift in Sources */,
 				40A1C7B728BAEE5B00AAFF2F /* WebService.swift in Sources */,
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
+				403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */,
 				40A1C7A428BA98BA00AAFF2F /* VideoGridView.swift in Sources */,
 				40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */,
 				40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */,
