@@ -35,7 +35,9 @@ struct PracticeList: View {
                                  LandingScreenView.self,
                                  GestureTest.self,
                                  EnvironmentTest.self,
-                                 ProSwiftUIView.self]
+                                 ProSwiftUIView.self,
+                                 SnapCarouselView.self,
+                                 BottomSheet.self]
     
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
@@ -83,6 +85,10 @@ struct PracticeList: View {
                 return AnyView(GestureTest())
             case is ProSwiftUIView.Type:
                 return AnyView(ProSwiftUIView())
+            case is SnapCarouselView.Type:
+                return AnyView(SnapCarouselView())
+            case is BottomSheet.Type:
+                return AnyView(BottomSheet())
             default: return AnyView(EmptyView())
         }
     }
