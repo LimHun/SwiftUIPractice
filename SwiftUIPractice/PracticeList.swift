@@ -117,8 +117,6 @@ struct PracticeList: View {
                 }
             }
             .listStyle(.automatic)
-            //.listStyle(DefaultListStyle())
-            //.navigationBarTitle(isActive ? "" : "SwiftUI Study")
             .navigationBarBackButtonHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
