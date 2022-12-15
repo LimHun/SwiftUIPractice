@@ -12,6 +12,9 @@
 		4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7B28D4F8C300048A90 /* MilkShake.swift */; };
 		4017CE7E28D4FB5E00048A90 /* FoodDeliveryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7D28D4FB5E00048A90 /* FoodDeliveryTab.swift */; };
 		4017CE8028D5B3BA00048A90 /* FoodDeliveryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */; };
+		401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C77B72949E4F5000209ED /* SplashScreen.swift */; };
+		401C77BB2949E7E7000209ED /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */; };
+		401C77BD2949F0BA000209ED /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 401C77BC2949F0BA000209ED /* logo.gif */; };
 		4020F3E628EB30EE00F36AC7 /* GestureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4020F3E528EB30EE00F36AC7 /* GestureTest.swift */; };
 		402805C628C4825C00FDA092 /* StickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805C528C4825C00FDA092 /* StickyHeaderView.swift */; };
 		402805C828C4839900FDA092 /* StickyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805C728C4839900FDA092 /* StickyContentView.swift */; };
@@ -102,6 +105,9 @@
 		4017CE7B28D4F8C300048A90 /* MilkShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkShake.swift; sourceTree = "<group>"; };
 		4017CE7D28D4FB5E00048A90 /* FoodDeliveryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryTab.swift; sourceTree = "<group>"; };
 		4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryHome.swift; sourceTree = "<group>"; };
+		401C77B72949E4F5000209ED /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		401C77BC2949F0BA000209ED /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		401C77BF2949F62F000209ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4020F3E528EB30EE00F36AC7 /* GestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTest.swift; sourceTree = "<group>"; };
 		402805C528C4825C00FDA092 /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		402805C728C4839900FDA092 /* StickyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401C77BB2949E7E7000209ED /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +231,23 @@
 				4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		401C77B62949E4DB000209ED /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				401C77BE2949F13F000209ED /* Shared */,
+				401C77BC2949F0BA000209ED /* logo.gif */,
+				401C77B72949E4F5000209ED /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		401C77BE2949F13F000209ED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		4020F3E428EB30C500F36AC7 /* GestureState */ = {
@@ -613,8 +637,10 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
+				401C77B62949E4DB000209ED /* SplashScreen */,
 				403BEEAA290843A5008B0CD7 /* BottomSheet */,
 				40A1C7A628BA9FE300AAFF2F /* Carousel */,
 				403BEE9729067E08008B0CD7 /* SnapCarousel */,
@@ -681,6 +707,7 @@
 			);
 			name = SwiftUIPractice;
 			packageProductDependencies = (
+				401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */,
 			);
 			productName = SwiftUIPractice;
 			productReference = 40F5770B2883A44800AC1285 /* SwiftUIPractice.app */;
@@ -711,6 +738,7 @@
 			);
 			mainGroup = 40F577022883A44800AC1285;
 			packageReferences = (
+				401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 40F5770C2883A44800AC1285 /* Products */;
 			projectDirPath = "";
@@ -733,6 +761,7 @@
 				40D2DA7828D76BC10023F733 /* video4.MOV in Resources */,
 				40D2DA7928D76BC10023F733 /* video5.MOV in Resources */,
 				40D2DA7A28D76BC10023F733 /* video6.MOV in Resources */,
+				401C77BD2949F0BA000209ED /* logo.gif in Resources */,
 				40D2DA7428D76B990023F733 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -784,6 +813,7 @@
 				403BEE9E29067F4D008B0CD7 /* Post.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
+				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
@@ -955,9 +985,9 @@
 				DEVELOPMENT_TEAM = SJKHCRL68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -986,9 +1016,9 @@
 				DEVELOPMENT_TEAM = SJKHCRL68N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIPractice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1027,6 +1057,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */ = {

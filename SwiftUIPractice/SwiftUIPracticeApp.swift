@@ -13,7 +13,8 @@ struct SwiftUIPracticeApp: App {
 
     var body: some Scene {
         WindowGroup {
-            PracticeList()
+            SplashScreen()
+            //PracticeList()
             //ListColorChange()
 //            ContentView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
