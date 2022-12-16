@@ -93,6 +93,9 @@
 		40F577182883A44A00AC1285 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577172883A44A00AC1285 /* Persistence.swift */; };
 		40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */; };
 		40F577222883A48300AC1285 /* ListColorChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577212883A48300AC1285 /* ListColorChange.swift */; };
+		40F76114294BE8390019FC2E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76113294BE8390019FC2E /* TimerView.swift */; };
+		40F76117294BE91A0019FC2E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76116294BE91A0019FC2E /* CircularProgressView.swift */; };
+		40F7611B294D0D400019FC2E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7611A294D0D400019FC2E /* TimerViewModel.swift */; };
 		40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC33D28F0EE0E00FEB6CA /* ReelsPlayer.swift */; };
 		40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34028F0EE6500FEB6CA /* ActionButton.swift */; };
 		40FDC34428F0EF7500FEB6CA /* ReelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */; };
@@ -189,6 +192,9 @@
 		40F577172883A44A00AC1285 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		40F5771A2883A44A00AC1285 /* SwiftUIPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIPractice.xcdatamodel; sourceTree = "<group>"; };
 		40F577212883A48300AC1285 /* ListColorChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListColorChange.swift; sourceTree = "<group>"; };
+		40F76113294BE8390019FC2E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		40F76116294BE91A0019FC2E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		40F7611A294D0D400019FC2E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		40FDC33D28F0EE0E00FEB6CA /* ReelsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsPlayer.swift; sourceTree = "<group>"; };
 		40FDC34028F0EE6500FEB6CA /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewModel.swift; sourceTree = "<group>"; };
@@ -637,6 +643,7 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				40F76112294BE81D0019FC2E /* Timer */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
@@ -679,6 +686,16 @@
 				40F577152883A44A00AC1285 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40F76112294BE81D0019FC2E /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				40F76113294BE8390019FC2E /* TimerView.swift */,
+				40F7611A294D0D400019FC2E /* TimerViewModel.swift */,
+				40F76116294BE91A0019FC2E /* CircularProgressView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		40FDC34228F0EF6500FEB6CA /* ViewModel */ = {
@@ -782,6 +799,7 @@
 				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
 				40CCA7C828E9C65F00C4A2CB /* LandingScreenView.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
+				40F76114294BE8390019FC2E /* TimerView.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
 				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
@@ -832,6 +850,7 @@
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */,
 				40A1C7A428BA98BA00AAFF2F /* VideoGridView.swift in Sources */,
+				40F7611B294D0D400019FC2E /* TimerViewModel.swift in Sources */,
 				40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */,
 				40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */,
 				40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */,
@@ -846,6 +865,7 @@
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
 				4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */,
 				402805CF28C48D0600FDA092 /* OffsetModifier.swift in Sources */,
+				40F76117294BE91A0019FC2E /* CircularProgressView.swift in Sources */,
 				402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */,
 				40D2DA8028D9EF730023F733 /* RollingView.swift in Sources */,
 				40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */,

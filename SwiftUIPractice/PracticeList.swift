@@ -38,7 +38,8 @@ struct PracticeList: View {
                                  ProSwiftUIView.self,
                                  SnapCarouselView.self,
                                  BottomSheet.self,
-                                 SplashScreen.self]
+                                 SplashScreen.self,
+                                 TimerView.self]
     
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
@@ -92,6 +93,8 @@ struct PracticeList: View {
             return AnyView(BottomSheet())
         case is SplashScreen.Type :
             return AnyView(SplashScreen())
+        case is TimerView.Type:
+            return AnyView(TimerView())
         default: return AnyView(EmptyView())
         }
     }
