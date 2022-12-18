@@ -39,7 +39,8 @@ struct PracticeList: View {
                                  SnapCarouselView.self,
                                  BottomSheet.self,
                                  SplashScreen.self,
-                                 TimerView.self]
+                                 TimerView.self,
+                                 IntroView.self]
     
     func buildView(types: [Any], index: Int) -> AnyView {
         switch types[index].self {
@@ -95,6 +96,8 @@ struct PracticeList: View {
             return AnyView(SplashScreen())
         case is TimerView.Type:
             return AnyView(TimerView())
+        case is IntroView.Type:
+            return AnyView(IntroView())
         default: return AnyView(EmptyView())
         }
     }

@@ -94,8 +94,15 @@
 		40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */; };
 		40F577222883A48300AC1285 /* ListColorChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577212883A48300AC1285 /* ListColorChange.swift */; };
 		40F76114294BE8390019FC2E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76113294BE8390019FC2E /* TimerView.swift */; };
-		40F76117294BE91A0019FC2E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76116294BE91A0019FC2E /* CircularProgressView.swift */; };
 		40F7611B294D0D400019FC2E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7611A294D0D400019FC2E /* TimerViewModel.swift */; };
+		40F7611E294EC5010019FC2E /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7611D294EC5010019FC2E /* IntroView.swift */; };
+		40F76123294EC6C20019FC2E /* meditatingman.json in Resources */ = {isa = PBXBuildFile; fileRef = 40F7611F294EC6C20019FC2E /* meditatingman.json */; };
+		40F76124294EC6C20019FC2E /* bikerider.json in Resources */ = {isa = PBXBuildFile; fileRef = 40F76120294EC6C20019FC2E /* bikerider.json */; };
+		40F76125294EC6C20019FC2E /* businessconcept.json in Resources */ = {isa = PBXBuildFile; fileRef = 40F76121294EC6C20019FC2E /* businessconcept.json */; };
+		40F76126294EC6C20019FC2E /* cyclerider.json in Resources */ = {isa = PBXBuildFile; fileRef = 40F76122294EC6C20019FC2E /* cyclerider.json */; };
+		40F76129294EC76E0019FC2E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 40F76128294EC76E0019FC2E /* Lottie */; };
+		40F7612E294EC7F70019FC2E /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7612D294EC7F70019FC2E /* OnBoardingItem.swift */; };
+		40F76130294EC87B0019FC2E /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7612F294EC87B0019FC2E /* OnBoardingScreen.swift */; };
 		40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC33D28F0EE0E00FEB6CA /* ReelsPlayer.swift */; };
 		40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34028F0EE6500FEB6CA /* ActionButton.swift */; };
 		40FDC34428F0EF7500FEB6CA /* ReelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */; };
@@ -193,8 +200,14 @@
 		40F5771A2883A44A00AC1285 /* SwiftUIPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIPractice.xcdatamodel; sourceTree = "<group>"; };
 		40F577212883A48300AC1285 /* ListColorChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListColorChange.swift; sourceTree = "<group>"; };
 		40F76113294BE8390019FC2E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		40F76116294BE91A0019FC2E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		40F7611A294D0D400019FC2E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		40F7611D294EC5010019FC2E /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		40F7611F294EC6C20019FC2E /* meditatingman.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meditatingman.json; sourceTree = "<group>"; };
+		40F76120294EC6C20019FC2E /* bikerider.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = bikerider.json; sourceTree = "<group>"; };
+		40F76121294EC6C20019FC2E /* businessconcept.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = businessconcept.json; sourceTree = "<group>"; };
+		40F76122294EC6C20019FC2E /* cyclerider.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cyclerider.json; sourceTree = "<group>"; };
+		40F7612D294EC7F70019FC2E /* OnBoardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingItem.swift; sourceTree = "<group>"; };
+		40F7612F294EC87B0019FC2E /* OnBoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingScreen.swift; sourceTree = "<group>"; };
 		40FDC33D28F0EE0E00FEB6CA /* ReelsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsPlayer.swift; sourceTree = "<group>"; };
 		40FDC34028F0EE6500FEB6CA /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewModel.swift; sourceTree = "<group>"; };
@@ -207,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				401C77BB2949E7E7000209ED /* SDWebImageSwiftUI in Frameworks */,
+				40F76129294EC76E0019FC2E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				40C19C1428C386A900988606 /* README.md */,
+				40F7612A294EC77F0019FC2E /* Lottie */,
 				40F5770D2883A44800AC1285 /* SwiftUIPractice */,
 				40F5770C2883A44800AC1285 /* Products */,
 			);
@@ -643,10 +658,11 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
-				40F76112294BE81D0019FC2E /* Timer */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
+				40F76112294BE81D0019FC2E /* Timer */,
+				40F7611C294EC4F00019FC2E /* Intro */,
 				401C77B62949E4DB000209ED /* SplashScreen */,
 				403BEEAA290843A5008B0CD7 /* BottomSheet */,
 				40A1C7A628BA9FE300AAFF2F /* Carousel */,
@@ -693,9 +709,45 @@
 			children = (
 				40F76113294BE8390019FC2E /* TimerView.swift */,
 				40F7611A294D0D400019FC2E /* TimerViewModel.swift */,
-				40F76116294BE91A0019FC2E /* CircularProgressView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		40F7611C294EC4F00019FC2E /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				40F7612C294EC7CA0019FC2E /* Model */,
+				40F7612B294EC7C20019FC2E /* View */,
+				40F7611D294EC5010019FC2E /* IntroView.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		40F7612A294EC77F0019FC2E /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				40F76120294EC6C20019FC2E /* bikerider.json */,
+				40F76121294EC6C20019FC2E /* businessconcept.json */,
+				40F76122294EC6C20019FC2E /* cyclerider.json */,
+				40F7611F294EC6C20019FC2E /* meditatingman.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		40F7612B294EC7C20019FC2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40F7612F294EC87B0019FC2E /* OnBoardingScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40F7612C294EC7CA0019FC2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40F7612D294EC7F70019FC2E /* OnBoardingItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		40FDC34228F0EF6500FEB6CA /* ViewModel */ = {
@@ -725,6 +777,7 @@
 			name = SwiftUIPractice;
 			packageProductDependencies = (
 				401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */,
+				40F76128294EC76E0019FC2E /* Lottie */,
 			);
 			productName = SwiftUIPractice;
 			productReference = 40F5770B2883A44800AC1285 /* SwiftUIPractice.app */;
@@ -756,6 +809,7 @@
 			mainGroup = 40F577022883A44800AC1285;
 			packageReferences = (
 				401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = 40F5770C2883A44800AC1285 /* Products */;
 			projectDirPath = "";
@@ -771,6 +825,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F76123294EC6C20019FC2E /* meditatingman.json in Resources */,
+				40F76124294EC6C20019FC2E /* bikerider.json in Resources */,
+				40F76125294EC6C20019FC2E /* businessconcept.json in Resources */,
+				40F76126294EC6C20019FC2E /* cyclerider.json in Resources */,
 				40D2DA7B28D76BC60023F733 /* Preview Assets.xcassets in Resources */,
 				40D2DA7528D76BC10023F733 /* video1.MOV in Resources */,
 				40D2DA7628D76BC10023F733 /* video2.MOV in Resources */,
@@ -798,6 +856,7 @@
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
 				40CCA7C828E9C65F00C4A2CB /* LandingScreenView.swift in Sources */,
+				40F7611E294EC5010019FC2E /* IntroView.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
 				40F76114294BE8390019FC2E /* TimerView.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
@@ -833,6 +892,7 @@
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
 				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
+				40F76130294EC87B0019FC2E /* OnBoardingScreen.swift in Sources */,
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				402805C828C4839900FDA092 /* StickyContentView.swift in Sources */,
@@ -865,8 +925,8 @@
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
 				4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */,
 				402805CF28C48D0600FDA092 /* OffsetModifier.swift in Sources */,
-				40F76117294BE91A0019FC2E /* CircularProgressView.swift in Sources */,
 				402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */,
+				40F7612E294EC7F70019FC2E /* OnBoardingItem.swift in Sources */,
 				40D2DA8028D9EF730023F733 /* RollingView.swift in Sources */,
 				40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
@@ -1087,6 +1147,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1094,6 +1162,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		40F76128294EC76E0019FC2E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 
