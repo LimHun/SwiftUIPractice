@@ -40,65 +40,74 @@ struct PracticeList: View {
                                  BottomSheet.self,
                                  SplashScreen.self,
                                  TimerView.self,
-                                 IntroView.self]
+                                 IntroView.self,
+                                 LoginView.self,
+                                 SocialMediaView.self,
+                                 OTPView.self]
     
-    func buildView(types: [Any], index: Int) -> AnyView {
+    func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
         case is ListColorChange.Type:
-            return AnyView( ListColorChange() )
+            return (AnyView( ListColorChange()), false)
         case is VideoGridView.Type:
-            return AnyView( VideoGridView())
+            return (AnyView( VideoGridView()), false)
         case is TestView.Type:
-            return AnyView( TestView() )
+            return (AnyView( TestView()), false)
         case is CarouselView.Type:
-            return AnyView( CarouselView() )
+            return (AnyView( CarouselView()), false)
         case is StockView.Type:
-            return AnyView( StockView() )
+            return (AnyView( StockView()), false)
         case is TouchAnimationView.Type:
-            return AnyView( TouchAnimationView() )
+            return (AnyView( TouchAnimationView()), false)
         case is TikTokView.Type:
-            return AnyView( TikTokView() )
+            return (AnyView( TikTokView()), false)
         case is MovieVerticalView.Type:
-            return AnyView( MovieVerticalView() )
+            return (AnyView( MovieVerticalView()), false)
         case is ReelsApp.Type:
-            return AnyView( ReelsApp() )
+            return (AnyView( ReelsApp()), false)
         case is StickyContentView.Type:
-            return AnyView( StickyContentView() )
+            return (AnyView( StickyContentView()), false)
         case is ResponsiveContent.Type:
-            return AnyView( ResponsiveContent() )
+            return (AnyView( ResponsiveContent()), false)
         case is FoodDeliveryHome.Type:
-            return AnyView( FoodDeliveryHome() )
+            return (AnyView( FoodDeliveryHome()), false)
         case is RollingView.Type:
-            return AnyView( RollingView() )
+            return (AnyView( RollingView()), false)
         case is VideoPlayerTest.Type:
-            return AnyView( VideoPlayerTest() )
+            return (AnyView( VideoPlayerTest()), false)
         case is VideoNavi.Type:
-            return AnyView( VideoNavi() )
+            return (AnyView( VideoNavi()), false)
         case is AutoFocusTextFeild.Type :
-            return AnyView( AutoFocusTextFeild() )
+            return (AnyView( AutoFocusTextFeild()), false)
         case is CoreLoactionUI.Type:
-            return AnyView( CoreLoactionUI() )
+            return (AnyView( CoreLoactionUI()), false)
         case is EnvironmentTest.Type:
-            return AnyView( EnvironmentTest() )
+            return (AnyView( EnvironmentTest()), false)
         case is MultiView.Type:
-            return AnyView( MultiView() )
+            return (AnyView( MultiView()), false)
         case is LandingScreenView.Type:
-            return AnyView( LandingScreenView() )
+            return (AnyView( LandingScreenView()), false)
         case is GestureTest.Type:
-            return AnyView(GestureTest())
+            return (AnyView(GestureTest()), false)
         case is ProSwiftUIView.Type:
-            return AnyView(ProSwiftUIView())
+            return (AnyView(ProSwiftUIView()), false)
         case is SnapCarouselView.Type:
-            return AnyView(SnapCarouselView())
+            return (AnyView(SnapCarouselView()), false)
         case is BottomSheet.Type:
-            return AnyView(BottomSheet())
+            return (AnyView(BottomSheet()), false)
         case is SplashScreen.Type :
-            return AnyView(SplashScreen())
+            return (AnyView(SplashScreen()), false)
         case is TimerView.Type:
-            return AnyView(TimerView())
+            return (AnyView(TimerView()), false)
         case is IntroView.Type:
-            return AnyView(IntroView())
-        default: return AnyView(EmptyView())
+            return (AnyView(IntroView()), false)
+        case is LoginView.Type:
+            return (AnyView(LoginView()), false)
+        case is SocialMediaView.Type:
+            return (AnyView(SocialMediaView()), true)
+        case is OTPView.Type:
+            return (AnyView(OTPView()), false)
+        default: return (AnyView(EmptyView()), false)
         }
     }
     
@@ -112,9 +121,10 @@ struct PracticeList: View {
                     
                     let studyTitle : String = String(describing: practiceViews[index])
                     NavigationLink {
-                        buildView(types: practiceViews, index: index)
+                        buildView(types: practiceViews, index: index).0
                             .navigationBarTitleDisplayMode(.inline)
                             .navigationBarTitle(studyTitle)
+                            .navigationBarHidden(buildView(types: practiceViews, index: index).isNaviBar)
                             .onAppear {
                                 isActive = true
                             }.onDisappear {
@@ -129,7 +139,6 @@ struct PracticeList: View {
             .navigationBarBackButtonHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        
     }
 }
 

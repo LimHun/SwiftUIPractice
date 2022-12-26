@@ -11,7 +11,7 @@ struct SnapCarouselView: View {
     
     @State var currentIndex : Int = 0
     
-    @State var posts : [Post] = []
+    @State var posts : [SnapCarouselPost] = []
     
     var body: some View {
         VStack(spacing: 15) {
@@ -55,7 +55,7 @@ struct SnapCarouselView: View {
         .frame(maxHeight: .infinity, alignment: .top)
         .onAppear {
             for index in 1...5 {
-                posts.append(Post(postImage: "Movie\(index)"))
+                posts.append(SnapCarouselPost(postImage: "Movie\(index)"))
             }
         }
     }
