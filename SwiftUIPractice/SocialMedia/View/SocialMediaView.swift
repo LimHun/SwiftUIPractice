@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SocialMediaView: View {
     
+    // 로그인 여부 확인 - 앱이 다시 켜져도 설정된 값이 유지
+    // 기본 값은 false
     @AppStorage("log_status") var logStatus: Bool = false
     
     var body: some View {

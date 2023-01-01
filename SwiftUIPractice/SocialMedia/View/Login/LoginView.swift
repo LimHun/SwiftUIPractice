@@ -11,6 +11,7 @@ import Firebase
 import FirebaseFirestore
 import FirebaseStorage
 
+// 진입시 보이는 로그인화면
 struct LoginView: View {
     
     // MARK: User Details

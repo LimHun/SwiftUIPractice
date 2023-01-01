@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QureyTag: View {
-    var query: Query = .food
+    var query: MenuQuery = .food
     var isSelected: Bool = false
 
     var body: some View {
@@ -24,6 +24,6 @@ struct QureyTag: View {
 
 struct QureyTag_Previews: PreviewProvider {
     static var previews: some View {
-        QureyTag(query: Query.food, isSelected: false)
+        QureyTag(query: MenuQuery.food, isSelected: false)
     }
 }

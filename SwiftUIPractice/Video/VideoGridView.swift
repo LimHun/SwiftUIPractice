@@ -16,7 +16,7 @@ struct VideoGridView: View {
 //        NavigationView {
             VStack {
                 HStack {
-                    ForEach(Query.allCases, id: \.self) { searchQuery in
+                    ForEach(MenuQuery.allCases, id: \.self) { searchQuery in
                         QureyTag(query: searchQuery, isSelected: videoManager.selectedQuery == searchQuery)
                             .onTapGesture {
                                 videoManager.selectedQuery = searchQuery

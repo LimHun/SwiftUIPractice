@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Query: String, CaseIterable {
+enum MenuQuery: String, CaseIterable {
     case nature, animals, people, ocean, food
 }
 
@@ -16,7 +16,7 @@ let apiToken : String = "563492ad6f9170000100000151ddee10d23e42b89502a3591245af3
 class VideoManager : ObservableObject {
 
     @Published var videos : [Video] = []
-    @Published var selectedQuery: Query = Query.nature {
+    @Published var selectedQuery: MenuQuery = MenuQuery.nature {
         // 변수 변경시 마다 api 신규 호출하도록 함
         didSet {
             Task.init {
@@ -43,7 +43,7 @@ class VideoManager : ObservableObject {
         }
     }
 
-    func findVideos(topic: Query) async {
+    func findVideos(topic: MenuQuery) async {
         do {
 //            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=1&orientation=portrait") else {
 //                fatalError("Missing URL")

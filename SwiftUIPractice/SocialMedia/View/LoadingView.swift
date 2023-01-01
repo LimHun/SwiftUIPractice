@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// 전역적으로 사용되는 로딩 프로그래스 뷰
 struct LoadingView: View {
     @Binding var show: Bool
     var body: some View {

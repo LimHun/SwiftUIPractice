@@ -42,6 +42,7 @@
 		408E524A295978AE00B83E0F /* CreateNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E5249295978AE00B83E0F /* CreateNewPost.swift */; };
 		408E524C295978E100B83E0F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E524B295978E100B83E0F /* Post.swift */; };
 		408E524E2959904600B83E0F /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E524D2959904600B83E0F /* PostsView.swift */; };
+		408E5251295AE15500B83E0F /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E5250295AE15500B83E0F /* ReusablePostsView.swift */; };
 		40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C78528BA290200AAFF2F /* PracticeList.swift */; };
 		40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C78A28BA8A8D00AAFF2F /* TestView.swift */; };
 		40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C79728BA980F00AAFF2F /* VideoCard.swift */; };
@@ -74,12 +75,14 @@
 		40A36AF22950AAF400F4AFFE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A36AF12950AAF400F4AFFE /* RegisterView.swift */; };
 		40A36AF52950AC7700F4AFFE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A36AF42950AC7700F4AFFE /* ViewExtensions.swift */; };
 		40A36AF8295149CA00F4AFFE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A36AF7295149CA00F4AFFE /* MainView.swift */; };
+		40A61EDF29612196001FEE84 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A61EDE29612196001FEE84 /* SearchUserView.swift */; };
 		40C19C0A28C254AD00988606 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0928C254AD00988606 /* Reel.swift */; };
 		40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */; };
 		40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */; };
 		40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C1228C3683C00988606 /* ReelsAPIView.swift */; };
 		40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C554DD28E32B9000825FBF /* CoreLoactionUI.swift */; };
 		40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C554E028E3400700825FBF /* StateBindingTest.swift */; };
+		40C8F901295E90F50011C77E /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C8F900295E90F50011C77E /* PostCardView.swift */; };
 		40CCA7C828E9C65F00C4A2CB /* LandingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CCA7C728E9C65F00C4A2CB /* LandingScreenView.swift */; };
 		40CCA7CA28E9C68800C4A2CB /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CCA7C928E9C68800C4A2CB /* HomeScreen.swift */; };
 		40CCA7CD28E9C6B100C4A2CB /* PromotionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CCA7CC28E9C6B100C4A2CB /* PromotionsScreen.swift */; };
@@ -164,6 +167,7 @@
 		408E5249295978AE00B83E0F /* CreateNewPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPost.swift; sourceTree = "<group>"; };
 		408E524B295978E100B83E0F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		408E524D2959904600B83E0F /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		408E5250295AE15500B83E0F /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
 		40A1C78528BA290200AAFF2F /* PracticeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeList.swift; sourceTree = "<group>"; };
 		40A1C78A28BA8A8D00AAFF2F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		40A1C79728BA980F00AAFF2F /* VideoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		40A36AF12950AAF400F4AFFE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		40A36AF42950AC7700F4AFFE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		40A36AF7295149CA00F4AFFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		40A61EDE29612196001FEE84 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
 		40C19C0928C254AD00988606 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabBarButton.swift; sourceTree = "<group>"; };
@@ -210,6 +215,7 @@
 		40C19C1428C386A900988606 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40C554DD28E32B9000825FBF /* CoreLoactionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLoactionUI.swift; sourceTree = "<group>"; };
 		40C554E028E3400700825FBF /* StateBindingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateBindingTest.swift; sourceTree = "<group>"; };
+		40C8F900295E90F50011C77E /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
 		40CCA7C728E9C65F00C4A2CB /* LandingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingScreenView.swift; sourceTree = "<group>"; };
 		40CCA7C928E9C68800C4A2CB /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		40CCA7CC28E9C6B100C4A2CB /* PromotionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionsScreen.swift; sourceTree = "<group>"; };
@@ -631,12 +637,31 @@
 			isa = PBXGroup;
 			children = (
 				40A36AF7295149CA00F4AFFE /* MainView.swift */,
-				408E523F29514B1D00B83E0F /* ProfileView.swift */,
-				408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */,
 				408E5249295978AE00B83E0F /* CreateNewPost.swift */,
-				408E524D2959904600B83E0F /* PostsView.swift */,
+				40A61EDC296118DF001FEE84 /* ProfileView */,
+				40A61EDD296118F5001FEE84 /* PostView */,
+				40A61EDE29612196001FEE84 /* SearchUserView.swift */,
 			);
 			path = MainView;
+			sourceTree = "<group>";
+		};
+		40A61EDC296118DF001FEE84 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				408E523F29514B1D00B83E0F /* ProfileView.swift */,
+				408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		40A61EDD296118F5001FEE84 /* PostView */ = {
+			isa = PBXGroup;
+			children = (
+				408E524D2959904600B83E0F /* PostsView.swift */,
+				408E5250295AE15500B83E0F /* ReusablePostsView.swift */,
+				40C8F900295E90F50011C77E /* PostCardView.swift */,
+			);
+			path = PostView;
 			sourceTree = "<group>";
 		};
 		40C19C0B28C2D4BA00988606 /* View */ = {
@@ -1018,6 +1043,7 @@
 				4005C3F328F2CE290025DAE9 /* ReelsView2.swift in Sources */,
 				402805D228C496D100FDA092 /* StickyTopBar.swift in Sources */,
 				40A1C7B528BAEE0200AAFF2F /* Stock.swift in Sources */,
+				40A61EDF29612196001FEE84 /* SearchUserView.swift in Sources */,
 				40A1C7C628BB64B100AAFF2F /* TouchAnimationView.swift in Sources */,
 				4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */,
 				40A1C7BC28BAF29A00AAFF2F /* StockView.swift in Sources */,
@@ -1026,6 +1052,7 @@
 				403BEE9E29067F4D008B0CD7 /* SnapCarouselPost.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
+				40C8F901295E90F50011C77E /* PostCardView.swift in Sources */,
 				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
 				40F76130294EC87B0019FC2E /* OnBoardingScreen.swift in Sources */,
@@ -1064,6 +1091,7 @@
 				40CDCDDC28C64D0000A35FF4 /* Sale.swift in Sources */,
 				40A1C79D28BA980F00AAFF2F /* QureyTag.swift in Sources */,
 				40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */,
+				408E5251295AE15500B83E0F /* ReusablePostsView.swift in Sources */,
 				4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */,
 				402805CF28C48D0600FDA092 /* OffsetModifier.swift in Sources */,
 				40A36AF22950AAF400F4AFFE /* RegisterView.swift in Sources */,
