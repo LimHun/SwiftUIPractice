@@ -24,6 +24,17 @@
 		402805D428C4977C00FDA092 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D328C4977C00FDA092 /* Message.swift */; };
 		402805D628C4981500FDA092 /* MessageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402805D528C4981500FDA092 /* MessageCardView.swift */; };
 		402AE06F28E5E31B0050EBC3 /* MultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402AE06E28E5E31B0050EBC3 /* MultiView.swift */; };
+		402C2F302967237900BFED6E /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402C2F2C2967237900BFED6E /* Ubuntu-Medium.ttf */; };
+		402C2F312967237900BFED6E /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402C2F2D2967237900BFED6E /* Ubuntu-Regular.ttf */; };
+		402C2F322967237900BFED6E /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402C2F2E2967237900BFED6E /* Ubuntu-Bold.ttf */; };
+		402C2F332967237900BFED6E /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 402C2F2F2967237900BFED6E /* Ubuntu-Light.ttf */; };
+		402C2F352967250700BFED6E /* TaskManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F342967250700BFED6E /* TaskManagementApp.swift */; };
+		402C2F372967273C00BFED6E /* Ubuntu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F362967273C00BFED6E /* Ubuntu.swift */; };
+		402C2F3A296A5EE000BFED6E /* DropDownPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F39296A5EE000BFED6E /* DropDownPicker.swift */; };
+		402C2F3E296A5F0D00BFED6E /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F3D296A5F0D00BFED6E /* DropDownView.swift */; };
+		402C2F40296AF89800BFED6E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F3F296AF89800BFED6E /* Task.swift */; };
+		402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F41296AF9D200BFED6E /* TaskCategory.swift */; };
+		402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F43296B148F00BFED6E /* AddTaskNew.swift */; };
 		403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9829067E23008B0CD7 /* SnapCarousel.swift */; };
 		403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */; };
 		403BEE9E29067F4D008B0CD7 /* SnapCarouselPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9D29067F4D008B0CD7 /* SnapCarouselPost.swift */; };
@@ -31,6 +42,7 @@
 		403BEEB1290843A5008B0CD7 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEEAE290843A5008B0CD7 /* BlurView.swift */; };
 		403BEEB2290843A5008B0CD7 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEEAF290843A5008B0CD7 /* CustomCorner.swift */; };
 		403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E1F3828E49C6E003D757B /* EnvironmentTest.swift */; };
+		4045D105297F81130046DB72 /* NativePopovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045D104297F81130046DB72 /* NativePopovers.swift */; };
 		4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */; };
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
 		407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */; };
@@ -76,6 +88,7 @@
 		40A36AF52950AC7700F4AFFE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A36AF42950AC7700F4AFFE /* ViewExtensions.swift */; };
 		40A36AF8295149CA00F4AFFE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A36AF7295149CA00F4AFFE /* MainView.swift */; };
 		40A61EDF29612196001FEE84 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A61EDE29612196001FEE84 /* SearchUserView.swift */; };
+		40A61EE22961A27D001FEE84 /* ExPhotoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A61EE12961A27D001FEE84 /* ExPhotoPickerView.swift */; };
 		40C19C0A28C254AD00988606 /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0928C254AD00988606 /* Reel.swift */; };
 		40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */; };
 		40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */; };
@@ -149,6 +162,17 @@
 		402805D328C4977C00FDA092 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		402805D528C4981500FDA092 /* MessageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCardView.swift; sourceTree = "<group>"; };
 		402AE06E28E5E31B0050EBC3 /* MultiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiView.swift; sourceTree = "<group>"; };
+		402C2F2C2967237900BFED6E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		402C2F2D2967237900BFED6E /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		402C2F2E2967237900BFED6E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		402C2F2F2967237900BFED6E /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		402C2F342967250700BFED6E /* TaskManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagementApp.swift; sourceTree = "<group>"; };
+		402C2F362967273C00BFED6E /* Ubuntu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ubuntu.swift; sourceTree = "<group>"; };
+		402C2F39296A5EE000BFED6E /* DropDownPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownPicker.swift; sourceTree = "<group>"; };
+		402C2F3D296A5F0D00BFED6E /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		402C2F3F296AF89800BFED6E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		402C2F41296AF9D200BFED6E /* TaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
+		402C2F43296B148F00BFED6E /* AddTaskNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskNew.swift; sourceTree = "<group>"; };
 		403BEE9829067E23008B0CD7 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
 		403BEE9D29067F4D008B0CD7 /* SnapCarouselPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselPost.swift; sourceTree = "<group>"; };
@@ -156,6 +180,7 @@
 		403BEEAE290843A5008B0CD7 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		403BEEAF290843A5008B0CD7 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		403E1F3828E49C6E003D757B /* EnvironmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
+		4045D104297F81130046DB72 /* NativePopovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePopovers.swift; sourceTree = "<group>"; };
 		4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTest.swift; sourceTree = "<group>"; };
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
 		407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextFeild.swift; sourceTree = "<group>"; };
@@ -208,6 +233,7 @@
 		40A36AF42950AC7700F4AFFE /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		40A36AF7295149CA00F4AFFE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		40A61EDE29612196001FEE84 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
+		40A61EE12961A27D001FEE84 /* ExPhotoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExPhotoPickerView.swift; sourceTree = "<group>"; };
 		40C19C0928C254AD00988606 /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		40C19C0C28C2D4DB00988606 /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 		40C19C0E28C3259A00988606 /* ReelsTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsTabBarButton.swift; sourceTree = "<group>"; };
@@ -368,6 +394,70 @@
 			path = MultipleDismiss;
 			sourceTree = "<group>";
 		};
+		402C2F28296721BF00BFED6E /* TaskManagementApp */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F2A2967227400BFED6E /* View */,
+				402C2F292967226F00BFED6E /* Model */,
+			);
+			path = TaskManagementApp;
+			sourceTree = "<group>";
+		};
+		402C2F292967226F00BFED6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F362967273C00BFED6E /* Ubuntu.swift */,
+				402C2F3F296AF89800BFED6E /* Task.swift */,
+				402C2F41296AF9D200BFED6E /* TaskCategory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		402C2F2A2967227400BFED6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F342967250700BFED6E /* TaskManagementApp.swift */,
+				402C2F43296B148F00BFED6E /* AddTaskNew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		402C2F2B2967227900BFED6E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F2E2967237900BFED6E /* Ubuntu-Bold.ttf */,
+				402C2F2F2967237900BFED6E /* Ubuntu-Light.ttf */,
+				402C2F2C2967237900BFED6E /* Ubuntu-Medium.ttf */,
+				402C2F2D2967237900BFED6E /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		402C2F38296A5E6900BFED6E /* DropDownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F3C296A5EF900BFED6E /* Model */,
+				402C2F3B296A5EF200BFED6E /* View */,
+				402C2F39296A5EE000BFED6E /* DropDownPicker.swift */,
+			);
+			path = DropDownPicker;
+			sourceTree = "<group>";
+		};
+		402C2F3B296A5EF200BFED6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				402C2F3D296A5F0D00BFED6E /* DropDownView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		402C2F3C296A5EF900BFED6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		403BEE9729067E08008B0CD7 /* SnapCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +500,14 @@
 				403BEEAF290843A5008B0CD7 /* CustomCorner.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4045D103297F80EA0046DB72 /* NativePopovers */ = {
+			isa = PBXGroup;
+			children = (
+				4045D104297F81130046DB72 /* NativePopovers.swift */,
+			);
+			path = NativePopovers;
 			sourceTree = "<group>";
 		};
 		4057CCAA28DB37FD00942641 /* VideoPlayerTest */ = {
@@ -664,6 +762,14 @@
 			path = PostView;
 			sourceTree = "<group>";
 		};
+		40A61EE02961A260001FEE84 /* PhotoPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				40A61EE12961A27D001FEE84 /* ExPhotoPickerView.swift */,
+			);
+			path = PhotoPickerView;
+			sourceTree = "<group>";
+		};
 		40C19C0B28C2D4BA00988606 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +858,7 @@
 				40C19C1428C386A900988606 /* README.md */,
 				40F76131294F00FA0019FC2E /* GoogleService-Info.plist */,
 				40F7612A294EC77F0019FC2E /* Lottie */,
+				402C2F2B2967227900BFED6E /* Fonts */,
 				40F5770D2883A44800AC1285 /* SwiftUIPractice */,
 				40F5770C2883A44800AC1285 /* Products */,
 				40F7613B294F32710019FC2E /* Frameworks */,
@@ -769,10 +876,14 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
-				40A36AF32950AC5E00F4AFFE /* Helpers */,
+				4045D103297F80EA0046DB72 /* NativePopovers */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
+				402C2F38296A5E6900BFED6E /* DropDownPicker */,
+				402C2F28296721BF00BFED6E /* TaskManagementApp */,
+				40A36AF32950AC5E00F4AFFE /* Helpers */,
+				40A61EE02961A260001FEE84 /* PhotoPickerView */,
 				408E52432957260D00B83E0F /* AutoOTP */,
 				40F76136294F025D0019FC2E /* SocialMedia */,
 				40F76112294BE81D0019FC2E /* Timer */,
@@ -980,6 +1091,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402C2F302967237900BFED6E /* Ubuntu-Medium.ttf in Resources */,
+				402C2F312967237900BFED6E /* Ubuntu-Regular.ttf in Resources */,
+				402C2F322967237900BFED6E /* Ubuntu-Bold.ttf in Resources */,
+				402C2F332967237900BFED6E /* Ubuntu-Light.ttf in Resources */,
 				40F76123294EC6C20019FC2E /* meditatingman.json in Resources */,
 				40F76124294EC6C20019FC2E /* bikerider.json in Resources */,
 				40F76125294EC6C20019FC2E /* businessconcept.json in Resources */,
@@ -1007,12 +1122,16 @@
 				40A1C7C928BCF3F100AAFF2F /* TikTokView.swift in Sources */,
 				40A1C7CE28BCF8CF00AAFF2F /* HomeView.swift in Sources */,
 				403BEEB0290843A5008B0CD7 /* BottomSheet.swift in Sources */,
+				40A61EE22961A27D001FEE84 /* ExPhotoPickerView.swift in Sources */,
 				40A1C7A028BA980F00AAFF2F /* VideoView.swift in Sources */,
 				408E524A295978AE00B83E0F /* CreateNewPost.swift in Sources */,
 				408E524C295978E100B83E0F /* Post.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
+				402C2F372967273C00BFED6E /* Ubuntu.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
+				402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */,
+				402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */,
 				40CCA7C828E9C65F00C4A2CB /* LandingScreenView.swift in Sources */,
 				40F76143294F44B90019FC2E /* User.swift in Sources */,
 				40F7613A294F02F10019FC2E /* LoginView.swift in Sources */,
@@ -1030,11 +1149,13 @@
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
 				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
+				402C2F352967250700BFED6E /* TaskManagementApp.swift in Sources */,
 				40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */,
 				40CCA7CF28E9CC1E00C4A2CB /* LoadCounterViewModel.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
 				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
 				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
+				4045D105297F81130046DB72 /* NativePopovers.swift in Sources */,
 				40A1C7C328BB004300AAFF2F /* StockListView.swift in Sources */,
 				403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */,
 				4017CE7E28D4FB5E00048A90 /* FoodDeliveryTab.swift in Sources */,
@@ -1051,7 +1172,9 @@
 				40CDCDD828C64BEF00A35FF4 /* Info.swift in Sources */,
 				403BEE9E29067F4D008B0CD7 /* SnapCarouselPost.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
+				402C2F3E296A5F0D00BFED6E /* DropDownView.swift in Sources */,
 				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
+				402C2F40296AF89800BFED6E /* Task.swift in Sources */,
 				40C8F901295E90F50011C77E /* PostCardView.swift in Sources */,
 				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
@@ -1059,6 +1182,7 @@
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				408E524029514B1D00B83E0F /* ProfileView.swift in Sources */,
+				402C2F3A296A5EE000BFED6E /* DropDownPicker.swift in Sources */,
 				408E524E2959904600B83E0F /* PostsView.swift in Sources */,
 				402805C828C4839900FDA092 /* StickyContentView.swift in Sources */,
 				402805C628C4825C00FDA092 /* StickyHeaderView.swift in Sources */,

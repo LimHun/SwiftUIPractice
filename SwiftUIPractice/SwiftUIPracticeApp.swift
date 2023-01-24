@@ -19,8 +19,8 @@ struct SwiftUIPracticeApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            SplashScreen()
-            SocialMediaView() // Firebase 앱
+            SplashScreen()
+//            SocialMediaView() // Firebase 앱
         }
     }
 }

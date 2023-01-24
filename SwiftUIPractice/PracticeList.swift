@@ -43,7 +43,11 @@ struct PracticeList: View {
                                  IntroView.self,
                                  LoginView.self,
                                  SocialMediaView.self,
-                                 OTPView.self]
+                                 OTPView.self,
+                                 ExPhotoPickerView.self,
+                                 TaskManagementApp.self,
+                                 DropDownView.self,
+                                 NativePopovers.self]
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
@@ -107,6 +111,14 @@ struct PracticeList: View {
             return (AnyView(SocialMediaView()), true)
         case is OTPView.Type:
             return (AnyView(OTPView()), false)
+        case is ExPhotoPickerView.Type:
+            return (AnyView(ExPhotoPickerView()), false)
+        case is TaskManagementApp.Type:
+            return (AnyView(TaskManagementApp()), false)
+        case is DropDownView.Type:
+            return (AnyView(DropDownView()), false)
+        case is NativePopovers.Type:
+            return (AnyView(NativePopovers()), false)
         default: return (AnyView(EmptyView()), false)
         }
     }
