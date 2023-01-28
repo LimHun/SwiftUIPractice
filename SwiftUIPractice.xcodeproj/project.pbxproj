@@ -35,6 +35,9 @@
 		402C2F40296AF89800BFED6E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F3F296AF89800BFED6E /* Task.swift */; };
 		402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F41296AF9D200BFED6E /* TaskCategory.swift */; };
 		402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F43296B148F00BFED6E /* AddTaskNew.swift */; };
+		403571532984934A00B26C5C /* SpotifyResponvieUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571522984934A00B26C5C /* SpotifyResponvieUI.swift */; };
+		403571572984A37200B26C5C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571562984A37200B26C5C /* Album.swift */; };
+		403571592985381100B26C5C /* SpotifyOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571582985381100B26C5C /* SpotifyOffsetModifier.swift */; };
 		403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9829067E23008B0CD7 /* SnapCarousel.swift */; };
 		403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */; };
 		403BEE9E29067F4D008B0CD7 /* SnapCarouselPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEE9D29067F4D008B0CD7 /* SnapCarouselPost.swift */; };
@@ -152,7 +155,7 @@
 		4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryHome.swift; sourceTree = "<group>"; };
 		401C77B72949E4F5000209ED /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		401C77BC2949F0BA000209ED /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
-		401C77BF2949F62F000209ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		401C77BF2949F62F000209ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4020F3E528EB30EE00F36AC7 /* GestureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTest.swift; sourceTree = "<group>"; };
 		402805C528C4825C00FDA092 /* StickyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderView.swift; sourceTree = "<group>"; };
 		402805C728C4839900FDA092 /* StickyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +176,9 @@
 		402C2F3F296AF89800BFED6E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		402C2F41296AF9D200BFED6E /* TaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
 		402C2F43296B148F00BFED6E /* AddTaskNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskNew.swift; sourceTree = "<group>"; };
+		403571522984934A00B26C5C /* SpotifyResponvieUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyResponvieUI.swift; sourceTree = "<group>"; };
+		403571562984A37200B26C5C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		403571582985381100B26C5C /* SpotifyOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyOffsetModifier.swift; sourceTree = "<group>"; };
 		403BEE9829067E23008B0CD7 /* SnapCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarousel.swift; sourceTree = "<group>"; };
 		403BEE9A29067E36008B0CD7 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
 		403BEE9D29067F4D008B0CD7 /* SnapCarouselPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselPost.swift; sourceTree = "<group>"; };
@@ -454,6 +460,32 @@
 		402C2F3C296A5EF900BFED6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40357150298492DC00B26C5C /* SpotifyResponvieUI */ = {
+			isa = PBXGroup;
+			children = (
+				403571552984A36400B26C5C /* Model */,
+				403571542984A35E00B26C5C /* View */,
+			);
+			path = SpotifyResponvieUI;
+			sourceTree = "<group>";
+		};
+		403571542984A35E00B26C5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				403571522984934A00B26C5C /* SpotifyResponvieUI.swift */,
+				403571582985381100B26C5C /* SpotifyOffsetModifier.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		403571552984A36400B26C5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				403571562984A37200B26C5C /* Album.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -876,10 +908,11 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
-				4045D103297F80EA0046DB72 /* NativePopovers */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
+				40357150298492DC00B26C5C /* SpotifyResponvieUI */,
+				4045D103297F80EA0046DB72 /* NativePopovers */,
 				402C2F38296A5E6900BFED6E /* DropDownPicker */,
 				402C2F28296721BF00BFED6E /* TaskManagementApp */,
 				40A36AF32950AC5E00F4AFFE /* Helpers */,
@@ -1129,6 +1162,7 @@
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
 				402C2F372967273C00BFED6E /* Ubuntu.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
+				403571532984934A00B26C5C /* SpotifyResponvieUI.swift in Sources */,
 				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
 				402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */,
 				402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */,
@@ -1147,6 +1181,7 @@
 				40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */,
 				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
+				403571572984A37200B26C5C /* Album.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
 				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
 				402C2F352967250700BFED6E /* TaskManagementApp.swift in Sources */,
@@ -1158,6 +1193,7 @@
 				4045D105297F81130046DB72 /* NativePopovers.swift in Sources */,
 				40A1C7C328BB004300AAFF2F /* StockListView.swift in Sources */,
 				403BEE9B29067E36008B0CD7 /* SnapCarouselView.swift in Sources */,
+				403571592985381100B26C5C /* SpotifyOffsetModifier.swift in Sources */,
 				4017CE7E28D4FB5E00048A90 /* FoodDeliveryTab.swift in Sources */,
 				40CCA7CA28E9C68800C4A2CB /* HomeScreen.swift in Sources */,
 				40C19C0D28C2D4DB00988606 /* CustomVideoPlayer.swift in Sources */,

@@ -47,7 +47,8 @@ struct PracticeList: View {
                                  ExPhotoPickerView.self,
                                  TaskManagementApp.self,
                                  DropDownView.self,
-                                 NativePopovers.self]
+                                 NativePopovers.self,
+                                 SpotifyResponvieUI.self]
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
@@ -119,6 +120,8 @@ struct PracticeList: View {
             return (AnyView(DropDownView()), false)
         case is NativePopovers.Type:
             return (AnyView(NativePopovers()), false)
+        case is SpotifyResponvieUI.Type:
+            return (AnyView(SpotifyResponvieUI().preferredColorScheme(.dark)), true)
         default: return (AnyView(EmptyView()), false)
         }
     }
