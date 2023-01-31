@@ -29,7 +29,7 @@ struct SpotifyResponvieUI: View {
                     } header: {
                         PinnedHeaderView()
                             .background(Color.black)
-                            .offset(y: headerOffsets.1 > 0 ? 0 : -headerOffsets.1 / 8)
+                            .offset(y: headerOffsets.1 > 0 ? 0 : 40)//-headerOffsets.1 / 8)
                             .modifier(SpotifyOffsetModifier(offset: $headerOffsets.0, returnFromStart: false))
                             .modifier(SpotifyOffsetModifier(offset: $headerOffsets.1))
                     }
@@ -99,7 +99,7 @@ struct SpotifyResponvieUI: View {
         }
         .padding()
         .padding(.top, 25)
-        .padding(.bottom, 150)
+        .padding(.bottom, 100)
     }
     
     func getIndex(album: Album) -> Int {

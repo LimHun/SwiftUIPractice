@@ -35,6 +35,9 @@
 		402C2F40296AF89800BFED6E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F3F296AF89800BFED6E /* Task.swift */; };
 		402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F41296AF9D200BFED6E /* TaskCategory.swift */; };
 		402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402C2F43296B148F00BFED6E /* AddTaskNew.swift */; };
+		402F344F2989568A0018567B /* DynamicTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F344E2989568A0018567B /* DynamicTabView.swift */; };
+		402F3451298956F10018567B /* DynamicTabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F3450298956F10018567B /* DynamicTabModel.swift */; };
+		402F345329895ABA0018567B /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F345229895ABA0018567B /* Extentions.swift */; };
 		403571532984934A00B26C5C /* SpotifyResponvieUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571522984934A00B26C5C /* SpotifyResponvieUI.swift */; };
 		403571572984A37200B26C5C /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571562984A37200B26C5C /* Album.swift */; };
 		403571592985381100B26C5C /* SpotifyOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403571582985381100B26C5C /* SpotifyOffsetModifier.swift */; };
@@ -176,6 +179,9 @@
 		402C2F3F296AF89800BFED6E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		402C2F41296AF9D200BFED6E /* TaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategory.swift; sourceTree = "<group>"; };
 		402C2F43296B148F00BFED6E /* AddTaskNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskNew.swift; sourceTree = "<group>"; };
+		402F344E2989568A0018567B /* DynamicTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTabView.swift; sourceTree = "<group>"; };
+		402F3450298956F10018567B /* DynamicTabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTabModel.swift; sourceTree = "<group>"; };
+		402F345229895ABA0018567B /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		403571522984934A00B26C5C /* SpotifyResponvieUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyResponvieUI.swift; sourceTree = "<group>"; };
 		403571562984A37200B26C5C /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		403571582985381100B26C5C /* SpotifyOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyOffsetModifier.swift; sourceTree = "<group>"; };
@@ -462,6 +468,31 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		402F344B298955E80018567B /* DynamicTab */ = {
+			isa = PBXGroup;
+			children = (
+				402F344D2989566E0018567B /* View */,
+				402F344C2989566C0018567B /* Model */,
+			);
+			path = DynamicTab;
+			sourceTree = "<group>";
+		};
+		402F344C2989566C0018567B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402F3450298956F10018567B /* DynamicTabModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		402F344D2989566E0018567B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				402F344E2989568A0018567B /* DynamicTabView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		40357150298492DC00B26C5C /* SpotifyResponvieUI */ = {
@@ -908,6 +939,8 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				402F345229895ABA0018567B /* Extentions.swift */,
+				402F344B298955E80018567B /* DynamicTab */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
@@ -1160,6 +1193,7 @@
 				408E524A295978AE00B83E0F /* CreateNewPost.swift in Sources */,
 				408E524C295978E100B83E0F /* Post.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
+				402F345329895ABA0018567B /* Extentions.swift in Sources */,
 				402C2F372967273C00BFED6E /* Ubuntu.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				403571532984934A00B26C5C /* SpotifyResponvieUI.swift in Sources */,
@@ -1173,6 +1207,7 @@
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
 				40F76114294BE8390019FC2E /* TimerView.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
+				402F3451298956F10018567B /* DynamicTabModel.swift in Sources */,
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
 				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
 				408E52422956D0EE00B83E0F /* ReusableProfileContent.swift in Sources */,
@@ -1234,6 +1269,7 @@
 				40A1C7B728BAEE5B00AAFF2F /* WebService.swift in Sources */,
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				40A36AEE294FFBCC00F4AFFE /* LoadingView.swift in Sources */,
+				402F344F2989568A0018567B /* DynamicTabView.swift in Sources */,
 				40A36AEC294FFB5A00F4AFFE /* SocialMediaView.swift in Sources */,
 				403BEE9929067E23008B0CD7 /* SnapCarousel.swift in Sources */,
 				40A36AF8295149CA00F4AFFE /* MainView.swift in Sources */,
@@ -1403,6 +1439,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1434,6 +1471,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
