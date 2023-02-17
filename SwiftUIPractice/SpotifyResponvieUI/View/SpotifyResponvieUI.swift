@@ -162,7 +162,7 @@ struct SpotifyResponvieUI: View {
                 .cornerRadius(15)
                 .offset(y: -minY)
         }
-        .frame(height: 1250)
+        .frame(height: 600)
     }
     
     // MARK: Pinned Header
