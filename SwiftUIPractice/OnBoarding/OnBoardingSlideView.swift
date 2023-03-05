@@ -1,5 +1,5 @@
 //
-//  OnBoardingView.swift
+//  OnBoardingSlideView.swift
 //  SwiftUIPractice
 //
 //  Created by tunko on 2023/03/05.
@@ -7,14 +7,20 @@
 
 import SwiftUI
 
-struct OnBoardingView: View {
+struct OnBoardingSlideView: View {
+     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { proxy in
+            let size = proxy.size
+            
+            OnBoardingContentView(screenSize: size)
+                .preferredColorScheme(.dark)
+        }
     }
 }
 
-struct OnBoardingView_Previews: PreviewProvider {
+struct OnBoardingSlideView_Previews: PreviewProvider {
     static var previews: some View {
-        OnBoardingView()
+        OnBoardingSlideView()
     }
 }

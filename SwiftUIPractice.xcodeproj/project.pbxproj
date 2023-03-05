@@ -122,6 +122,10 @@
 		40D2DA7B28D76BC60023F733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F577152883A44A00AC1285 /* Preview Assets.xcassets */; };
 		40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2DA7D28D9EF5E0023F733 /* RollingText.swift */; };
 		40D2DA8028D9EF730023F733 /* RollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2DA7F28D9EF730023F733 /* RollingView.swift */; };
+		40E58B1029B4DACE000EFA03 /* OnBoardingSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B0F29B4DACE000EFA03 /* OnBoardingSlideView.swift */; };
+		40E58B1329B4DC43000EFA03 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */; };
+		40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */; };
+		40E58B1729B4E27F000EFA03 /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
 		40F577112883A44800AC1285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577102883A44800AC1285 /* ContentView.swift */; };
 		40F577182883A44A00AC1285 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577172883A44A00AC1285 /* Persistence.swift */; };
@@ -266,6 +270,10 @@
 		40CDCDE228C650F200A35FF4 /* ResponsiveContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveContent.swift; sourceTree = "<group>"; };
 		40D2DA7D28D9EF5E0023F733 /* RollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingText.swift; sourceTree = "<group>"; };
 		40D2DA7F28D9EF730023F733 /* RollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingView.swift; sourceTree = "<group>"; };
+		40E58B0F29B4DACE000EFA03 /* OnBoardingSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlideView.swift; sourceTree = "<group>"; };
+		40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
+		40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
+		40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		40F577102883A44800AC1285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -915,6 +923,25 @@
 			path = Rolling;
 			sourceTree = "<group>";
 		};
+		40E58B0E29B4DAAC000EFA03 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				40E58B1129B4DC27000EFA03 /* Model */,
+				40E58B0F29B4DACE000EFA03 /* OnBoardingSlideView.swift */,
+				40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */,
+				40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		40E58B1129B4DC27000EFA03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		40F577022883A44800AC1285 = {
 			isa = PBXGroup;
 			children = (
@@ -944,6 +971,7 @@
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
+				40E58B0E29B4DAAC000EFA03 /* OnBoarding */,
 				40357150298492DC00B26C5C /* SpotifyResponvieUI */,
 				4045D103297F80EA0046DB72 /* NativePopovers */,
 				402C2F38296A5E6900BFED6E /* DropDownPicker */,
@@ -1206,6 +1234,7 @@
 				40F7611E294EC5010019FC2E /* IntroView.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
 				40F76114294BE8390019FC2E /* TimerView.swift in Sources */,
+				40E58B1029B4DACE000EFA03 /* OnBoardingSlideView.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
 				402F3451298956F10018567B /* DynamicTabModel.swift in Sources */,
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
@@ -1248,13 +1277,16 @@
 				402C2F40296AF89800BFED6E /* Task.swift in Sources */,
 				40C8F901295E90F50011C77E /* PostCardView.swift in Sources */,
 				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
+				40E58B1729B4E27F000EFA03 /* OnBoardingContentView.swift in Sources */,
 				40C554DE28E32B9000825FBF /* CoreLoactionUI.swift in Sources */,
 				40F76130294EC87B0019FC2E /* OnBoardingScreen.swift in Sources */,
 				40A1C7E028C24B2300AAFF2F /* ReelsView.swift in Sources */,
 				40A1C7AD28BAA19D00AAFF2F /* CustomCarousel.swift in Sources */,
 				408E524029514B1D00B83E0F /* ProfileView.swift in Sources */,
+				40E58B1329B4DC43000EFA03 /* OnBoardingModel.swift in Sources */,
 				402C2F3A296A5EE000BFED6E /* DropDownPicker.swift in Sources */,
 				408E524E2959904600B83E0F /* PostsView.swift in Sources */,
+				40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */,
 				402805C828C4839900FDA092 /* StickyContentView.swift in Sources */,
 				402805C628C4825C00FDA092 /* StickyHeaderView.swift in Sources */,
 				40FDC34428F0EF7500FEB6CA /* ReelsViewModel.swift in Sources */,

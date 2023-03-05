@@ -7,14 +7,17 @@
 
 import SwiftUI
 
-struct OnBoardingModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct OnBoardingModel: Identifiable {
+    var id = UUID().uuidString
+    var image: String
+    var title: String
+    var desription: String
+    var color: Color
 }
 
-struct OnBoardingModel_Previews: PreviewProvider {
-    static var previews: some View {
-        OnBoardingModel()
-    }
-}
+var intros : [OnBoardingModel] = [
+    OnBoardingModel(image: "Movie1", title: "title1", desription: "description", color: Color.red),
+    OnBoardingModel(image: "Movie2", title: "title1", desription: "description", color: Color.red),
+    OnBoardingModel(image: "Movie3", title: "title1", desription: "description", color: Color.red),
+    OnBoardingModel(image: "Movie4", title: "title1", desription: "description", color: Color.red)
+]

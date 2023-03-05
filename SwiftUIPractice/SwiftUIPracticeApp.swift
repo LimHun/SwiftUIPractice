@@ -21,6 +21,23 @@ struct SwiftUIPracticeApp: App {
         WindowGroup {
             SplashScreen()
 //            SocialMediaView() // Firebase 앱
+//            NavigationView {
+//                MyView()
+//            }
+            
         }
+    }
+}
+
+
+struct MyView: View {
+    var body: some View {
+        VStack {
+            Text("This is My View")
+            NavigationLink(destination: MyView()) {
+                Text("Go to My View")
+            }
+        }
+        .navigationBarTitle("My View")
     }
 }

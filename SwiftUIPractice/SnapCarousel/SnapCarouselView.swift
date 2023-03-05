@@ -35,10 +35,7 @@ struct SnapCarouselView: View {
                 
                 SnapCarousel(index: $currentIndex, items: posts) { post in
                     GeometryReader{ proxy in
-                        
-                        
                         let size = proxy.size
-                        
                         Image(post.postImage)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
