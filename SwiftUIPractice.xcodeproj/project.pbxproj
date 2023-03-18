@@ -51,6 +51,7 @@
 		4045D105297F81130046DB72 /* NativePopovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045D104297F81130046DB72 /* NativePopovers.swift */; };
 		4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */; };
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
+		406D2E9929C2188400589BAE /* TextTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406D2E9829C2188400589BAE /* TextTapView.swift */; };
 		407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */; };
 		4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */; };
 		408E524029514B1D00B83E0F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E523F29514B1D00B83E0F /* ProfileView.swift */; };
@@ -199,6 +200,7 @@
 		4045D104297F81130046DB72 /* NativePopovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePopovers.swift; sourceTree = "<group>"; };
 		4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTest.swift; sourceTree = "<group>"; };
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
+		406D2E9829C2188400589BAE /* TextTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTapView.swift; sourceTree = "<group>"; };
 		407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextFeild.swift; sourceTree = "<group>"; };
 		4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSwiftUIView.swift; sourceTree = "<group>"; };
 		408E523F29514B1D00B83E0F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -590,6 +592,14 @@
 			path = VideoPlayerTest;
 			sourceTree = "<group>";
 		};
+		406D2E9629C2182B00589BAE /* TextTap */ = {
+			isa = PBXGroup;
+			children = (
+				406D2E9829C2188400589BAE /* TextTapView.swift */,
+			);
+			path = TextTap;
+			sourceTree = "<group>";
+		};
 		407777C028DCA81E00145D3A /* AutoFocusTextFeild */ = {
 			isa = PBXGroup;
 			children = (
@@ -966,6 +976,7 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				406D2E9629C2182B00589BAE /* TextTap */,
 				402F345229895ABA0018567B /* Extentions.swift */,
 				402F344B298955E80018567B /* DynamicTab */,
 				401C77BF2949F62F000209ED /* Info.plist */,
@@ -1244,6 +1255,7 @@
 				40A1C7BE28BAF38400AAFF2F /* StockViewModel.swift in Sources */,
 				40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */,
 				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
+				406D2E9929C2188400589BAE /* TextTapView.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				403571572984A37200B26C5C /* Album.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
