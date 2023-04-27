@@ -39,8 +39,7 @@ struct VideoGridView: View {
                         }
                         .padding()
                     }
-                }
-                .frame(width: .infinity)
+                } 
             }
             .background(Color("AccentColor"))
 //            .navigationBarHidden(true)
