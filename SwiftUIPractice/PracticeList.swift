@@ -14,7 +14,8 @@ struct CustomViewType: Identifiable {
 
 struct PracticeList: View {
     
-    let practiceViews : [Any] = [ShimmerView.self,
+    let practiceViews : [Any] = [SpotifyHeaderAnimationView.self,
+                                 ShimmerView.self,
                                  ListColorChange.self,
                                  VideoGridView.self,
                                  CarouselView.self,
@@ -56,6 +57,8 @@ struct PracticeList: View {
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
+        case is SpotifyHeaderAnimationView.Type:
+            return (AnyView(SpotifyHeaderAnimationView()), true)
         case is ShimmerView.Type:
             return (AnyView(ShimmerView()), true)
         case is ListColorChange.Type:

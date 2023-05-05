@@ -156,6 +156,9 @@
 		40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34028F0EE6500FEB6CA /* ActionButton.swift */; };
 		40FDC34428F0EF7500FEB6CA /* ReelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */; };
 		40FDC34628F0F38F00FEB6CA /* ReelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34528F0F38F00FEB6CA /* ReelsModel.swift */; };
+		40FEBA5C2A02AC790050246A /* SpotifyHeaderAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FEBA5B2A02AC790050246A /* SpotifyHeaderAnimationView.swift */; };
+		40FEBA5E2A02AC8A0050246A /* SpotifyAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FEBA5D2A02AC8A0050246A /* SpotifyAlbum.swift */; };
+		40FEBA602A02AE710050246A /* SpotifyHeaderAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FEBA5F2A02AE710050246A /* SpotifyHeaderAnimationHomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -306,6 +309,9 @@
 		40FDC34028F0EE6500FEB6CA /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		40FDC34328F0EF7500FEB6CA /* ReelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewModel.swift; sourceTree = "<group>"; };
 		40FDC34528F0F38F00FEB6CA /* ReelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsModel.swift; sourceTree = "<group>"; };
+		40FEBA5B2A02AC790050246A /* SpotifyHeaderAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHeaderAnimationView.swift; sourceTree = "<group>"; };
+		40FEBA5D2A02AC8A0050246A /* SpotifyAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAlbum.swift; sourceTree = "<group>"; };
+		40FEBA5F2A02AE710050246A /* SpotifyHeaderAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyHeaderAnimationHomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1007,6 +1013,7 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
 				40B368E029F9F072001836D2 /* Extension */,
 				40B368DA29F95DD4001836D2 /* ShimmerText */,
 				406D2E9629C2182B00589BAE /* TextTap */,
@@ -1158,6 +1165,32 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				40FEBA612A02AE7A0050246A /* View */,
+				40FEBA5A2A02AC6D0050246A /* Model */,
+			);
+			path = SpotifyHeaderAnimation;
+			sourceTree = "<group>";
+		};
+		40FEBA5A2A02AC6D0050246A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40FEBA5D2A02AC8A0050246A /* SpotifyAlbum.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40FEBA612A02AE7A0050246A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40FEBA5B2A02AC790050246A /* SpotifyHeaderAnimationView.swift */,
+				40FEBA5F2A02AE710050246A /* SpotifyHeaderAnimationHomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1275,6 +1308,7 @@
 				402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */,
 				40CCA7C828E9C65F00C4A2CB /* LandingScreenView.swift in Sources */,
 				40F76143294F44B90019FC2E /* User.swift in Sources */,
+				40FEBA5C2A02AC790050246A /* SpotifyHeaderAnimationView.swift in Sources */,
 				40F7613A294F02F10019FC2E /* LoginView.swift in Sources */,
 				40F7611E294EC5010019FC2E /* IntroView.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
@@ -1282,6 +1316,7 @@
 				40E58B1029B4DACE000EFA03 /* OnBoardingSlideView.swift in Sources */,
 				40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */,
 				402F3451298956F10018567B /* DynamicTabModel.swift in Sources */,
+				40FEBA602A02AE710050246A /* SpotifyHeaderAnimationHomeView.swift in Sources */,
 				40CDCDE128C650A500A35FF4 /* ResponsiveHome.swift in Sources */,
 				40A1C7E728C24ED700AAFF2F /* ReelsApp.swift in Sources */,
 				408E52422956D0EE00B83E0F /* ReusableProfileContent.swift in Sources */,
@@ -1381,6 +1416,7 @@
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
 				40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */,
 				4017CE8028D5B3BA00048A90 /* FoodDeliveryHome.swift in Sources */,
+				40FEBA5E2A02AC8A0050246A /* SpotifyAlbum.swift in Sources */,
 				40CDCDE328C650F200A35FF4 /* ResponsiveContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1519,7 +1555,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1551,7 +1587,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
