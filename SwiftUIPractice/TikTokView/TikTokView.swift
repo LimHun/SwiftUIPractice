@@ -8,8 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-
-
 struct TikTokView: View {
 
     var body: some View {

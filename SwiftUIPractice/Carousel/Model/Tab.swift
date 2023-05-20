@@ -8,8 +8,8 @@
 import Foundation
 
 enum Tab: String, CaseIterable {
-    case home = "Home"
-    case explore = "Explore"
-    case heart = "Heart"
-    case profile = "Profile"
+    case home = "iconHome"
+    case explore = "iconExplore"
+    case heart = "iconHeart"
+    case profile = "iconProfile"
 }

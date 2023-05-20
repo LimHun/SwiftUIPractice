@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Movie : Identifiable, Equatable {
+struct Movie: Identifiable, Equatable {
     var id = UUID().uuidString
     var moveTitle: String
-    var artwork : String
+    var artwork: String
 }
 
 var movies: [Movie] = [

@@ -8,8 +8,8 @@
 import SwiftUI
 import FirebaseFirestoreSwift
 
-struct Post: Identifiable, Codable, Equatable, Hashable {
-    @DocumentID var id : String?
+struct Post: Identifiable, Equatable, Hashable, Codable {
+    @DocumentID var id: String?
     var text: String
     var imageURL: URL?
     var imageReferenceID: String = ""

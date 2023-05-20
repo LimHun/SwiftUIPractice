@@ -16,16 +16,14 @@ struct LandingScreenView: View {
 //    @State private var homeScreenPresentedState = false
     
     var body: some View {
-        //NavigationLink(destination: HomeScreen()) {
-//        NavigationLink(destination: HomeScreen(homeScreenPresentedState: $homeScreenPresentedState), isActive: $homeScreenPresentedState) {
         NavigationLink(destination: HomeScreen()) {
             VStack(spacing: 16) {
                 Button("Exit") {
                     presentationMode.wrappedValue.dismiss()
-//                    dismissClosure()
                 }
-                Text("Go to Home Screen").onTapGesture {
-//                    homeScreenPresentedState.toggle()
+                Text("Go to Home Screen")
+                    .onTapGesture {
+                        
                 }
                 let loadCount = LoadCounterViewModel.loadCounterViewModel.increaseAndGetCount(for: .loadingScreen)
                 Text("Load count \(loadCount)")
@@ -33,9 +31,3 @@ struct LandingScreenView: View {
         }
     }
 }
-
-//struct LandingScreenView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LandingScreenView(dismissClosure: {})
-//    }
-//}

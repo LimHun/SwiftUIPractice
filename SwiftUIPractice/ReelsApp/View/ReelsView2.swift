@@ -8,13 +8,11 @@
 import SwiftUI
 import AVFoundation
 
-
-
 struct ReelsView2: View {
     
-    @EnvironmentObject var reelsViewModel : ReelsViewModel
-    @State var selectedIndex : Int = 0
-    @State var currentReel : Int = -1
+    @EnvironmentObject var reelsViewModel: ReelsViewModel
+    @State var selectedIndex: Int = 0
+    @State var currentReel: Int = -1
     var body: some View {
         GeometryReader { proxy in
             let size = proxy.size
@@ -32,9 +30,9 @@ struct ReelsView2: View {
                 if let lastElement = reelsViewModel.reelsList.last {
                     if lastElement.uid == index {
                         print("lastElement.uid == index \(lastElement.uid)")
-                        Task.init {
-                            await reelsViewModel.requestFeedList(reelsViewModel.reelsList.count)
-                        }
+//                        Task.init {
+//                            await reelsViewModel.requestFeedList(reelsViewModel.reelsList.count)
+//                        }
                     }
                 } 
             })
@@ -48,7 +46,7 @@ struct ReelsView2: View {
         .ignoresSafeArea(.all, edges: .top)
         .background(Color.black.ignoresSafeArea())
         .onAppear {
-            currentReel = reelsViewModel.reelsList.first?.uid ?? -1 //reels.first?.id ?? ""
+            currentReel = reelsViewModel.reelsList.first?.uid ?? -1 // reels.first?.id ?? ""
         }
         .onDisappear {
             for item in reelsViewModel.reelsList {

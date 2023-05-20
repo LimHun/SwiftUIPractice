@@ -14,7 +14,7 @@ enum Ubunut {
     case medium
     case regular
     
-    var weight : Font.Weight {
+    var weight: Font.Weight {
         switch self {
         case .light:
             return .light

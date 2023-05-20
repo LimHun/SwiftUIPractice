@@ -8,14 +8,14 @@
 import Foundation
 import AVFoundation
  
-struct  ReelsBody : Codable {
+struct  ReelsBody: Codable {
     var type: Int
-    var method : String
-    var url : String
-    var item : [ReelsItem]
+    var method: String
+    var url: String
+    var item: [ReelsItem]
 }
 
-struct ReelsItem : Codable, Hashable {
+struct ReelsItem: Codable, Hashable {
     let uid, isDeleted: Int
     let createdTime, updatedTime: String
     let userUid, productUid, type: Int

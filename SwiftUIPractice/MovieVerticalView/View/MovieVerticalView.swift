@@ -17,7 +17,7 @@ struct MovieVerticalView: View {
             VStack {
 
                 // MARK: Following & For You
-                HStack(spacing:15) {
+                HStack(spacing: 15) {
                     Button {
                         self.top = 0
                     } label: {
@@ -44,7 +44,7 @@ struct MovieVerticalView: View {
 
                     Spacer()
 
-                    VStack(spacing: 35){
+                    VStack(spacing: 35) {
                         Button {
 
                         } label: {
@@ -157,7 +157,7 @@ struct MovieVerticalView: View {
     }
 }
 
-class Host : UIHostingController<ContentView> {
+class Host: UIHostingController<ContentView> {
     
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ReelsTabBarButton : View {
+struct ReelsTabBarButton: View {
     var image: String
     var isSystemImage: Bool
     @Binding var currentTab: String
@@ -22,8 +22,7 @@ struct ReelsTabBarButton : View {
                 if isSystemImage {
                     Image(systemName: image)
                         .font(.title2)
-                }
-                else {
+                } else {
                     Image(image)
                         .resizable()
                         .renderingMode(.template)

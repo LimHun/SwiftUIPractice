@@ -18,11 +18,11 @@ enum NetworkError: Error {
     case encodingError(Error)
 }
 
-class ReelsViewModel : ObservableObject {
+class ReelsViewModel: ObservableObject {
     
-    @Published var reels : ReelsBody?
-    @Published var reelsList : [ReelsItem] = []
-    @Published var reelsPlayer : [AVPlayer] = []
+    @Published var reels: ReelsBody?
+    @Published var reelsList: [ReelsItem] = []
+    @Published var reelsPlayer: [AVPlayer] = []
     
 //    @Published var usernameMessage: String = ""
 //    @Published var isValid: Bool = false
@@ -115,50 +115,50 @@ class ReelsViewModel : ObservableObject {
     
     // 1차 async await 사용
     init() {
-        Task.init {
-            await requestFeedList()
-        }
+//        Task.init {
+//            await requestFeedList()
+//        }
     }
     
-    func requestFeedList(_ offset : Int = 0) async {
-        do {
-            let requestURL = "\(WeegleServer.url)/api/public/feed/list?select_type=all&latitude=37.536977&longitude=126.955242&km=1000&category=65535&ad_product_uid=0&video_uid=0&random_seed=133q1234&offset=\(offset)"
-            
-            guard let url = URL(string: requestURL) else {
-                fatalError("Missing URL")
-            }
-            
-            let urlRequest = URLRequest(url: url)
-            //urlRequest.setValue(apiToken, forHTTPHeaderField: "Authorization")
-            URLSession.shared.dataTask(with: urlRequest) { data, response, error in
-                
-            }
-            let (data, response) = try await URLSession.shared.data(for: urlRequest)
-            guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-                fatalError("Error while fetching data")
-            }
-            
-            let decoder = JSONDecoder()
-            decoder.keyDecodingStrategy = .convertFromSnakeCase
-            let decodeData = try decoder.decode(ReelsBody.self, from: data)
-            
-            print(decodeData)
-            DispatchQueue.main.async {
-                
-                if offset == 0 {
-                    self.reelsList.removeAll()
-                }
-                
-                for i in 0..<decodeData.item.count {
-                    let url = URL(string: "\(WeegleServer.convertedAWS)/\(decodeData.item[i].videoFilename)")
-                    let avPlayer = AVPlayer(url: url!)
-                    var item = decodeData.item[i]
-                    item.avPlayer = avPlayer
-                    self.reelsList.append(item)
-                }
-            }
-        } catch {
-            print("Error fetch data from pexels : \(error)")
-        }
-    }
+//    func requestFeedList(_ offset: Int = 0) async {
+//        do {
+//            let requestURL = "\(WeegleServer.url)/api/public/feed/list?select_type=all&latitude=37.536977&longitude=126.955242&km=1000&category=65535&ad_product_uid=0&video_uid=0&random_seed=133q1234&offset=\(offset)"
+//
+//            guard let url = URL(string: requestURL) else {
+//                fatalError("Missing URL")
+//            }
+//
+//            let urlRequest = URLRequest(url: url)
+//            //urlRequest.setValue(apiToken, forHTTPHeaderField: "Authorization")
+//            URLSession.shared.dataTask(with: urlRequest) { _, +, error in
+//
+//            }
+//            let (data, response) = try await URLSession.shared.data(for: urlRequest)
+//            guard (response as? HTTPURLResponse)?.statusCode == 200 else {
+//                fatalError("Error while fetching data")
+//            }
+//
+//            let decoder = JSONDecoder()
+//            decoder.keyDecodingStrategy = .convertFromSnakeCase
+//            let decodeData = try decoder.decode(ReelsBody.self, from: data)
+//
+//            print(decodeData)
+//            DispatchQueue.main.async {
+//
+//                if offset == 0 {
+//                    self.reelsList.removeAll()
+//                }
+//
+//                for i in 0..<decodeData.item.count {
+//                    let url = URL(string: "\(WeegleServer.convertedAWS)/\(decodeData.item[i].videoFilename)")
+//                    let avPlayer = AVPlayer(url: url!)
+//                    var item = decodeData.item[i]
+//                    item.avPlayer = avPlayer
+//                    self.reelsList.append(item)
+//                }
+//            }
+//        } catch {
+//            print("Error fetch data from pexels : \(error)")
+//        }
+//    }
 }

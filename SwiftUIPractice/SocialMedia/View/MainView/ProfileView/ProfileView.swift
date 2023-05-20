@@ -38,7 +38,7 @@ struct ProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Menu {
-                        //MARK : Two Action's
+                        // MARK: Two Action's
                         // 1. Logout
                         // 2. Delete Account
                         Button("Logout", action: logOutUser)
@@ -83,7 +83,7 @@ struct ProfileView: View {
     // MARK: Deleting User Entire Account
     func deleteAccount() {
         isLoading = true
-        Task{
+        Task {
             do {
                 guard let userUID = Auth.auth().currentUser?.uid else {
                     return

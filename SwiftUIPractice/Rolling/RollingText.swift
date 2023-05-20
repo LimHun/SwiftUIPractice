@@ -12,7 +12,7 @@ struct RollingText: View {
     // MARK: Text Properties
     var font: Font = .largeTitle
     var weight: Font.Weight = .regular
-    @Binding var value : Int
+    @Binding var value: Int
     
     // MARK: Animation Properties
     @State var animationRange: [Int] = []
@@ -28,7 +28,7 @@ struct RollingText: View {
                     .opacity(0)
                     .overlay {
                         // Text 1칸에 따른 GeometryReader 1칸만큼 뷰를 생성
-                        GeometryReader{ proxy in
+                        GeometryReader { proxy in
                             let size = proxy.size
                             VStack(spacing: 0) {
                                 // 0~9까지 생성
@@ -56,15 +56,19 @@ struct RollingText: View {
         }
         .onChange(of: value) { newValue in
             
-            // MARK : Handling Addition / Removal to Extra Value
+            // MARK: Handling Addition / Removal to Extra Value
             let extra = "\(value)".count - animationRange.count
             if extra > 0 {
-                for _ in 0..<extra{
-                    withAnimation(.easeIn(duration: 0.1)) {animationRange.append(0)}
+                for _ in 0..<extra {
+                    withAnimation(.easeIn(duration: 0.1)) {
+                        animationRange.append(0)
+                    }
                 }
             } else {
                 for _ in 0..<(-extra) {
-                    withAnimation(.easeIn(duration: 0.1)) {animationRange.removeLast()}
+                    _ = withAnimation(.easeIn(duration: 0.1)) {
+                        animationRange.removeLast()
+                    }
                 }
             }
             updateText()

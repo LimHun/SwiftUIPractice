@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum TaskCategory:  String, CaseIterable {
+enum TaskCategory: String, CaseIterable {
     case general = "General"
     case bug = "Bug"
     case idea = "Idea"
@@ -31,5 +31,4 @@ enum TaskCategory:  String, CaseIterable {
             return Color.brown
         }
     }
-}
-
+} 

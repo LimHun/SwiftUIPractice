@@ -9,12 +9,12 @@ import Foundation
 
 struct MediaFile: Identifiable {
     var id = UUID().uuidString
-    var url : String
-    var title : String
+    var url: String
+    var title: String
     var isExpanded: Bool = false
 }
 
-var MediaFileJSON = [
+var mediaFileJSON = [
     MediaFile(url: "video1", title: "video1"),
     MediaFile(url: "video2", title: "video2"),
     MediaFile(url: "video3", title: "video3"),
@@ -22,4 +22,3 @@ var MediaFileJSON = [
     MediaFile(url: "video5", title: "video5"),
     MediaFile(url: "video6", title: "video6")
 ]
-

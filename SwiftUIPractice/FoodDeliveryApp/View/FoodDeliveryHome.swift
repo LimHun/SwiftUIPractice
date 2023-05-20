@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct FoodDeliveryHome: View {
-    @State var currentIndex : Int = 0
+    @State var currentIndex: Int = 0
     
     var body: some View {
-        VStack{
-            HeaderView()
+        VStack {
+            headerView()
             
             // MARK: Attributed Text's
             VStack(alignment: .leading) {
@@ -26,11 +26,11 @@ struct FoodDeliveryHome: View {
             
             GeometryReader { proxy in
                 let size = proxy.size
-                CarouselView(size: size)
+                carouselView(size: size)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background{
+        .background {
             Color("LightGreen")
                 .ignoresSafeArea()
         }
@@ -38,16 +38,16 @@ struct FoodDeliveryHome: View {
     
     // MARK: MilkShake Carousel View
     @ViewBuilder
-    func CarouselView(size: CGSize) -> some View {
-        VStack{
+    func carouselView(size: CGSize) -> some View {
+        VStack {
             // 여기서 중단
         }
     }
     
     // MARK: Header View
     @ViewBuilder
-    func HeaderView() -> some View {
-        HStack{
+    func headerView() -> some View {
+        HStack {
             Button {
                 
             } label: {

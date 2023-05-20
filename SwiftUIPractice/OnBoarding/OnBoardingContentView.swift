@@ -22,7 +22,6 @@ struct OnBoardingContentView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: screenSize.height / 3)
-                                
                             
                             VStack(alignment: .leading, spacing: 22) {
                                 Text(intro.title)
@@ -55,7 +54,7 @@ struct OnBoardingContentView: View {
                             .frame(width: getIndex() == index ? 20 : 7, height: 7)
                     }
                 }
-                .overlay (
+                .overlay(
                     Capsule()
                         .fill(.white)
                         .frame(width: 20, height: 7)
@@ -80,7 +79,7 @@ struct OnBoardingContentView: View {
                 }
                 
                 Button {
-                    let index = intros.count - 1//min(getIndex() + 1, intros.count - 1)
+                    let index = intros.count - 1 // min(getIndex() + 1, intros.count - 1)
                     offset = CGFloat(index) * screenSize.width
                 } label: {
                     Image(systemName: "chevron.right")

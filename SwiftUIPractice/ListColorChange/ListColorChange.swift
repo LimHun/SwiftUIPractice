@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct CellItemModule : Identifiable {
+struct CellItemModule: Identifiable {
     let id = UUID()
-    let cellColor : Color
-    let emoji : String
+    let cellColor: Color
+    let emoji: String
 }
 
 struct ListColorChange: View {
 
-    let cellDatas : [CellItemModule] = [
+    let cellDatas: [CellItemModule] = [
         CellItemModule(cellColor: Color.red, emoji: "😙"),
         CellItemModule(cellColor: Color.orange, emoji: "😚"),
         CellItemModule(cellColor: Color.yellow, emoji: "😄"),
@@ -30,7 +30,7 @@ struct ListColorChange: View {
         CellItemModule(cellColor: Color.brown, emoji: "🥹")
     ]
 
-    @State private var reduction : Bool = false
+    @State private var reduction: Bool = false
 
     var body: some View {
         List(cellDatas) { data in

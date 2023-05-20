@@ -9,9 +9,9 @@ import SwiftUI
 
 struct SnapCarouselView: View {
     
-    @State var currentIndex : Int = 0
+    @State var currentIndex: Int = 0
     
-    @State var posts : [SnapCarouselPost] = []
+    @State var posts: [SnapCarouselPost] = []
     
     var body: some View {
         VStack(spacing: 15) {
@@ -34,7 +34,7 @@ struct SnapCarouselView: View {
                     .fontWeight(.black)
                 
                 SnapCarousel(index: $currentIndex, items: posts) { post in
-                    GeometryReader{ proxy in
+                    GeometryReader { proxy in
                         let size = proxy.size
                         Image(post.postImage)
                             .resizable()

@@ -49,7 +49,7 @@ struct TouchAnimationView: View {
                                     .offset(x: location.x - transformedLocation.x, y: location.y - transformedLocation.y)
 
                                     // MARK: For Effect 2
-                                    //.scaleEffect(scale)
+                                    // .scaleEffect(scale)
 
                             }
                             .padding(5)
@@ -72,18 +72,18 @@ struct TouchAnimationView: View {
 
     // MARK: Calculationg Scale For Each Item With the Help Of Pythagorean Theorem
     func itemScale(rect: CGRect, size: CGSize) -> CGFloat {
-        let a = location.x - rect.midX
-        let b = location.y - rect.midY
+        let posX = location.x - rect.midX
+        let posY = location.y - rect.midY
 
-        let root = sqrt((a * a) + (b * b))
-        let diagonalValue = sqrt((size.width * size.width) + (size.height * size.height))
+        let root = sqrt((posX * posX) + (posY * posY))
+        // let diagonalValue = sqrt((size.width * size.width) + (size.height * size.height))
 
         // MARK: Main Grid Magnifiction Effect
         // Simply Give Any Number (This will be the Circle Size)
         // For the Video I'm Giving 150
         let scale = (root - 150) / 150
-        // MARK : For More Detail Divide Digonal Value
-        //let scale = root / (diagonalValue / 2)
+        // MARK: For More Detail Divide Digonal Value
+        // let scale = root / (diagonalValue / 2)
         let modifiedScale = location == .zero ? 1 : (1 - scale)
 
         return modifiedScale > 0 ? modifiedScale : 0.001

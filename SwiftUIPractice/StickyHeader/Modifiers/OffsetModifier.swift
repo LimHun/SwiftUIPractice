@@ -14,7 +14,7 @@ struct OffsetModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .overlay(
-                GeometryReader{ proxy -> Color in
+                GeometryReader { proxy -> Color in
                     let minY = proxy.frame(in: .global).minY
 
                     // getting value for coordinate space called scroll...

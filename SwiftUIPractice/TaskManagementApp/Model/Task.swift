@@ -23,5 +23,5 @@ var sampleTasks: [TaskData] = [
     .init(dateAdded: Date(timeIntervalSince1970: 1673187965), taskName: "Edit YT Video", taskDescription: "123-098213-091283-129", taskCategory: .challenge),
     .init(dateAdded: Date(timeIntervalSince1970: 1673107965), taskName: "Edit YT Video", taskDescription: "asdkjnfalskdjnf", taskCategory: .bug),
     .init(dateAdded: Date(timeIntervalSince1970: 1673107965), taskName: "Edit YT Video", taskDescription: "qwpoekj;asldkhfpoqiwe3", taskCategory: .general),
-    .init(dateAdded: Date(timeIntervalSince1970: 1673087965), taskName: "Edit YT Video", taskDescription: "qpwoeirnmsdkdkkdkdkdkdkdkdkdk", taskCategory: .modifiers),
+    .init(dateAdded: Date(timeIntervalSince1970: 1673087965), taskName: "Edit YT Video", taskDescription: "qpwoeirnmsdkdkkdkdkdkdkdkdkdk", taskCategory: .modifiers)
 ]

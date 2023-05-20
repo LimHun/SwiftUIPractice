@@ -15,7 +15,7 @@ struct OnBoardingModel: Identifiable {
     var color: Color
 }
 
-var intros : [OnBoardingModel] = [
+var intros: [OnBoardingModel] = [
     OnBoardingModel(image: "Movie1", title: "title1", desription: "description", color: Color.red),
     OnBoardingModel(image: "Movie2", title: "title1", desription: "description", color: Color.red),
     OnBoardingModel(image: "Movie3", title: "title1", desription: "description", color: Color.red),

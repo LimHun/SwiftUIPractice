@@ -360,18 +360,10 @@
 		401C77B62949E4DB000209ED /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
-				401C77BE2949F13F000209ED /* Shared */,
 				401C77BC2949F0BA000209ED /* logo.gif */,
 				401C77B72949E4F5000209ED /* SplashScreen.swift */,
 			);
 			path = SplashScreen;
-			sourceTree = "<group>";
-		};
-		401C77BE2949F13F000209ED /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		4020F3E428EB30C500F36AC7 /* GestureState */ = {
@@ -470,7 +462,6 @@
 		402C2F38296A5E6900BFED6E /* DropDownPicker */ = {
 			isa = PBXGroup;
 			children = (
-				402C2F3C296A5EF900BFED6E /* Model */,
 				402C2F3B296A5EF200BFED6E /* View */,
 				402C2F39296A5EE000BFED6E /* DropDownPicker.swift */,
 			);
@@ -483,13 +474,6 @@
 				402C2F3D296A5F0D00BFED6E /* DropDownView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		402C2F3C296A5EF900BFED6E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		402F344B298955E80018567B /* DynamicTab */ = {
@@ -565,17 +549,9 @@
 			isa = PBXGroup;
 			children = (
 				403BEEAB290843A5008B0CD7 /* BottomSheet.swift */,
-				403BEEAC290843A5008B0CD7 /* Model */,
 				403BEEAD290843A5008B0CD7 /* View */,
 			);
 			path = BottomSheet;
-			sourceTree = "<group>";
-		};
-		403BEEAC290843A5008B0CD7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		403BEEAD290843A5008B0CD7 /* View */ = {
@@ -1205,6 +1181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				403CD3582A1809DA00F2796D /* PBXTargetDependency */,
 			);
 			name = SwiftUIPractice;
 			packageProductDependencies = (
@@ -1247,6 +1224,7 @@
 				401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				403CD3562A18097400F2796D /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 40F5770C2883A44800AC1285 /* Products */;
 			projectDirPath = "";
@@ -1422,6 +1400,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		403CD3582A1809DA00F2796D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 403CD3572A1809DA00F2796D /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		40F5771C2883A44A00AC1285 /* Debug */ = {
@@ -1634,6 +1619,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		403CD3562A18097400F2796D /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.2;
+			};
+		};
 		40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
@@ -1657,6 +1650,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
+		};
+		403CD3572A1809DA00F2796D /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 403CD3562A18097400F2796D /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
 		};
 		40F76128294EC76E0019FC2E /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;

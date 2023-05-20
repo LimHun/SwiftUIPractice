@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VideoCard: View {
-    var video : Video
+    var video: Video
     var body: some View {
         ZStack {
             ZStack(alignment: .bottomLeading) {

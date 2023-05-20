@@ -13,7 +13,7 @@ struct SpotifyResponvieUI: View {
     @Namespace var animation
     
     @State var currentType: String = "Popular"
-    @State var _albums: [Album] = albums
+    @State var albumList: [Album] = albums
     
     @State var headerOffsets: (CGFloat, CGFloat) = (0, 0)
     
@@ -29,7 +29,7 @@ struct SpotifyResponvieUI: View {
                     } header: {
                         PinnedHeaderView()
                             .background(Color.black)
-                            .offset(y: headerOffsets.1 > 0 ? 0 : 40)//-headerOffsets.1 / 8)
+                            .offset(y: headerOffsets.1 > 0 ? 0 : 40) // -headerOffsets.1 / 8)
                             .modifier(SpotifyOffsetModifier(offset: $headerOffsets.0, returnFromStart: false))
                             .modifier(SpotifyOffsetModifier(offset: $headerOffsets.1))
                     }
@@ -49,9 +49,9 @@ struct SpotifyResponvieUI: View {
     }
     
     @ViewBuilder
-    func SongList()->some View {
+    func SongList() -> some View {
         VStack(spacing: 25) {
-            ForEach($_albums) { $albums in
+            ForEach($albumList) { $albums in
                 HStack(spacing: 12) {
                     
                     Text("#\(getIndex(album: albums) + 1)")
@@ -103,7 +103,7 @@ struct SpotifyResponvieUI: View {
     }
     
     func getIndex(album: Album) -> Int {
-        return _albums.firstIndex { currentAlbum in
+        return albumList.firstIndex { currentAlbum in
             return album.id == currentAlbum.id
         } ?? 0
     }

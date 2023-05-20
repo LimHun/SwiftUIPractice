@@ -14,7 +14,7 @@ enum ServerMode {
 
 struct WeegleServer {
     
-    static var mode : ServerMode = .Test
+    static var mode: ServerMode = .Test
     
     static var url: String {
         return mode == .Main

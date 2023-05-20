@@ -16,7 +16,7 @@ struct ShimmerConfig {
 }
 
 // Shimmer Effect Helper
-fileprivate struct shimmerEffectHelper: ViewModifier {
+fileprivate struct ShimmerEffectHelper: ViewModifier {
     // Shimmer Config
     var config: ShimmerConfig
     // Animvation Properties
@@ -48,7 +48,7 @@ fileprivate struct shimmerEffectHelper: ViewModifier {
                                             .linearGradient(colors: [
                                                 .white.opacity(0),
                                                 config.highlight.opacity(config.highlightOpacity),
-                                                .white.opacity(0),
+                                                .white.opacity(0)
                                             ], startPoint: .top, endPoint: .bottom)
                                         )
                                         // Adding Blur
@@ -74,8 +74,6 @@ fileprivate struct shimmerEffectHelper: ViewModifier {
                         DispatchQueue.main.async {
                             moveTo = 0.7
                         }
-                        
-                        
                     }
                     .animation(.linear(duration: config.speed).repeatForever(autoreverses: false), value: moveTo)
             }
@@ -85,7 +83,7 @@ fileprivate struct shimmerEffectHelper: ViewModifier {
 extension View {
     @ViewBuilder
     func shimmer(_ config: ShimmerConfig) -> some View {
-        self.modifier(shimmerEffectHelper(config: config))
+        self.modifier(ShimmerEffectHelper(config: config))
     }
 }
 
@@ -93,5 +91,4 @@ struct ShimmerEffect_Previews: PreviewProvider {
     static var previews: some View {
         ShimmerView()
     }
-}
-
+} 

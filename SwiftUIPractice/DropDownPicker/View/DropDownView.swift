@@ -29,7 +29,6 @@ struct DropDownView: View {
                     .ignoresSafeArea()
             }
         }
-        //.preferredColorScheme(.dark)
     }
 }
 
@@ -54,12 +53,12 @@ struct DropDown: View {
             
             VStack(spacing: 0) {
                 if !dynamic {
-                    RowView(selection, size)
+                    rowView(selection, size)
                 }
-                ForEach(content.filter{
+                ForEach(content.filter {
                     dynamic ? true : $0 != selection
                 }, id: \.self) { title in
-                    RowView(title, size)
+                    rowView(title, size)
                 }
             }
             .background {
@@ -82,7 +81,7 @@ struct DropDown: View {
     }
     
     @ViewBuilder
-    func RowView(_ title: String, _ size: CGSize) -> some View {
+    func rowView(_ title: String, _ size: CGSize) -> some View {
         Text(title)
             .font(.title3)
             .fontWeight(.semibold)
@@ -109,7 +108,7 @@ struct DropDown: View {
                             }
                         }
                     } else {
-                        //expandView = true
+                        // expandView = true
                         /// - disabling Outside Taps
                         if selection == title {
                             expandView = true

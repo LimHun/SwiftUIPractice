@@ -13,7 +13,7 @@ import FirebaseStorage
 struct CreateNewPost: View {
     
     /// - Callbacks
-    var onPost: (Post) -> ()
+    var onPost: (Post) -> Void
     
     /// - Post Proferties
     @State private var postText: String = ""
@@ -28,7 +28,7 @@ struct CreateNewPost: View {
     @State private var errorMessage: String = ""
     @State private var showError: Bool = false
     @State private var showImagePicker: Bool = false
-    @State private var photoItem : PhotosPickerItem?
+    @State private var photoItem: PhotosPickerItem?
     @FocusState private var showKeyboard: Bool
     var body: some View {
         VStack {
@@ -140,9 +140,7 @@ struct CreateNewPost: View {
             LoadingView(show: $isLoading)
         }
     }
-    
-    
-    
+     
     // MARK: create firebase post
     func createPost() {
         isLoading = true

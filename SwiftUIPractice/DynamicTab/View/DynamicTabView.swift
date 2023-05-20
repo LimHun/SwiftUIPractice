@@ -13,7 +13,7 @@ import SwiftUI
 // .offsetX 모디파이어 확인하러 가라
 
 struct DynamicTabView: View {
-    //MARK: View Properties
+    // MARK: View Properties
     @State var offset: CGFloat = 0
     @State var currentTab: DynamicTabModel = sampleTabs.first!
     
@@ -56,14 +56,14 @@ struct DynamicTabView: View {
                 Text("\(offset)")
                     .offset(y: 400)
                 
-                DynamicTabHeader(size: screenSize)
+                dynamicTabHeader(size: screenSize)
             }
             .frame(width: screenSize.width, height: screenSize.height)
         }
     }
     
     @ViewBuilder
-    func DynamicTabHeader(size: CGSize) -> some View {
+    func dynamicTabHeader(size: CGSize) -> some View {
         VStack(alignment: .leading, spacing: 22) {
             Text("Dynamic Tabs")
                 .font(.title.bold())
@@ -98,7 +98,7 @@ struct DynamicTabView: View {
         }
     }
     
-    func tabOffset(size : CGSize, padding: CGFloat) -> CGFloat {
+    func tabOffset(size: CGSize, padding: CGFloat) -> CGFloat {
         return (-offset / size.width) * ((size.width - padding) / CGFloat(sampleTabs.count))
     }
     

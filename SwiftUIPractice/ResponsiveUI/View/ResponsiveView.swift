@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ResponsiveView<Content: View>: View {
 
-    var content: (Properties)-> Content
+    var content: (Properties) -> Content
     init(@ViewBuilder content: @escaping (Properties) -> Content) {
         self.content = content
     }
 
     var body: some View {
-        GeometryReader{ proxy in
+        GeometryReader { proxy in
             let size = proxy.size
             let isLandscpe = size.width > size.height
             let isIpad = UIDevice.current.userInterfaceIdiom == .pad
@@ -36,11 +36,11 @@ struct ResponsiveView<Content: View>: View {
     }
 }
 
-//struct ResponsiveView_Previews: PreviewProvider {
+// struct ResponsiveView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ResponsiveView()
 //    }
-//}
+// }
 
 struct Properties {
     var isLandscape: Bool

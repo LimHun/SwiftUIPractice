@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct StickyTopBar : View {
+struct StickyTopBar: View {
 
-    var topEdge : CGFloat
-    @Binding var offset : CGFloat
+    var topEdge: CGFloat
+    @Binding var offset: CGFloat
     var maxHeight: CGFloat
 
     var body: some View {

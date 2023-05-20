@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomCornner: Shape {
 
     var conners: UIRectCorner
-    var radius : CGFloat
+    var radius: CGFloat
 
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: conners, cornerRadii: CGSize(width: radius, height: radius))

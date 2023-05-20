@@ -29,7 +29,6 @@ struct SwiftUIPracticeApp: App {
     }
 }
 
-
 struct MyView: View {
     var body: some View {
         VStack {

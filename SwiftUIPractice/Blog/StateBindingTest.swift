@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FirstView: View {
-    @State private var isToggle : Bool = false
+    @State private var isToggle: Bool = false
     var body: some View {
         VStack {
             Text("isToggle : \(isToggle ? "true" : "false")")
@@ -18,12 +18,12 @@ struct FirstView: View {
 }
 
 struct SecondView: View {
-    @Binding var isToggle : Bool
+    @Binding var isToggle: Bool
     var body: some View {
         Button {
             isToggle.toggle()
         } label: {
-            ZStack{
+            ZStack {
                 RoundedRectangle(cornerRadius: 5)
                     .fill(Color.cyan)
                 Text("Toggle")

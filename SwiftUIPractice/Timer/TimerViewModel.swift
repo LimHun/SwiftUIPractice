@@ -47,4 +47,3 @@ class TimerViewModel: ObservableObject {
         return 1 - (CGFloat(counter) / CGFloat(totalSecondTime))
     }
 }
-

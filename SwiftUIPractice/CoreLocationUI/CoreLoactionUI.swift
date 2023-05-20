@@ -55,9 +55,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var manager = CLLocationManager()
     
     // Region...
-    @Published var region : MKCoordinateRegion = .init()
-    
-    @Published var coffeeShops : [Shop] = []
+    @Published var region: MKCoordinateRegion = .init()
+    @Published var coffeeShops: [Shop] = []
     
     // Setting Delegate
     override init() {
@@ -78,10 +77,8 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         
         print(location)
         
-        Task.init {
-            async{
-                await fetchCoffeeShops()
-            }
+        Task {
+            await fetchCoffeeShops()
         }
     }
     
@@ -91,7 +88,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         do {
             let request = MKLocalSearch.Request()
             request.region = region
-            request.naturalLanguageQuery = "CU"//"만세육간"//"커피"//"Coffee Shops"
+            request.naturalLanguageQuery = "CU" // "만세육간"//"커피"//"Coffee Shops"
             
             let query = MKLocalSearch(request: request)
             let response = try await query.start()
@@ -109,7 +106,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
 }
 
-struct Shop : Identifiable {
+struct Shop: Identifiable {
     var id = UUID().uuidString
     var mapItem: MKMapItem
 }
