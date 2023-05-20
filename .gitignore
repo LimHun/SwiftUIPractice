@@ -97,4 +97,4 @@ atlassian-bitbucket-pipelines-runner/*
 iOSInjectionProject/
 
 *.xcuserstate
-
+xcuserdata/
