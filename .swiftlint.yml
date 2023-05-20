@@ -1,0 +1,54 @@
+disabled_rules:
+- leading_whitespace
+- trailing_whitespace
+- line_length
+- cyclomatic_complexity
+- function_body_length
+- function_parameter_count
+- orphaned_doc_comment 
+# 클로저 내에 사용하지 않는 파라미터 "_"으로 바꾸지 않도록 경고 무시
+- unused_closure_parameter
+# let _ = 형태에서 let을 제외하지 않도록 무시 (View가 반환되는 경우가 있음)
+- redundant_discardable_let
+- private_over_fileprivate
+- comma
+# 삼항연산자 허용
+- void_function_in_ternary
+
+# 값을 나열해서 암시적으로 양쪽 다 지정할 수 있음
+type_body_length:
+  - 350 # 경고
+  - 400 # 에러
+
+identifier_name:
+    allowed_symbols: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    min_length: # min_length에서
+        error: 1 # 에러만 적용
+        warning: 1
+    max_length:    # max_length에서
+        warning: 40 #40글자 넘으면
+        error: 50   #50글자 넘으면 에러
+    excluded: # 제외할 문자열 목록 사용
+        - id
+#identifier_name:
+#  min_length:
+#    warning: 3
+#    error: 2
+  
+#identifier_name:
+#  min_length: 1
+#  allowed_symbols: "_"
+#  warning: 1
+#  error: 2
+#  excluded:
+#    - i
+#    - id
+#    - vc
+
+#identifier_name:
+#  allowed_symbols: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#  validates_start_with_lowercase: false
+#  excluded:
+#    - variable
+#    - function
+#    - type

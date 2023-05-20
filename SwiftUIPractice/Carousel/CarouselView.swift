@@ -10,15 +10,14 @@ import SwiftUI
 struct CarouselView: View {
 
     // MARK: View Properties
-    @State var currentTab : Tab = .home
+    @State var currentTab: Tab = .home
+    @State var currentIndex: Int = 0
     @Namespace var animation
-
-    @State var currentIndex : Int = 0
- 
+    
     var body: some View {
         VStack {
-            HeaderView()
-            SearchBar()
+            headerView()
+            searchBar()
 
             (Text("Featured")
                 .fontWeight(.semibold) +
@@ -40,7 +39,7 @@ struct CarouselView: View {
             .padding(.horizontal, -15)
             .padding(.vertical)
 
-            TabBar()
+            tabBar()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background {
@@ -66,7 +65,7 @@ struct CarouselView: View {
                     .clear,
                     .clear,
                     Color("BGTop"),
-                    Color("BGBottom"),
+                    Color("BGBottom")
                 ], startPoint: .top, endPoint: .bottom)
             }
             .ignoresSafeArea()
@@ -75,8 +74,8 @@ struct CarouselView: View {
 
     // MARK: Custom Tab Bar
     @ViewBuilder
-    func TabBar() -> some View {
-        HStack(spacing: 0){
+    func tabBar() -> some View {
+        HStack(spacing: 0) {
             ForEach(Tab.allCases, id: \.rawValue) { tab in
                 VStack(spacing: -2) {
                     Image(tab.rawValue)
@@ -105,7 +104,7 @@ struct CarouselView: View {
 
     // MARK: Search Bar
     @ViewBuilder
-    func SearchBar() -> some View {
+    func searchBar() -> some View {
         HStack(spacing: 15) {
             Image("Search")
                 .renderingMode(.template)
@@ -137,7 +136,7 @@ struct CarouselView: View {
 
     // MARK: Header View
     @ViewBuilder
-    func HeaderView() -> some View {
+    func headerView() -> some View {
         HStack {
             VStack(alignment: .leading, spacing: 6) {
                 (Text("Hello").fontWeight(.semibold) + Text("🤗"))

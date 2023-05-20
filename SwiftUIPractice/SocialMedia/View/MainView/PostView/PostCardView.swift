@@ -14,11 +14,11 @@ struct PostCardView: View {
     
     var post: Post
     // callbacks
-    var onUpdate: (Post) -> ()
-    var onDelete: () -> ()
+    var onUpdate: (Post) -> Void
+    var onDelete: () -> Void
     // View Properties
-    @AppStorage("user_UID") var userUID : String = ""
-    @State private var docListner : ListenerRegistration?
+    @AppStorage("user_UID") var userUID: String = ""
+    @State private var docListner: ListenerRegistration?
     
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -51,7 +51,7 @@ struct PostCardView: View {
                     .frame(height: 200)
                 }
                 
-                PostInteraction()
+                postInteraction()
             }
         }
         .hAlign(.leading)
@@ -73,12 +73,12 @@ struct PostCardView: View {
         .onAppear {
             if docListner == nil {
                 guard let postID = post.id else { return }
-                docListner = Firestore.firestore().collection("Posts").document(postID).addSnapshotListener({ snapshot, error in
+                docListner = Firestore.firestore().collection("Posts").document(postID).addSnapshotListener({ snapshot, _ in
                     if let snapshot {
                         if snapshot.exists {
-                            if let updatedPost = try? snapshot.data(as: Post.self) {
-                                onUpdate(updatedPost)
-                            }
+//                            if let updatedPost = try? (snapshot.data() as? Post) {
+//                                onUpdate(updatedPost)
+//                            }
                         } else {
                             onDelete()
                         }
@@ -98,7 +98,7 @@ struct PostCardView: View {
     
     // MARK: Like/Dislike Interaction
     @ViewBuilder
-    func PostInteraction() -> some View {
+    func postInteraction() -> some View {
         HStack(spacing: 6) {
             Button {
                 likePost()
@@ -174,10 +174,4 @@ struct PostCardView: View {
             }
         }
     }
-}
-
-//struct PostCardView_Previews: PreviewProvider {
-//    static var previews: some View {
-//
-//    }
-//}
+} 

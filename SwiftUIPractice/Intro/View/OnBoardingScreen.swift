@@ -45,7 +45,7 @@ struct OnBoardingScreen: View {
                             }
                             .opacity(isLastSlide ? 0 : 1)
                         }
-                        .tint(Color("Green"))
+                        .tint(Color("introGreen"))
                         .fontWeight(.bold)
                         
                         // MARK: Movable Slides
@@ -87,18 +87,18 @@ struct OnBoardingScreen: View {
                                 .frame(maxWidth: .infinity)
                                 .background {
                                     Capsule()
-                                        .fill(Color("Green"))
+                                        .fill(Color("introGreen"))
                                 }
                                 .padding(.horizontal, isLastSlide ? 30 : 100)
                                 .onTapGesture {
-                                    //MARK: Updating to Next Index
+                                    // MARK: Updating to Next Index
                                     if currentIndex < onboardingItems.count - 1 {
                                         // MARK: pausing previous animation
                                         let currentProgress = onboardingItems[currentIndex].lottieView.currentProgress
                                         onboardingItems[currentIndex].lottieView.currentProgress = (currentProgress == 0 ? 0.7 : currentProgress)
                                         currentIndex += 1
                                         
-                                        //MARK: playing next animation from start
+                                        // MARK: playing next animation from start
                                         playAnimation()
                                     }
                                 }
@@ -112,7 +112,7 @@ struct OnBoardingScreen: View {
                         }
                         .font(.caption2)
                         .underline(true, color: .primary)
-                        .offset(y : 5)
+                        .offset(y: 5)
                     }
                     .animation(.easeInOut, value: isLastSlide)
                     .padding(15)

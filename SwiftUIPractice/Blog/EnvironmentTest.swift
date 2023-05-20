@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-class EnvironmentClass : ObservableObject{
-    @Published var name : String
-    @Published var option : String
+class EnvironmentClass: ObservableObject {
+    @Published var name: String
+    @Published var option: String
     init(name: String, option: String) {
         self.name = name
         self.option = option
@@ -19,12 +19,12 @@ class EnvironmentClass : ObservableObject{
 struct EnvironmentTest: View {
     @StateObject var envClass = EnvironmentClass(name: "Tunk", option: "😀")
     
-    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor : Bool
-    @Environment(\.description) var description : String
+    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor: Bool
+    @Environment(\.description) var description: String
     
     var body: some View {
         ScrollView {
-            VStack{
+            VStack {
                 Text("description : \(description)")
                     .textSelection(.enabled)
                 NextView()
@@ -34,9 +34,8 @@ struct EnvironmentTest: View {
     }
 }
 
-
-struct NextView : View {
-    @EnvironmentObject var envClass : EnvironmentClass
+struct NextView: View {
+    @EnvironmentObject var envClass: EnvironmentClass
     var body: some View {
         Text("NextView name :\(envClass.name) option :\(envClass.option)")
     }

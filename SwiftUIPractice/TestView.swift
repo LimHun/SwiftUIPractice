@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct FruitType : Identifiable{
+struct FruitType: Identifiable {
     var id = UUID()
-    var fruitName : String
+    var fruitName: String
 }
 
-class Student : ObservableObject {
-    var name : String
+class Student: ObservableObject {
+    var name: String
     init(name: String) {
         self.name = name
     }
@@ -21,10 +21,10 @@ class Student : ObservableObject {
 
 struct TestView: View {
      
-    @State var age : Int = 0
+    @State var age: Int = 0
     @StateObject var student = Student(name: "name")
     
-    var array : [FruitType] = [FruitType(fruitName: "🍎"),
+    var array: [FruitType] = [FruitType(fruitName: "🍎"),
                                FruitType(fruitName: "🥝"),
                                FruitType(fruitName: "🍐"),
                                FruitType(fruitName: "🍊"),

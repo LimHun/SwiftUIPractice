@@ -11,18 +11,17 @@ import AVKit
 struct VideoPlayerTest: View {
     
     @State var player = AVPlayer()
-    @State var toggle : Bool = true//false
+    @State var toggle: Bool = true
     
     var videoUrl: String = "https://player.vimeo.com/external/291648067.sd.mp4?s=7f9ee1f8ec1e5376027e4a6d1d05d5738b2fbb29&profile_id=164&oauth2_token_id=57447761"
     
     var body: some View {
-        VStack{
+        VStack {
             Button {
                 toggle.toggle()
             } label: {
                 Text("toggle")
             }
-            //toggle ? AnyView(CustomPlayer(urlString: videoUrl)) : AnyView(EmptyView())
             toggle ? AnyView(videoView()) : AnyView(EmptyView())
         }
         .navigationBarHidden(true)
@@ -33,11 +32,11 @@ extension VideoPlayerTest {
     
     @ViewBuilder
     func videoView() -> some View {
-        VStack{
-            HStack{
+        VStack {
+            HStack {
                 Spacer()
                 VideoPlayer(player: player)
-                    .onAppear() {
+                    .onAppear {
                         player = AVPlayer(url: URL(string: videoUrl)!)
                     }
                 Spacer()

@@ -59,8 +59,8 @@ struct SearchUserView: View {
     
     func searchUsers() async {
         do {
-            let queryLowerCased = searchText.lowercased()
-            let queryUpperCased = searchText.uppercased()
+            let _ = searchText.lowercased()
+            let _ = searchText.uppercased()
             
             let documents = try await Firestore.firestore().collection("Users")
                 .whereField("username", isGreaterThanOrEqualTo: searchText)

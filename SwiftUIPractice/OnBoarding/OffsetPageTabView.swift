@@ -16,7 +16,7 @@ struct OffsetPageTabView<Content: View>: UIViewRepresentable {
         return OffsetPageTabView.Coordinator(parent: self)
     }
     
-    init(offset: Binding<CGFloat>, @ViewBuilder content: @escaping ()->Content) {
+    init(offset: Binding<CGFloat>, @ViewBuilder content: @escaping () -> Content) {
         self.content = content()
         self._offset = offset
     }
@@ -73,5 +73,4 @@ struct OffsetPageTabView<Content: View>: UIViewRepresentable {
             parent.offset = offset
         }
     }
-}
-
+} 

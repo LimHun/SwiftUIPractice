@@ -14,7 +14,7 @@ struct BottomSheet: View {
     @State var searchText = ""
     
     // Gesture Properties...
-    @State var offset : CGFloat = 0
+    @State var offset: CGFloat = 0
     @State var lastOffset: CGFloat = 0
     @GestureState var gestureOffset: CGFloat = 0
     
@@ -33,7 +33,7 @@ struct BottomSheet: View {
             
             // BottomSheet
             
-            GeometryReader{ proxy in
+            GeometryReader { proxy in
                 let height = proxy.frame(in: .global).height
                 AnyView(
                     ZStack {
@@ -79,11 +79,9 @@ struct BottomSheet: View {
                             if -offset > 100 && -offset < maxHeight / 2 {
                                 // Mid..
                                 offset = -(maxHeight / 3)
-                            }
-                            else if -offset > maxHeight / 2 {
+                            } else if -offset > maxHeight / 2 {
                                 offset = -maxHeight
-                            }
-                            else {
+                            } else {
                                 offset = 0
                             }
                         }

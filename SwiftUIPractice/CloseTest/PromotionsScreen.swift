@@ -25,10 +25,4 @@ struct PromotionsScreen: View {
             Text("Load count \(loadCount)")
         }
     }
-}
-
-//struct PromotionsScreen_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PromotionsScreen(homeScreenPresentedState: .constant(false))
-//    }
-//}
+} 

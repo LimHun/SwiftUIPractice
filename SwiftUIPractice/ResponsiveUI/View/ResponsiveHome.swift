@@ -20,9 +20,9 @@ struct ResponsiveHome: View {
             // MARK: Showing Only For iPad
             if props.isAdoptable {
                 ViewThatFits {
-                    SideBar()
+                    sideBar()
                     ScrollView(.vertical, showsIndicators: false) {
-                        SideBar()
+                        sideBar()
                     }
                     .background(Color.white.ignoresSafeArea())
                 }
@@ -32,18 +32,18 @@ struct ResponsiveHome: View {
             }
             
             ScrollView(.vertical, showsIndicators: false) {
-                VStack{
-                    HeaderView()
-                    InfoCards()
+                VStack {
+                    headerView()
+                    infoCards()
                     
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 20) {
-                            DailySalesView()
-                            PieChartView()
+                            dailySalesView()
+                            pieChartView()
                         }
                     }
                     
-                    TrendingItemsView()
+                    trendingItemsView()
                 }
                 .padding(15)
             }
@@ -57,9 +57,9 @@ struct ResponsiveHome: View {
         .overlay(alignment: .leading) {
             // MARK: Side Bar For Non iPad Devices
             ViewThatFits {
-                SideBar()
+                sideBar()
                 ScrollView(.vertical, showsIndicators: false) {
-                    SideBar()
+                    sideBar()
                 }
                 .background(Color.white.ignoresSafeArea())
             }
@@ -78,13 +78,12 @@ struct ResponsiveHome: View {
     
     // MARK: Trending Item View
     @ViewBuilder
-    func TrendingItemsView() -> some View {
+    func trendingItemsView() -> some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Trending Dishes")
                 .font(.title3.bold())
                 .padding(.bottom)
-            
-            
+             
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: props.isAdoptable ? 2 : 1), spacing: props.isAdoptable ? 20 : 15) {
                 ForEach(trendingDishes) { item in
                     HStack(spacing: 15) {
@@ -96,7 +95,7 @@ struct ResponsiveHome: View {
                             .padding(10)
                             .background {
                                 RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                    .fill(Color("Orange").opacity(0.1))
+                                    .fill(Color("introOrange").opacity(0.1))
                             }
                         
                         VStack(alignment: .leading, spacing: 8) {
@@ -106,7 +105,7 @@ struct ResponsiveHome: View {
                             
                             Label {
                                 Text(item.title)
-                                    .foregroundColor(Color("Orange"))
+                                    .foregroundColor(Color("introOrange"))
                             } icon: {
                                 Text("\(item.subTitle)")
                                     .foregroundColor(.gray)
@@ -121,7 +120,7 @@ struct ResponsiveHome: View {
                         Button("View All") {}
                             .font(.caption)
                             .fontWeight(.semibold)
-                            .foregroundColor(Color("Orange"))
+                            .foregroundColor(Color("introOrange"))
                             .offset(y: 6)
                     })
                 }
@@ -129,7 +128,7 @@ struct ResponsiveHome: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(15)
-        .background{
+        .background {
             RoundedRectangle(cornerRadius: 15, style: .continuous)
                 .fill(.white)
         }
@@ -137,12 +136,12 @@ struct ResponsiveHome: View {
     }
     
     // MARK: PieChart View
-    func PieChartView() -> some View {
+    func pieChartView() -> some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Total Income")
                 .font(.title3.bold())
             
-            ZStack{
+            ZStack {
                 Circle()
                     .trim(from: 0.5, to: 1)
                     .stroke(.red, style: StrokeStyle(lineWidth: 15, lineCap: .round, lineJoin: .round))
@@ -174,7 +173,7 @@ struct ResponsiveHome: View {
     
     // MARK: Graph View
     @ViewBuilder
-    func DailySalesView() -> some View {
+    func dailySalesView() -> some View {
         VStack(alignment: .leading, spacing: 15) {
             Text("Daily Sales")
                 .font(.title3.bold())
@@ -186,11 +185,11 @@ struct ResponsiveHome: View {
                         x: .value("Time", sale.time),
                         y: .value("Sale", sale.sales)
                     )
-                    .foregroundStyle(.linearGradient(colors:[
-                        Color("Orange").opacity(0.6),
-                        Color("Orange").opacity(0.5),
-                        Color("Orange").opacity(0.3),
-                        Color("Orange").opacity(0.1),
+                    .foregroundStyle(.linearGradient(colors: [
+                        Color("introOrange").opacity(0.6),
+                        Color("introOrange").opacity(0.5),
+                        Color("introOrange").opacity(0.3),
+                        Color("introOrange").opacity(0.1),
                         .clear
                     ], startPoint: .top, endPoint: .bottom))
                     .interpolationMethod(.catmullRom)
@@ -200,14 +199,14 @@ struct ResponsiveHome: View {
                         x: .value("Time", sale.time),
                         y: .value("Sale", sale.sales)
                     )
-                    .foregroundStyle(Color("Orange"))
+                    .foregroundStyle(Color("introOrange"))
                     .interpolationMethod(.catmullRom)
                     
                     PointMark(
                         x: .value("Time", sale.time),
                         y: .value("Sale", sale.sales)
                     )
-                    .foregroundStyle(Color("Orange"))
+                    .foregroundStyle(Color("introOrange"))
                 }
             }
             .frame(height: 180)
@@ -222,7 +221,7 @@ struct ResponsiveHome: View {
     
     // MARK: Info Cards View
     @ViewBuilder
-    func InfoCards() -> some View {
+    func infoCards() -> some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 18) {
                 ForEach(infos) { info in
@@ -270,7 +269,7 @@ struct ResponsiveHome: View {
     
     // MARK: Header View
     @ViewBuilder
-    func HeaderView() -> some View {
+    func headerView() -> some View {
         // MARK: Dynamic Layout(iOS 16+)
         let layout = props.isiPad && !props.isMaxSplit ? AnyLayout(HStackLayout()) : AnyLayout(VStackLayout(spacing: 22))
         
@@ -316,7 +315,7 @@ struct ResponsiveHome: View {
     
     // MARK: Side bar
     @ViewBuilder
-    func SideBar() -> some View {
+    func sideBar() -> some View {
         // MARK: Side Bar
         let tabs: [String] = [
             "Home", "Table", "Menu", "Order", "History", "Report", "Alert", "Settings"
@@ -329,7 +328,7 @@ struct ResponsiveHome: View {
                 .frame(width: 55, height: 55)
                 .padding(.bottom, 10)
             
-            ForEach(tabs, id:\.self) { tab in
+            ForEach(tabs, id: \.self) { tab in
                 VStack(spacing: 8) {
                     Image(tab)
                         .resizable()
@@ -341,13 +340,13 @@ struct ResponsiveHome: View {
                         .font(.caption)
                         .fontWeight(.semibold)
                 }
-                .foregroundColor(currentTab == tab ? Color("Orange") : .gray)
+                .foregroundColor(currentTab == tab ? Color("introOrange") : .gray)
                 .padding(.vertical, 13)
                 .frame(width: 65)
                 .background {
                     if currentTab == tab {
                         RoundedRectangle(cornerRadius: 15, style: .continuous)
-                            .fill(Color("Orange").opacity(0.1))
+                            .fill(Color("introOrange").opacity(0.1))
                             .matchedGeometryEffect(id: "TAB", in: animation)
                     }
                 }
@@ -378,7 +377,7 @@ struct ResponsiveHome: View {
         .padding(.vertical)
         .frame(maxHeight: .infinity, alignment: .top)
         .frame(width: 100)
-        .background{
+        .background {
             Color.white
                 .ignoresSafeArea()
         }

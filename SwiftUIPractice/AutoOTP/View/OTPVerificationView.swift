@@ -95,7 +95,6 @@ struct OTPAverificationView_Previews: PreviewProvider {
     }
 }
 
-
 // MARK: Binding <String> Extansion
 extension Binding where Value == String {
     func limit(_ length: Int) -> Self {

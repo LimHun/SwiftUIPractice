@@ -11,11 +11,11 @@ enum MenuQuery: String, CaseIterable {
     case nature, animals, people, ocean, food
 }
 
-let apiToken : String = "563492ad6f9170000100000151ddee10d23e42b89502a3591245af3d"
+let apiToken: String = "563492ad6f9170000100000151ddee10d23e42b89502a3591245af3d"
 
-class VideoManager : ObservableObject {
+class VideoManager: ObservableObject {
 
-    @Published var videos : [Video] = []
+    @Published var videos: [Video] = []
     @Published var selectedQuery: MenuQuery = MenuQuery.nature {
         // 변수 변경시 마다 api 신규 호출하도록 함
         didSet {
@@ -26,8 +26,8 @@ class VideoManager : ObservableObject {
         }
     }
 
-    var page : Int = 1  // 페이지
-    var per_page : Int = 15 // 페이지당 데이터 수
+    var page: Int = 1  // 페이지
+    var perPage: Int = 15 // 페이지당 데이터 수
 
     // findVideos는 비동기 함수이기 때문에 init 함수 안에 Task dot init를 추가해야 합니다.
     init() {
@@ -49,11 +49,10 @@ class VideoManager : ObservableObject {
 //                fatalError("Missing URL")
 //            }
 
-            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&page=\(page)&per_page=\(per_page)&orientation=portrait&size=small") else {
+            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&page=\(page)&per_page=\(perPage)&orientation=portrait&size=small") else {
                 fatalError("Missing URL")
             }
-
-
+ 
             var urlRequest = URLRequest(url: url)
             urlRequest.setValue(apiToken, forHTTPHeaderField: "Authorization")
 
@@ -82,14 +81,12 @@ class VideoManager : ObservableObject {
         }
     }
 }
-
-
-
-struct ResponseBody : Decodable {
-    var page : Int
-    var perPage : Int
+ 
+struct ResponseBody: Decodable {
+    var page: Int
+    var perPage: Int
     var totalResults: Int
-    var url : String
+    var url: String
     var videos: [Video]
 }
 

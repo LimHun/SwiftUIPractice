@@ -9,12 +9,12 @@ import SwiftUI
 
 struct Message: Identifiable {
     var id = UUID().uuidString
-    var message : String
-    var userName : String
-    var tintColor : Color
+    var message: String
+    var userName: String
+    var tintColor: Color
 }
 
-var allMessages : [Message] = [
+var allMessages: [Message] = [
     Message(message: "message test test tes  test test", userName: "LimHun", tintColor: .pink),
     Message(message: "message test test tes  test test", userName: "LimHun", tintColor: .pink),
     Message(message: "message test test tes  test test", userName: "LimHun", tintColor: .pink),

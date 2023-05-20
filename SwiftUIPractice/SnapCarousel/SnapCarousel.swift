@@ -20,7 +20,7 @@ struct SnapCarousel<Content: View, T: Identifiable>: View {
          trailingSpace: CGFloat = 100,
          index: Binding<Int>,
          items: [T],
-         @ViewBuilder content: @escaping (T)->Content) {
+         @ViewBuilder content: @escaping (T) -> Content) {
         self.list = items
         self.spacing = spacing
         self.trailingSpace = trailingSpace

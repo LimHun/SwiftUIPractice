@@ -14,7 +14,7 @@ struct CustomViewType: Identifiable {
 
 struct PracticeList: View {
     
-    let practiceViews : [Any] = [SpotifyHeaderAnimationView.self,
+    let practiceViews: [Any] = [SpotifyHeaderAnimationView.self,
                                  ShimmerView.self,
                                  ListColorChange.self,
                                  VideoGridView.self,
@@ -91,7 +91,7 @@ struct PracticeList: View {
             return (AnyView( VideoPlayerTest()), true)
         case is VideoNavi.Type:
             return (AnyView( VideoNavi()), true)
-        case is AutoFocusTextFeild.Type :
+        case is AutoFocusTextFeild.Type:
             return (AnyView( AutoFocusTextFeild()), true)
         case is CoreLoactionUI.Type:
             return (AnyView( CoreLoactionUI()), true)
@@ -109,7 +109,7 @@ struct PracticeList: View {
             return (AnyView(SnapCarouselView()), true)
         case is BottomSheet.Type:
             return (AnyView(BottomSheet()), true)
-        case is SplashScreen.Type :
+        case is SplashScreen.Type:
             return (AnyView(SplashScreen()), true)
         case is TimerView.Type:
             return (AnyView(TimerView()), true)
@@ -149,7 +149,7 @@ struct PracticeList: View {
             List {
                 ForEach(0..<practiceViews.count, id: \.self) { index in
                     
-                    let studyTitle : String = String(describing: practiceViews[index])
+                    let studyTitle: String = String(describing: practiceViews[index])
                     NavigationLink {
                         buildView(types: practiceViews, index: index).0
                             .navigationBarTitleDisplayMode(.inline)

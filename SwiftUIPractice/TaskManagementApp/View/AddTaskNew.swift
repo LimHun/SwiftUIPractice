@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddTaskNew: View {
     // - Callback
-    var onAdd: (TaskData) -> ()
+    var onAdd: (TaskData) -> Void
     @Environment(\.dismiss) private var dismiss
     @State private var taskName: String = ""
     @State private var taskDescription: String = ""
@@ -35,7 +35,7 @@ struct AddTaskNew: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 15)
                 
-                TitleView("NAME")
+                titleView("NAME")
                 
                 TextField("Make New Video", text: $taskName)
                     .ubuntu(16, .regular)
@@ -46,7 +46,7 @@ struct AddTaskNew: View {
                     .fill(.white.opacity(0.7))
                     .frame(height: 1)
                 
-                TitleView("DATE")
+                titleView("DATE")
                     .padding(.top, 15)
                 
                 HStack(alignment: .bottom, spacing: 12) {
@@ -116,7 +116,7 @@ struct AddTaskNew: View {
             }
             
             VStack(alignment: .leading, spacing: 10) {
-                TitleView("DESCRIPTION", .gray)
+                titleView("DESCRIPTION", .gray)
                 
                 TextField("About Your Task", text: $taskDescription)
                     .ubuntu(16, .regular)
@@ -126,7 +126,7 @@ struct AddTaskNew: View {
                     .fill(.black.opacity(0.2))
                     .frame(height: 1)
                 
-                TitleView("CATEGORY", .gray)
+                titleView("CATEGORY", .gray)
                     .padding(.top, 15)
                 
                 LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: 20), count: 3), spacing: 15) {
@@ -184,7 +184,7 @@ struct AddTaskNew: View {
     }
     
     @ViewBuilder
-    func TitleView(_ value: String, _ color: Color = .white.opacity(0.7)) -> some View {
+    func titleView(_ value: String, _ color: Color = .white.opacity(0.7)) -> some View {
         Text(value)
             .ubuntu(12, .regular)
             .foregroundColor(color)

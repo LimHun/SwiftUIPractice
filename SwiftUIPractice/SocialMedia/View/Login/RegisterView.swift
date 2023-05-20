@@ -12,7 +12,7 @@ import FirebaseFirestore
 import FirebaseStorage
 
 // MARK: Register View 회원가입 뷰
-struct RegisterView : View {
+struct RegisterView: View {
     // 입력 받을 변수들
     @State var emailID: String = ""
     @State var password: String = ""
@@ -33,7 +33,8 @@ struct RegisterView : View {
     
     // 프로그래스
     @State var isLoading: Bool = false
-    //MARK: UserDefaults
+    
+    // MARK: UserDefaults
     @AppStorage("log_status") var logStatus: Bool = false
     @AppStorage("user_profile_url") var profileURL: URL?
     @AppStorage("user_name") var userNameStored: String = ""
@@ -52,10 +53,10 @@ struct RegisterView : View {
             // MARK: For smller size optimization
             ViewThatFits {
                 ScrollView(.vertical, showsIndicators: false) {
-                    HelperView()
+                    helperView()
                 }
                 
-                HelperView()
+                helperView()
             }
             
             // MARK: Register Button
@@ -102,7 +103,7 @@ struct RegisterView : View {
     }
     
     @ViewBuilder
-    func HelperView() -> some View {
+    func helperView() -> some View {
         VStack(spacing: 12) {
             
             ZStack {
@@ -131,8 +132,7 @@ struct RegisterView : View {
             TextField("Email", text: $emailID)
                 .textContentType(.middleName)
                 .border(1, .gray.opacity(0.5))
-                
-            
+                  
             SecureField("Password", text: $password)
                 .textContentType(.emailAddress)
                 .border(1, .gray.opacity(0.5))
@@ -161,7 +161,7 @@ struct RegisterView : View {
     
     func registerUser() {
         isLoading = true
-        Task{
+        Task {
             do {
                 // Stop 1 : Creating Firebase Account
                 try await Auth.auth().createUser(withEmail: emailID, password: password)
@@ -169,24 +169,24 @@ struct RegisterView : View {
                 guard let userUID = Auth.auth().currentUser?.uid else { return }
                 guard let imageData = userProfilePicData else { return }
                 let storageRef = Storage.storage().reference().child("Profile_Images").child(userUID)
-                let _ = try await storageRef.putDataAsync(imageData)
+                _ = try await storageRef.putDataAsync(imageData)
                 // Step 3 : Downloading Photo URL
                 let downloadURL = try await storageRef.downloadURL()
                 print(downloadURL)
                 // Step 4 : Creating a User Firestore Object
-                let user = User(username: userName, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
+                let _ = User(username: userName, userBio: userBio, userBioLink: userBioLink, userUID: userUID, userEmail: emailID, userProfileURL: downloadURL)
                 
-                let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: {
-                    error in
-                    if error == nil {
-                        // MARK: Print Saved Successfully
-                        print("Saved Successfully")
-                        userNameStored = userName
-                        self.userUID = userUID
-                        profileURL = downloadURL
-                        logStatus = true
-                    }
-                })
+//                let _ = try Firestore.firestore().collection("Users").document(userUID).setData(from: user, completion: {
+//                    error in
+//                    if error == nil {
+//                        // MARK: Print Saved Successfully
+//                        print("Saved Successfully")
+//                        userNameStored = userName
+//                        self.userUID = userUID
+//                        profileURL = downloadURL
+//                        logStatus = true
+//                    }
+//                })
             } catch {
                 // MARK: Deleting Created Account In Case of Failure
                 try await Auth.auth().currentUser?.delete()

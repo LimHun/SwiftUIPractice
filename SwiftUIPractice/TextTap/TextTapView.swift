@@ -22,7 +22,7 @@ struct ContentText: View {
     }
 
     var body: some View {
-        ForEach(self.splitText.indices) { index in
+        ForEach(self.splitText.indices, id: \.self) { index in
             Text(splitText[index])
         }
     }
@@ -140,7 +140,7 @@ struct TextTapView: View {
                 })
         }
         
-        return ForEach(content.indices, content: forEachView)
+        return ForEach(content.indices, id: \.self, content: forEachView)
     }
     
     // Determine the height of the view containing our combined Text and Link views
@@ -159,5 +159,4 @@ struct TextTapView_Previews: PreviewProvider {
     static var previews: some View {
         TextTapView()
     }
-}
-
+} 

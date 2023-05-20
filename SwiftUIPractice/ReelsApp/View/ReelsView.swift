@@ -10,10 +10,10 @@ import AVFoundation
 
 struct ReelsView: View {
 
-    @Binding var videos : [Video]
-    @ObservedObject var videoManager : VideoManager
+    @Binding var videos: [Video]
+    @ObservedObject var videoManager: VideoManager
     @State var currentReel = ""
-    @State var reels = MediaFileJSON.map { item -> Reel in
+    @State var reels = mediaFileJSON.map { item -> Reel in
         let url = Bundle.main.path(forResource: item.url, ofType: "MOV") ?? ""
         let player = AVPlayer(url: URL(fileURLWithPath: url))
         return Reel(player: player, mediaFile: item)

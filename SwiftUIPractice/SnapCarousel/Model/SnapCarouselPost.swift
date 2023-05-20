@@ -9,5 +9,5 @@ import SwiftUI
 
 struct SnapCarouselPost: Identifiable {
     var id = UUID().uuidString
-    var postImage : String
+    var postImage: String
 }

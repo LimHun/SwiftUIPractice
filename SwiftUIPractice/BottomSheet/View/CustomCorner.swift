@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomCorner: Shape { 
-    var corners : UIRectCorner
+    var corners: UIRectCorner
     var radius: CGFloat
     
     func path(in rect: CGRect) -> Path {

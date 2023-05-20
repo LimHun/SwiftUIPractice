@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MessageCardView: View {
 
-    var message : Message
+    var message: Message
 
     var body: some View {
 

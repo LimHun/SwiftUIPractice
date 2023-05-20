@@ -32,8 +32,8 @@ struct HomeScreen: View {
     }
 }
 
-//struct HomeScreen_Previews: PreviewProvider {
+// struct HomeScreen_Previews: PreviewProvider {
 //    static var previews: some View {
 //        HomeScreen(homeScreenPresentedState: .constant(false))
 //    }
-//}
+// }

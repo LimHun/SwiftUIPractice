@@ -18,8 +18,7 @@ struct SpotifyOffsetModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             .overlay {
-                GeometryReader { proxy in
-                    //Color.red.opacity(0.1)//clear
+                GeometryReader { proxy in 
                     Color.clear
                         .preference(key: OffsetKey.self, value: proxy.frame(in: .named("SCROLL")).minY)
                         .onPreferenceChange(OffsetKey.self) { value in

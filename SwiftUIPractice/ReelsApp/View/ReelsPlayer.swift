@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ReelsPlayer: View {
 
-    @Binding var reel : Reel
-    @Binding var currentReel : String
+    @Binding var reel: Reel
+    @Binding var currentReel: String
     
-    @State var showMore : Bool = false
+    @State var showMore: Bool = false
     @State var isMuted = false
     @State var volumeAnimation = false
 
@@ -44,12 +44,12 @@ struct ReelsPlayer: View {
 
                         isMuted.toggle()
                         player.isMuted = isMuted
-                        withAnimation{
+                        withAnimation {
                             volumeAnimation.toggle()
                         }
 
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                            withAnimation{
+                            withAnimation {
                                 volumeAnimation.toggle()
                             }
                         }
@@ -88,11 +88,10 @@ struct ReelsPlayer: View {
                                             .fontWeight(.semibold)
                                     }
                                     .frame(height: 120)
-
-
+ 
                                 } else {
                                     Button {
-                                        withAnimation{
+                                        withAnimation {
                                             showMore.toggle()
                                         }
                                     } label: {
@@ -107,7 +106,7 @@ struct ReelsPlayer: View {
                                                 .foregroundColor(.gray)
                                         }
                                         .padding(.top, 6)
-                                        .frame(maxWidth:.infinity, alignment: .leading)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
                                     }
                                 }
                             }

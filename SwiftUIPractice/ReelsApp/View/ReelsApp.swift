@@ -36,7 +36,7 @@ struct ReelsApp: View {
                     .tag("person.circle")
             }
 
-            HStack(spacing: 0){
+            HStack(spacing: 0) {
                 ForEach(["house.fill", "magnifyingglass", "Profile", "suit.heart", "person.circle"], id: \.self) { image in
                     ReelsTabBarButton(image: image, isSystemImage: image != "Profile", currentTab: $currentTab)
                 }

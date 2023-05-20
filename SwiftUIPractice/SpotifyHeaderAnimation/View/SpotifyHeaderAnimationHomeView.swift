@@ -8,59 +8,55 @@
 import SwiftUI
 
 struct SpotifyHeaderAnimationHomeView: View {
-
-    
+ 
     var safeArea: EdgeInsets
     var size: CGSize
     
     let screenHeaderHeightRatio: CGFloat = 0.70
     
     var body: some View {
-        //ZStack {
-            
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    ArtWork()
-                    
-                    GeometryReader { proxy in
-                        // MARK: Since We Ignored Top Edge
-                        let minY = proxy.frame(in: .named("SCROLL")).minY - safeArea.top
-                        Button {
-                            
-                        } label: {
-                            Text("SHUFFLE PLAY")
-                                .font(.callout)
-                                .fontWeight(.semibold)
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 45)
-                                .padding(.vertical, 12)
-                                .background {
-                                    Capsule()
-                                        .fill(Color.green.gradient)
-                                }
-                        }
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .offset(y: minY < 50 ? -(minY - 50) : 0)
-                    }
-                    .frame(height: 50)
-                    .padding(.top, -34)
-                    .zIndex(1)
-                    
-                    VStack {
-                        Text("Popular")
-                            .fontWeight(.heavy)
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                ArtWork()
+                
+                GeometryReader { proxy in
+                    // MARK: Since We Ignored Top Edge
+                    let minY = proxy.frame(in: .named("SCROLL")).minY - safeArea.top
+                    Button {
                         
-                        AlbumView()
+                    } label: {
+                        Text("SHUFFLE PLAY")
+                            .font(.callout)
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 45)
+                            .padding(.vertical, 12)
+                            .background {
+                                Capsule()
+                                    .fill(Color.green.gradient)
+                            }
                     }
-                    .padding(.top, 10)
-                    .zIndex(0)   
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .offset(y: minY < 50 ? -(minY - 50) : 0)
                 }
-                .overlay(alignment: .top) {
-                    HeaderView()
+                .frame(height: 50)
+                .padding(.top, -34)
+                .zIndex(1)
+                
+                VStack {
+                    Text("Popular")
+                        .fontWeight(.heavy)
+                    
+                    AlbumView()
                 }
+                .padding(.top, 10)
+                .zIndex(0)
             }
-            .coordinateSpace(name: "SCROLL")
-        //}
+            .overlay(alignment: .top) {
+                HeaderView()
+            }
+        }
+        .coordinateSpace(name: "SCROLL")
     }
     
     @ViewBuilder
@@ -86,7 +82,7 @@ struct SpotifyHeaderAnimationHomeView: View {
                                     .black.opacity(0.3 - progress),
                                     .black.opacity(0.5 - progress),
                                     .black.opacity(0.8 - progress),
-                                    .black.opacity(1),
+                                    .black.opacity(1)
                                 ], startPoint: .top, endPoint: .bottom)
                             )
                         

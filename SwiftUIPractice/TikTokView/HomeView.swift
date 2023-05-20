@@ -11,7 +11,7 @@ import AVKit
 struct Player: UIViewControllerRepresentable, Identifiable {
     let id: UUID = .init()
     let player: AVPlayer
-    let update : () -> Void
+    let update: () -> Void
 
     func makeUIViewController(context: Context) -> some UIViewController {
         let vc = AVPlayerViewController()
@@ -54,10 +54,10 @@ struct HomeView: View {
             .offset(x: proxy.size.width)
             .tabViewStyle(PageTabViewStyle())
         }
-        .onAppear{
+        .onAppear {
 
         }
-        .onDisappear{
+        .onDisappear {
             for video in videos {
                 video.player.pause()
             }

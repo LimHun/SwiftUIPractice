@@ -39,7 +39,6 @@ struct TaskManagementApp: View {
             let midHour = hours[hours.count / 2]
             VStack {
                 ForEach(hours, id: \.self) { hour in
-                    //Text(hour.toString("h a"))
                     TimelineViewRow(hour)
                 }
             }
@@ -227,7 +226,7 @@ extension Calendar {
     }
     
     /// - Returns Current Week in Array Format 
-    var currentWeek : [WeekDay] {
+    var currentWeek: [WeekDay] {
         guard let firstWeekDay = self.dateInterval(of: .weekOfMonth, for: Date())?.start else {
             return []
         }

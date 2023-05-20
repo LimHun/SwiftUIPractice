@@ -11,9 +11,9 @@ struct StickyHeaderView: View {
     @Environment(\.dismiss) private var dismiss
 
     let maxHeight = UIScreen.main.bounds.height / 2.3
-    let topEdge : CGFloat
+    let topEdge: CGFloat
 
-    @State var offset : CGFloat = 0
+    @State var offset: CGFloat = 0
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {

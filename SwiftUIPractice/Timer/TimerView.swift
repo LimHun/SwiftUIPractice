@@ -25,7 +25,7 @@ struct TimerView: View {
                     .fill(Color.clear)
                     .frame(width: 250, height: 250)
                     .overlay {
-                        Circle().trim(from:0, to: timerViewModel.progress())
+                        Circle().trim(from: 0, to: timerViewModel.progress())
                             .stroke(style: StrokeStyle(lineWidth: 25, lineCap: .butt, lineJoin: .round))
                             .foregroundColor(
                                 (timerViewModel.completed() ? Color.orange : Color.red)
@@ -51,8 +51,7 @@ struct TimerView: View {
         }
     }
 }
-
-
+ 
 struct Clock: View {
     var counter: Int
     var countTo: Int

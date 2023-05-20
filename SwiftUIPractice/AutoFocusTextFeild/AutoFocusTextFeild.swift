@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct feildModel : Identifiable {
+struct FeildModel: Identifiable {
     var id = UUID()
-    var text : String
-    var placeHolder : String
-    var color : Color
-    var fieldFocus : FieldFocus
+    var text: String
+    var placeHolder: String
+    var color: Color
+    var fieldFocus: FieldFocus
 }
 
-enum FieldFocus : Int {
+enum FieldFocus: Int {
     case feild1 = 0
     case feild2 = 1
     case feild3 = 2
@@ -25,16 +25,16 @@ enum FieldFocus : Int {
     case feild7 = 6
 }
 
-class AutoFocusViewModel : ObservableObject {
-    @Published var fields = [feildModel]()
+class AutoFocusViewModel: ObservableObject {
+    @Published var fields = [FeildModel]()
     func setData() {
-        fields = [feildModel(text: "", placeHolder: "placeHolder1", color: Color.red, fieldFocus : .feild1),
-                  feildModel(text: "", placeHolder: "placeHolder2", color: Color.orange, fieldFocus : .feild2),
-                  feildModel(text: "", placeHolder: "placeHolder3", color: Color.yellow, fieldFocus : .feild3),
-                  feildModel(text: "", placeHolder: "placeHolder4", color: Color.green, fieldFocus : .feild4),
-                  feildModel(text: "", placeHolder: "placeHolder5", color: Color.cyan, fieldFocus : .feild5),
-                  feildModel(text: "", placeHolder: "placeHolder6", color: Color.blue, fieldFocus : .feild6),
-                  feildModel(text: "", placeHolder: "placeHolder7", color: Color.purple, fieldFocus : .feild7)]
+        fields = [FeildModel(text: "", placeHolder: "placeHolder1", color: Color.red, fieldFocus: .feild1),
+                  FeildModel(text: "", placeHolder: "placeHolder2", color: Color.orange, fieldFocus: .feild2),
+                  FeildModel(text: "", placeHolder: "placeHolder3", color: Color.yellow, fieldFocus: .feild3),
+                  FeildModel(text: "", placeHolder: "placeHolder4", color: Color.green, fieldFocus: .feild4),
+                  FeildModel(text: "", placeHolder: "placeHolder5", color: Color.cyan, fieldFocus: .feild5),
+                  FeildModel(text: "", placeHolder: "placeHolder6", color: Color.blue, fieldFocus: .feild6),
+                  FeildModel(text: "", placeHolder: "placeHolder7", color: Color.purple, fieldFocus: .feild7)]
     }
 }
 
@@ -45,16 +45,16 @@ extension View {
 }
 
 struct AutoFocusTextFeild: View {
-    
     @StateObject var autoFocusViewModel = AutoFocusViewModel()
-    @FocusState var focusedField : FieldFocus?
+    @FocusState var focusedField: FieldFocus?
 
     var body: some View {
         ScrollViewReader { proxy in
-            ScrollView{
-                VStack{
+            ScrollView {
+                VStack {
                     ForEach(0..<autoFocusViewModel.fields.count, id: \.self) { index in
-                        TextField(autoFocusViewModel.fields[index].placeHolder, text: $autoFocusViewModel.fields[index].text)
+                        TextField(autoFocusViewModel.fields[index].placeHolder,
+                                  text: $autoFocusViewModel.fields[index].text)
                             .focused($focusedField, equals: autoFocusViewModel.fields[index].fieldFocus)
                             .padding()
                             .background {
@@ -81,7 +81,6 @@ struct AutoFocusTextFeild: View {
         }
         .onAppear {
             autoFocusViewModel.setData()
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 self.focusedField = .feild1
             }
@@ -94,5 +93,3 @@ struct AutoFocusTextFeild_Previews: PreviewProvider {
         AutoFocusTextFeild()
     }
 }
-
-

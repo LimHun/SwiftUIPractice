@@ -9,18 +9,18 @@ import SwiftUI
 
 var rainbowColors = [Color.red, Color.orange, Color.yellow, Color.green, Color.cyan, Color.blue, Color.purple]
 
-class MutiViewModel : ObservableObject {
-    var viewsPresentation : [Binding<PresentationMode>] = []
-    @Published var isShowViewList : [Bool] = []
+class MutiViewModel: ObservableObject {
+    var viewsPresentation: [Binding<PresentationMode>] = []
+    @Published var isShowViewList: [Bool] = []
 }
 
-struct TestView1 : View {
+struct TestView1: View {
     @Environment(\.presentationMode) var presentationMode
     @StateObject var mutiViewModel = MutiViewModel()
-    @State var isShow : Bool = false
+    @State var isShow: Bool = false
     
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView2()
                     .environmentObject(mutiViewModel)
@@ -31,19 +31,19 @@ struct TestView1 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[0])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestView2 : View {
+struct TestView2: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView3()
                     .environmentObject(mutiViewModel)
@@ -54,19 +54,19 @@ struct TestView2 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[1])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestView3 : View {
+struct TestView3: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView4()
                     .environmentObject(mutiViewModel)
@@ -77,19 +77,19 @@ struct TestView3 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[2])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestView4 : View {
+struct TestView4: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView5()
                     .environmentObject(mutiViewModel)
@@ -100,19 +100,19 @@ struct TestView4 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[3])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestView5 : View {
+struct TestView5: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView6()
                     .environmentObject(mutiViewModel)
@@ -123,19 +123,19 @@ struct TestView5 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[4])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestView6 : View {
+struct TestView6: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestView7()
                     .environmentObject(mutiViewModel)
@@ -146,20 +146,19 @@ struct TestView6 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[5])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
-
-
-struct TestView7 : View {
+ 
+struct TestView7: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             NavigationLink {
                 TestViewEnd()
                     .environmentObject(mutiViewModel)
@@ -170,19 +169,19 @@ struct TestView7 : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(rainbowColors[6])
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
     }
 }
 
-struct TestViewEnd : View {
+struct TestViewEnd: View {
     @Environment(\.presentationMode) var presentationMode
-    @EnvironmentObject var mutiViewModel : MutiViewModel
-    @State var isShow : Bool = false
+    @EnvironmentObject var mutiViewModel: MutiViewModel
+    @State var isShow: Bool = false
     var body: some View {
-        VStack{
+        VStack {
             Button {
                 for presentView in mutiViewModel.viewsPresentation {
                     presentView.wrappedValue.dismiss()
@@ -194,7 +193,7 @@ struct TestViewEnd : View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.random)
         }
-        .onAppear{
+        .onAppear {
             mutiViewModel.viewsPresentation.append(presentationMode)
             mutiViewModel.isShowViewList.append(isShow)
         }
@@ -234,8 +233,7 @@ struct MultiView: View {
                 presentationMode.wrappedValue.dismiss()
             }
 
-            NavigationLink("title", destination: MultiNextView(num: $num), isActive: $isShowView)
-
+            NavigationLink("title", destination: MultiNextView(num: $num))
         }
 
     }
@@ -245,12 +243,12 @@ struct MultiNextView: View {
 
     @Environment(\.presentations) private var presentations
     @Environment(\.presentationMode) var presentationMode
-    @Binding var num : Int
+    @Binding var num: Int
     @State private var isShowView = false
 
     var body: some View {
 //        if num < 10 {
-            VStack{
+            VStack {
                 NavigationLink {
                     MultiNextView(num: $num)
                         .environment(\.presentations, presentations + [$isShowView])
@@ -273,8 +271,7 @@ struct MultiNextView: View {
                     } label: {
                         Text("first View Close")
                     }
-                }
-                else if num > 10 {
+                } else if num > 10 {
                     Button {
                         num = 0
                         presentations.forEach { isShowView in

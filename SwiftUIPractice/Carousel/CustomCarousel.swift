@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCollection, ID: Hashable, Item.Element: Equatable {
 
     var content: (Item.Element, CGSize) -> Content
-    var id : KeyPath<Item.Element, ID>
+    var id: KeyPath<Item.Element, ID>
 
     // MARK: View Properties
     var spacing: CGFloat
@@ -30,7 +30,7 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
 
     // MARK: Gesture Properties
     @GestureState var translation: CGFloat = 0
-    @State var offset : CGFloat = 0
+    @State var offset: CGFloat = 0
     @State var lastStoredOffset: CGFloat = 0
 
     @State var currentIndex: Int = 0
@@ -67,8 +67,8 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
                     .updating($translation, body: { value, out, _ in
                         out = value.translation.width
                     })
-                    .onChanged{ onChange(value: $0, cardWidth: cardWidth) }
-                    .onEnded{ onEnd(Value: $0, cardWidth: cardWidth)}
+                    .onChanged { onChange(value: $0, cardWidth: cardWidth) }
+                    .onEnded { onEnd(value: $0, cardWidth: cardWidth) }
             )
         }
         .padding(.top, 60)
@@ -93,9 +93,9 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         // MARK: Checking Provious, Next And In-Between Offsets
         let previous = (index - 1) == self.index ? (translation < 0 ? yOffset : -yOffset) : 0
         let next = (index + 1) == self.index ? (translation < 0 ? -yOffset : yOffset) : 0
-        let In_Between = (index - 1) == self.index ? previous : next
+        let inBetween = (index - 1) == self.index ? previous : next
 
-        return index == self.index ? -60 - yOffset : In_Between
+        return index == self.index ? -60 - yOffset : inBetween
     }
 
     // MARK: Item Index
@@ -127,27 +127,27 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         rotation = progress * 5
     }
 
-    func onEnd(Value:DragGesture.Value, cardWidth: CGFloat) {
-        var _index = (offset / cardWidth).rounded()
+    func onEnd(value: DragGesture.Value, cardWidth: CGFloat) {
+        var currentindex = (offset / cardWidth).rounded()
 //        print("offset : \(offset)")
 //        print("offset / cardWidth : \((offset / cardWidth))")
 //        print("offset / cardWidth . rounded: \(_index)")
 
-        _index = max(-CGFloat(items.count - 1), _index)
-        _index = min(_index, 0)
+        currentindex = max(-CGFloat(items.count - 1), currentindex)
+        currentindex = min(currentindex, 0)
 
-        currentIndex = (Int)(_index)
+        self.currentIndex = (Int)(currentindex)
 
         // MARK: Updating Index
         // Note Since We're Moving On Right Side
         // So All Data Will be Nagative
-        index = -currentIndex
+        index = -self.currentIndex
 
         withAnimation {
             // MARK: Removing Extra Space
             // Why / 2 -> Because We Need Both Sides Need To Be Visible
             let extraSpace = (cardPadding / 2) - spacing
-            offset = (cardWidth * _index) + extraSpace
+            offset = (cardWidth * currentindex) + extraSpace
 
             let progress = offset / cardWidth
             rotation = (progress * 5).rounded() - 1

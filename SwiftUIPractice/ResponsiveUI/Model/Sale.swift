@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct Sale: Identifiable {
-    var id : String = UUID().uuidString
-    var sales : Int
-    var time : String
+    var id: String = UUID().uuidString
+    var sales: Int
+    var time: String
 }
 
 var dailySales: [Sale] = [
@@ -22,6 +22,5 @@ var dailySales: [Sale] = [
     .init(sales: 80, time: "4:00"),
     .init(sales: 120, time: "5:00"),
     .init(sales: 50, time: "6:00"),
-    .init(sales: 30, time: "7:00"),
+    .init(sales: 30, time: "7:00")
 ]
-

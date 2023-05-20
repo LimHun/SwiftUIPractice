@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct ActionButton : View {
-   var reel : Reel
+struct ActionButton: View {
+   var reel: Reel
    var body: some View {
-       VStack(spacing:25) {
+       VStack(spacing: 25) {
            Button {
 
            } label: {
@@ -42,8 +42,7 @@ struct ActionButton : View {
        }
    }
 }
-
-
+ 
 struct ActionButton_Previews: PreviewProvider {
     static var previews: some View {
         ReelsApp()

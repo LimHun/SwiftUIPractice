@@ -8,19 +8,18 @@
 import SwiftUI
 import AVKit
 
-var sampleText : String = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+var sampleText: String = "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
 
 struct ReelsAPIView: View {
 
-    @State var showMore : Bool = false
+    @State var showMore: Bool = false
     @State var isMuted = false
     @State var volumeAnimation = false
-    @State var value : Float = 0
+    @State var value: Float = 0
     @State var isPlaying = false
     
-    var player : AVPlayer
-    
-
+    var player: AVPlayer
+     
     var body: some View {
         ZStack {
             CustomVideoPlayer(player: player)
@@ -45,8 +44,6 @@ struct ReelsAPIView: View {
 
             Color.black
                 .opacity(0.01)
-                //.frame(width: .infinity, height: .infinity)
-//                .frame(width: 150, height: 150)
                 .onTapGesture {
                     if volumeAnimation {
                         return
@@ -54,12 +51,12 @@ struct ReelsAPIView: View {
 
                     isMuted.toggle()
                     player.isMuted = isMuted
-                    withAnimation{
+                    withAnimation {
                         volumeAnimation.toggle()
                     }
 
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
-                        withAnimation{
+                        withAnimation {
                             volumeAnimation.toggle()
                         }
                     }
@@ -75,7 +72,6 @@ struct ReelsAPIView: View {
                     reelsActionButtonView()
                 }
                 CustomProgressBar(value: self.$value, isPlaying: self.$isPlaying, player: self.player)
-                //CustomProgressBar(value: self.$value, player: self.$player, isPlaying: self.$isPlaying)
             }
             .frame(maxHeight: .infinity, alignment: .bottom)
 
@@ -139,7 +135,7 @@ extension ReelsAPIView {
                         }
                         HStack {
                             Button {
-                                withAnimation{
+                                withAnimation {
                                     showMore.toggle()
                                 }
                             } label: {
@@ -154,7 +150,7 @@ extension ReelsAPIView {
                     .padding()
                 } else {
                     Button {
-                        withAnimation{
+                        withAnimation {
                             showMore.toggle()
                         }
                     } label: {
@@ -170,7 +166,7 @@ extension ReelsAPIView {
                                 .foregroundColor(.gray)
                         }
                         .padding()
-                        .frame(maxWidth:.infinity, alignment: .leading)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
             }
@@ -179,7 +175,7 @@ extension ReelsAPIView {
     
     @ViewBuilder
     func reelsActionButtonView() -> some View {
-        VStack(spacing:25) {
+        VStack(spacing: 25) {
             Button {
 
             } label: {
@@ -217,18 +213,17 @@ extension ReelsAPIView {
         .padding(10)
     }
 }
-
-
-struct CustomProgressBar : UIViewRepresentable {
+ 
+struct CustomProgressBar: UIViewRepresentable {
    
     func makeCoordinator() -> Coordinator {
         return CustomProgressBar.Coordinator(parent1: self)
     }
     
-    @Binding var value : Float
-    @Binding var isPlaying : Bool
+    @Binding var value: Float
+    @Binding var isPlaying: Bool
     
-    var player : AVPlayer
+    var player: AVPlayer
     
     func makeUIView(context: UIViewRepresentableContext<CustomProgressBar>) -> UISlider {
         let slider = UISlider()
@@ -236,7 +231,6 @@ struct CustomProgressBar : UIViewRepresentable {
         slider.maximumTrackTintColor = .gray
         slider.thumbTintColor = .white
         slider.setThumbImage(UIImage(), for: .normal)
-        //slider.setThumbImage(UIImage(named: "thumb"), for: .normal)
         slider.value = value
         slider.addTarget(context.coordinator, action: #selector(context.coordinator.changed(slider:)), for: .valueChanged)
         return slider
@@ -248,13 +242,13 @@ struct CustomProgressBar : UIViewRepresentable {
         }
     }
     
-    class Coordinator : NSObject {
-        var parent : CustomProgressBar
+    class Coordinator: NSObject {
+        var parent: CustomProgressBar
         init(parent1: CustomProgressBar) {
             parent = parent1
         }
         
-        @objc func changed(slider : UISlider) {
+        @objc func changed(slider: UISlider) {
             if slider.isTracking {
                 let sec = Double(slider.value * Float((parent.player.currentItem?.duration.seconds)!))
                 parent.player.seek(to: CMTime(seconds: sec, preferredTimescale: 1))

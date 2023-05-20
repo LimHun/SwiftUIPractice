@@ -15,11 +15,10 @@ import SwiftUI
 // Preference를 통해 해당 키값을 가진 변수가 달라질떄마다 이벤트를 호출한다.
 // 여기서 이벤트는 completion 함수 클로저이다.
 // .onPreferenceChange를 통해서 value 값이 변경되는지 체크하는 것이다.
-
-
+ 
 extension View {
     @ViewBuilder
-    func offsetX(completion: @escaping (CGFloat)->())->some View {
+    func offsetX(completion: @escaping (CGFloat) -> Void) -> some View {
         self
             .overlay {
                 GeometryReader { proxy in

@@ -10,10 +10,10 @@ import AVKit
 
 struct TikTokVideo {
     struct Profile {
-        let img : String
+        let img: String
     }
     struct Sound {
-        let name : String
+        let name: String
     }
     let id: UUID = UUID()
     let player: AVPlayer
