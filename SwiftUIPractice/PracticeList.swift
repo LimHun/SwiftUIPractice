@@ -53,7 +53,8 @@ struct PracticeList: View {
                                  SpotifyResponvieUI.self,
                                  OnBoardingScreen.self,
                                  OnBoardingSlideView.self,
-                                 TextTapView.self]
+                                 TextTapView.self,
+                                 MovableGridsView.self]
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
@@ -137,6 +138,8 @@ struct PracticeList: View {
             return (AnyView(OnBoardingSlideView()), true)
         case is TextTapView.Type:
             return (AnyView(TextTapView()), true)
+        case is MovableGridsView.Type:
+            return (AnyView(MovableGridsView()), true)
         default: return (AnyView(EmptyView()), true)
         }
     }
