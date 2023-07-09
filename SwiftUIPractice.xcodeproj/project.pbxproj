@@ -50,6 +50,10 @@
 		403BEEB2290843A5008B0CD7 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403BEEAF290843A5008B0CD7 /* CustomCorner.swift */; };
 		403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403E1F3828E49C6E003D757B /* EnvironmentTest.swift */; };
 		4045D105297F81130046DB72 /* NativePopovers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4045D104297F81130046DB72 /* NativePopovers.swift */; };
+		4046FAF92A59975E000728CE /* InfiniteCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4046FAF82A59975E000728CE /* InfiniteCarouselView.swift */; };
+		4046FAFB2A5A2E03000728CE /* InfiniteCarouselHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4046FAFA2A5A2E03000728CE /* InfiniteCarouselHome.swift */; };
+		4046FAFE2A5A2F8A000728CE /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4046FAFD2A5A2F8A000728CE /* PageModel.swift */; };
+		4046FB012A5A3E92000728CE /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4046FB002A5A3E92000728CE /* OffsetReader.swift */; };
 		4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */; };
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
 		406D2E9929C2188400589BAE /* TextTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406D2E9829C2188400589BAE /* TextTapView.swift */; };
@@ -206,6 +210,10 @@
 		403BEEAF290843A5008B0CD7 /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		403E1F3828E49C6E003D757B /* EnvironmentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTest.swift; sourceTree = "<group>"; };
 		4045D104297F81130046DB72 /* NativePopovers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePopovers.swift; sourceTree = "<group>"; };
+		4046FAF82A59975E000728CE /* InfiniteCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselView.swift; sourceTree = "<group>"; };
+		4046FAFA2A5A2E03000728CE /* InfiniteCarouselHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselHome.swift; sourceTree = "<group>"; };
+		4046FAFD2A5A2F8A000728CE /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		4046FB002A5A3E92000728CE /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
 		4057CCAB28DB382A00942641 /* VideoPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTest.swift; sourceTree = "<group>"; };
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
 		406D2E9829C2188400589BAE /* TextTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTapView.swift; sourceTree = "<group>"; };
@@ -579,6 +587,33 @@
 				4045D104297F81130046DB72 /* NativePopovers.swift */,
 			);
 			path = NativePopovers;
+			sourceTree = "<group>";
+		};
+		4046FAF72A599743000728CE /* InfiniteCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				4046FAFF2A5A3E71000728CE /* Helpers */,
+				4046FAFC2A5A2F6F000728CE /* Model */,
+				4046FAF82A59975E000728CE /* InfiniteCarouselView.swift */,
+				4046FAFA2A5A2E03000728CE /* InfiniteCarouselHome.swift */,
+			);
+			path = InfiniteCarousel;
+			sourceTree = "<group>";
+		};
+		4046FAFC2A5A2F6F000728CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4046FAFD2A5A2F8A000728CE /* PageModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4046FAFF2A5A3E71000728CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4046FB002A5A3E92000728CE /* OffsetReader.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		4057CCAA28DB37FD00942641 /* VideoPlayerTest */ = {
@@ -999,6 +1034,7 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				4046FAF72A599743000728CE /* InfiniteCarousel */,
 				40309C752A57A88200F21E57 /* MovableGrids */,
 				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
 				40B368E029F9F072001836D2 /* Extension */,
@@ -1320,6 +1356,7 @@
 				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
 				402C2F352967250700BFED6E /* TaskManagementApp.swift in Sources */,
 				40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */,
+				4046FAF92A59975E000728CE /* InfiniteCarouselView.swift in Sources */,
 				40CCA7CF28E9CC1E00C4A2CB /* LoadCounterViewModel.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
 				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
@@ -1365,11 +1402,13 @@
 				402805D428C4977C00FDA092 /* Message.swift in Sources */,
 				40A1C7BA28BAF26500AAFF2F /* StockListViewModel.swift in Sources */,
 				40A1C7D728BE5AD300AAFF2F /* MovieVerticalView.swift in Sources */,
+				4046FAFE2A5A2F8A000728CE /* PageModel.swift in Sources */,
 				40B368DD29F95E07001836D2 /* ShimmerEffect.swift in Sources */,
 				4005C3F528F2DAAC0025DAE9 /* ServerMode.swift in Sources */,
 				40FDC34628F0F38F00FEB6CA /* ReelsModel.swift in Sources */,
 				403BEEB2290843A5008B0CD7 /* CustomCorner.swift in Sources */,
 				402805CA28C485EA00FDA092 /* CustomCornner.swift in Sources */,
+				4046FAFB2A5A2E03000728CE /* InfiniteCarouselHome.swift in Sources */,
 				40A1C7B728BAEE5B00AAFF2F /* WebService.swift in Sources */,
 				40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				40A36AEE294FFBCC00F4AFFE /* LoadingView.swift in Sources */,
@@ -1382,6 +1421,7 @@
 				40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */,
 				40C19C1328C3683C00988606 /* ReelsAPIView.swift in Sources */,
 				40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */,
+				4046FB012A5A3E92000728CE /* OffsetReader.swift in Sources */,
 				40A1C79F28BA980F00AAFF2F /* VideoManager.swift in Sources */,
 				4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */,
 				40CDCDDF28C64E0600A35FF4 /* ResponsiveView.swift in Sources */,
