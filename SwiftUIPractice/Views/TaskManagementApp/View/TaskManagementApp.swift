@@ -200,15 +200,7 @@ struct TaskManagementApp_Previews: PreviewProvider {
     static var previews: some View {
         TaskManagementApp()
     }
-}
-
-extension Date {
-    func toString(_ formet: String) -> String {
-        let formetter = DateFormatter()
-        formetter.dateFormat = formet
-        return formetter.string(from: self)
-    }
-}
+} 
 
 extension Calendar {
     

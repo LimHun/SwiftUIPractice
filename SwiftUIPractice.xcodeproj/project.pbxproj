@@ -641,7 +641,6 @@
 				4046FAF72A599743000728CE /* InfiniteCarousel */,
 				40309C752A57A88200F21E57 /* MovableGrids */,
 				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
-				40B368E029F9F072001836D2 /* Extension */,
 				40B368DA29F95DD4001836D2 /* ShimmerText */,
 				406D2E9629C2182B00589BAE /* TextTap */,
 				402F344B298955E80018567B /* DynamicTab */,
@@ -686,6 +685,7 @@
 		408787A42A62C9E800A8F381 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				40B368E129F9F090001836D2 /* UINavigationController+Extension.swift */,
 				402F345229895ABA0018567B /* Extentions.swift */,
 			);
 			path = Extentions;
@@ -941,14 +941,6 @@
 				40B368DC29F95E07001836D2 /* ShimmerEffect.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		40B368E029F9F072001836D2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				40B368E129F9F090001836D2 /* UINavigationController+Extension.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		40C19C0B28C2D4BA00988606 /* View */ = {

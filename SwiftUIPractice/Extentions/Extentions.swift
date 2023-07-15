@@ -31,11 +31,36 @@ extension View {
                 }
             }
     }
+    
+    @ViewBuilder
+    func offsetX(_ addObserver: Bool, completion: @escaping (CGRect) -> ()) -> some View {
+        self
+            .frame(maxWidth: .infinity)
+            .overlay {
+                if addObserver {
+                    GeometryReader {
+                        let rect = $0.frame(in: .global)
+                        
+                        Color.clear
+                            .preference(key: InfinitiyOffsetKey.self, value: rect)
+                            .onPreferenceChange(InfinitiyOffsetKey.self, perform: completion)
+                    }
+                }
+            }
+    }
 }
 
 struct DynamicOffsetKey: PreferenceKey {
     static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = nextValue()
+    }
+}
+ 
+extension Date {
+    func toString(_ formet: String) -> String {
+        let formetter = DateFormatter()
+        formetter.dateFormat = formet
+        return formetter.string(from: self)
     }
 }
