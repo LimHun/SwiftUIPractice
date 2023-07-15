@@ -31,8 +31,7 @@ struct PracticeList: View {
                                  VideoPlayerTest.self,
                                  VideoNavi.self,
                                  AutoFocusTextFeild.self,
-                                 CoreLoactionUI.self,
-                                 TestView.self,
+                                 CoreLoactionUI.self, 
                                  MultiView.self,
                                  LandingScreenView.self,
                                  GestureTest.self,
@@ -43,8 +42,6 @@ struct PracticeList: View {
                                  SplashScreen.self,
                                  TimerView.self,
                                  IntroView.self,
-                                 LoginView.self,
-                                 SocialMediaView.self,
                                  OTPView.self,
                                  ExPhotoPickerView.self,
                                  TaskManagementApp.self,
@@ -66,8 +63,6 @@ struct PracticeList: View {
             return (AnyView( ListColorChange()), true)
         case is VideoGridView.Type:
             return (AnyView( VideoGridView()), true)
-        case is TestView.Type:
-            return (AnyView( TestView()), true)
         case is CarouselView.Type:
             return (AnyView( CarouselView()), true)
         case is StockView.Type:
@@ -115,11 +110,7 @@ struct PracticeList: View {
         case is TimerView.Type:
             return (AnyView(TimerView()), true)
         case is IntroView.Type:
-            return (AnyView(IntroView()), true)
-        case is LoginView.Type:
-            return (AnyView(LoginView()), true)
-        case is SocialMediaView.Type:
-            return (AnyView(SocialMediaView()), true)
+            return (AnyView(IntroView()), true) 
         case is OTPView.Type:
             return (AnyView(OTPView()), true)
         case is ExPhotoPickerView.Type:

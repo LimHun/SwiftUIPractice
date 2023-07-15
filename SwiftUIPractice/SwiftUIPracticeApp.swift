@@ -6,25 +6,12 @@
 //
 
 import SwiftUI
-import Firebase
 
 @main
-struct SwiftUIPracticeApp: App {
-    
-    init() {
-        FirebaseApp.configure()
-    }
-    
-    let persistenceController = PersistenceController.shared
-
+struct SwiftUIPracticeApp: App { 
     var body: some Scene {
         WindowGroup {
             SplashScreen()
-//            SocialMediaView() // Firebase 앱
-//            NavigationView {
-//                MyView()
-//            }
-            
         }
     }
 }

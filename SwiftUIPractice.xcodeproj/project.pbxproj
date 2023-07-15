@@ -68,7 +68,6 @@
 		408E524E2959904600B83E0F /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E524D2959904600B83E0F /* PostsView.swift */; };
 		408E5251295AE15500B83E0F /* ReusablePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E5250295AE15500B83E0F /* ReusablePostsView.swift */; };
 		40A1C78628BA290200AAFF2F /* PracticeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C78528BA290200AAFF2F /* PracticeList.swift */; };
-		40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C78A28BA8A8D00AAFF2F /* TestView.swift */; };
 		40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C79728BA980F00AAFF2F /* VideoCard.swift */; };
 		40A1C79D28BA980F00AAFF2F /* QureyTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C79828BA980F00AAFF2F /* QureyTag.swift */; };
 		40A1C79E28BA980F00AAFF2F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A1C79928BA980F00AAFF2F /* ModelData.swift */; };
@@ -136,8 +135,6 @@
 		40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */; };
 		40E58B1729B4E27F000EFA03 /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
-		40F577112883A44800AC1285 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577102883A44800AC1285 /* ContentView.swift */; };
-		40F577182883A44A00AC1285 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577172883A44A00AC1285 /* Persistence.swift */; };
 		40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */; };
 		40F577222883A48300AC1285 /* ListColorChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577212883A48300AC1285 /* ListColorChange.swift */; };
 		40F76114294BE8390019FC2E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76113294BE8390019FC2E /* TimerView.swift */; };
@@ -151,11 +148,7 @@
 		40F7612E294EC7F70019FC2E /* OnBoardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7612D294EC7F70019FC2E /* OnBoardingItem.swift */; };
 		40F76130294EC87B0019FC2E /* OnBoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7612F294EC87B0019FC2E /* OnBoardingScreen.swift */; };
 		40F76132294F00FA0019FC2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40F76131294F00FA0019FC2E /* GoogleService-Info.plist */; };
-		40F76135294F01D90019FC2E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 40F76134294F01D90019FC2E /* FirebaseAuth */; };
 		40F7613A294F02F10019FC2E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76139294F02F10019FC2E /* LoginView.swift */; };
-		40F7613D294F32710019FC2E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 40F7613C294F32710019FC2E /* FirebaseFirestore */; };
-		40F7613F294F32710019FC2E /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 40F7613E294F32710019FC2E /* FirebaseFirestoreSwift */; };
-		40F76141294F32720019FC2E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 40F76140294F32720019FC2E /* FirebaseStorage */; };
 		40F76143294F44B90019FC2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F76142294F44B90019FC2E /* User.swift */; };
 		40FDC33E28F0EE0E00FEB6CA /* ReelsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC33D28F0EE0E00FEB6CA /* ReelsPlayer.swift */; };
 		40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FDC34028F0EE6500FEB6CA /* ActionButton.swift */; };
@@ -228,7 +221,6 @@
 		408E524D2959904600B83E0F /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		408E5250295AE15500B83E0F /* ReusablePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusablePostsView.swift; sourceTree = "<group>"; };
 		40A1C78528BA290200AAFF2F /* PracticeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeList.swift; sourceTree = "<group>"; };
-		40A1C78A28BA8A8D00AAFF2F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		40A1C79728BA980F00AAFF2F /* VideoCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
 		40A1C79828BA980F00AAFF2F /* QureyTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QureyTag.swift; sourceTree = "<group>"; };
 		40A1C79928BA980F00AAFF2F /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
@@ -297,10 +289,8 @@
 		40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
-		40F577102883A44800AC1285 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40F577122883A44A00AC1285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F577152883A44A00AC1285 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		40F577172883A44A00AC1285 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		40F5771A2883A44A00AC1285 /* SwiftUIPractice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIPractice.xcdatamodel; sourceTree = "<group>"; };
 		40F577212883A48300AC1285 /* ListColorChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListColorChange.swift; sourceTree = "<group>"; };
 		40F76113294BE8390019FC2E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -329,12 +319,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40F7613F294F32710019FC2E /* FirebaseFirestoreSwift in Frameworks */,
 				401C77BB2949E7E7000209ED /* SDWebImageSwiftUI in Frameworks */,
-				40F7613D294F32710019FC2E /* FirebaseFirestore in Frameworks */,
-				40F76135294F01D90019FC2E /* FirebaseAuth in Frameworks */,
 				40F76129294EC76E0019FC2E /* Lottie in Frameworks */,
-				40F76141294F32720019FC2E /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +633,62 @@
 				4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */,
 			);
 			path = TestProSwiftUI;
+			sourceTree = "<group>";
+		};
+		408787A32A62C9CC00A8F381 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4046FAF72A599743000728CE /* InfiniteCarousel */,
+				40309C752A57A88200F21E57 /* MovableGrids */,
+				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
+				40B368E029F9F072001836D2 /* Extension */,
+				40B368DA29F95DD4001836D2 /* ShimmerText */,
+				406D2E9629C2182B00589BAE /* TextTap */,
+				402F344B298955E80018567B /* DynamicTab */,
+				40E58B0E29B4DAAC000EFA03 /* OnBoarding */,
+				40357150298492DC00B26C5C /* SpotifyResponvieUI */,
+				4045D103297F80EA0046DB72 /* NativePopovers */,
+				402C2F38296A5E6900BFED6E /* DropDownPicker */,
+				402C2F28296721BF00BFED6E /* TaskManagementApp */,
+				40A36AF32950AC5E00F4AFFE /* Helpers */,
+				40A61EE02961A260001FEE84 /* PhotoPickerView */,
+				408E52432957260D00B83E0F /* AutoOTP */,
+				40F76136294F025D0019FC2E /* SocialMedia */,
+				40F76112294BE81D0019FC2E /* Timer */,
+				40F7611C294EC4F00019FC2E /* Intro */,
+				401C77B62949E4DB000209ED /* SplashScreen */,
+				403BEEAA290843A5008B0CD7 /* BottomSheet */,
+				40A1C7A628BA9FE300AAFF2F /* Carousel */,
+				403BEE9729067E08008B0CD7 /* SnapCarousel */,
+				40A1C78F28BA97C900AAFF2F /* Video */,
+				40A1C7A528BA9E7700AAFF2F /* ListColorChange */,
+				40A1C7B228BAEDD700AAFF2F /* StocksAppSwiftUI */,
+				40A1C7C428BB648200AAFF2F /* TouchAnimation */,
+				40A1C7C728BCF3A300AAFF2F /* TikTokView */,
+				40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */,
+				40A1C7E528C24E8E00AAFF2F /* ReelsApp */,
+				402805C428C4822700FDA092 /* StickyHeader */,
+				40CDCDD528C64BB300A35FF4 /* ResponsiveUI */,
+				4017CE7828D4F86900048A90 /* FoodDeliveryApp */,
+				40D2DA7C28D9EF230023F733 /* Rolling */,
+				4057CCAA28DB37FD00942641 /* VideoPlayerTest */,
+				407777C028DCA81E00145D3A /* AutoFocusTextFeild */,
+				40C554DC28E32B0000825FBF /* CoreLocationUI */,
+				402AE06D28E5E2E90050EBC3 /* MultipleDismiss */,
+				40C554DF28E33FDB00825FBF /* Blog */,
+				40CCA7C628E9C63300C4A2CB /* CloseTest */,
+				4083BD5B28EDD59D00A81220 /* TestProSwiftUI */,
+				40A1C7DE28BE71DC00AAFF2F /* Videos */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		408787A42A62C9E800A8F381 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				402F345229895ABA0018567B /* Extentions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		408E52432957260D00B83E0F /* AutoOTP */ = {
@@ -1034,57 +1076,14 @@
 		40F5770D2883A44800AC1285 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
-				4046FAF72A599743000728CE /* InfiniteCarousel */,
-				40309C752A57A88200F21E57 /* MovableGrids */,
-				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
-				40B368E029F9F072001836D2 /* Extension */,
-				40B368DA29F95DD4001836D2 /* ShimmerText */,
-				406D2E9629C2182B00589BAE /* TextTap */,
-				402F345229895ABA0018567B /* Extentions.swift */,
-				402F344B298955E80018567B /* DynamicTab */,
 				401C77BF2949F62F000209ED /* Info.plist */,
 				40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */,
 				40A1C78528BA290200AAFF2F /* PracticeList.swift */,
-				40E58B0E29B4DAAC000EFA03 /* OnBoarding */,
-				40357150298492DC00B26C5C /* SpotifyResponvieUI */,
-				4045D103297F80EA0046DB72 /* NativePopovers */,
-				402C2F38296A5E6900BFED6E /* DropDownPicker */,
-				402C2F28296721BF00BFED6E /* TaskManagementApp */,
-				40A36AF32950AC5E00F4AFFE /* Helpers */,
-				40A61EE02961A260001FEE84 /* PhotoPickerView */,
-				408E52432957260D00B83E0F /* AutoOTP */,
-				40F76136294F025D0019FC2E /* SocialMedia */,
-				40F76112294BE81D0019FC2E /* Timer */,
-				40F7611C294EC4F00019FC2E /* Intro */,
-				401C77B62949E4DB000209ED /* SplashScreen */,
-				403BEEAA290843A5008B0CD7 /* BottomSheet */,
-				40A1C7A628BA9FE300AAFF2F /* Carousel */,
-				403BEE9729067E08008B0CD7 /* SnapCarousel */,
-				40A1C78F28BA97C900AAFF2F /* Video */,
-				40A1C7A528BA9E7700AAFF2F /* ListColorChange */,
-				40A1C7B228BAEDD700AAFF2F /* StocksAppSwiftUI */,
-				40A1C7C428BB648200AAFF2F /* TouchAnimation */,
-				40A1C7C728BCF3A300AAFF2F /* TikTokView */,
-				40A1C7D528BE5A8D00AAFF2F /* MovieVerticalView */,
-				40A1C7E528C24E8E00AAFF2F /* ReelsApp */,
-				402805C428C4822700FDA092 /* StickyHeader */,
-				40CDCDD528C64BB300A35FF4 /* ResponsiveUI */,
-				4017CE7828D4F86900048A90 /* FoodDeliveryApp */,
-				40D2DA7C28D9EF230023F733 /* Rolling */,
-				4057CCAA28DB37FD00942641 /* VideoPlayerTest */,
-				407777C028DCA81E00145D3A /* AutoFocusTextFeild */,
-				40C554DC28E32B0000825FBF /* CoreLocationUI */,
-				402AE06D28E5E2E90050EBC3 /* MultipleDismiss */,
-				40C554DF28E33FDB00825FBF /* Blog */,
-				40CCA7C628E9C63300C4A2CB /* CloseTest */,
-				4083BD5B28EDD59D00A81220 /* TestProSwiftUI */,
-				40F577102883A44800AC1285 /* ContentView.swift */,
-				40F577122883A44A00AC1285 /* Assets.xcassets */,
-				40A1C7DE28BE71DC00AAFF2F /* Videos */,
-				40F577172883A44A00AC1285 /* Persistence.swift */,
+				408787A42A62C9E800A8F381 /* Extentions */,
+				408787A32A62C9CC00A8F381 /* Views */,
 				40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */,
+				40F577122883A44A00AC1285 /* Assets.xcassets */,
 				40F577142883A44A00AC1285 /* Preview Content */,
-				40A1C78A28BA8A8D00AAFF2F /* TestView.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -1233,10 +1232,6 @@
 			packageProductDependencies = (
 				401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */,
 				40F76128294EC76E0019FC2E /* Lottie */,
-				40F76134294F01D90019FC2E /* FirebaseAuth */,
-				40F7613C294F32710019FC2E /* FirebaseFirestore */,
-				40F7613E294F32710019FC2E /* FirebaseFirestoreSwift */,
-				40F76140294F32720019FC2E /* FirebaseStorage */,
 			);
 			productName = SwiftUIPractice;
 			productReference = 40F5770B2883A44800AC1285 /* SwiftUIPractice.app */;
@@ -1269,7 +1264,6 @@
 			packageReferences = (
 				401C77B92949E7E7000209ED /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				403CD3562A18097400F2796D /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 40F5770C2883A44800AC1285 /* Products */;
@@ -1353,13 +1347,11 @@
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				403571572984A37200B26C5C /* Album.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
-				40F577182883A44A00AC1285 /* Persistence.swift in Sources */,
 				402C2F352967250700BFED6E /* TaskManagementApp.swift in Sources */,
 				40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */,
 				4046FAF92A59975E000728CE /* InfiniteCarouselView.swift in Sources */,
 				40CCA7CF28E9CC1E00C4A2CB /* LoadCounterViewModel.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
-				40F577112883A44800AC1285 /* ContentView.swift in Sources */,
 				40309C792A57A8B400F21E57 /* MovableGridsView.swift in Sources */,
 				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
 				4045D105297F81130046DB72 /* NativePopovers.swift in Sources */,
@@ -1381,7 +1373,6 @@
 				403BEE9E29067F4D008B0CD7 /* SnapCarouselPost.swift in Sources */,
 				4057CCAC28DB382A00942641 /* VideoPlayerTest.swift in Sources */,
 				402C2F3E296A5F0D00BFED6E /* DropDownView.swift in Sources */,
-				40A1C78B28BA8A8D00AAFF2F /* TestView.swift in Sources */,
 				402C2F40296AF89800BFED6E /* Task.swift in Sources */,
 				40C8F901295E90F50011C77E /* PostCardView.swift in Sources */,
 				401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */,
@@ -1679,14 +1670,6 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1699,26 +1682,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 40F76127294EC76E0019FC2E /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
-		};
-		40F76134294F01D90019FC2E /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		40F7613C294F32710019FC2E /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		40F7613E294F32710019FC2E /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
-		};
-		40F76140294F32720019FC2E /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40F76133294F01D90019FC2E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 

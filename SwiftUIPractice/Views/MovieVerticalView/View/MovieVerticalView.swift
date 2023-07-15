@@ -155,11 +155,7 @@ struct MovieVerticalView: View {
         }
         .background(Color.black.edgesIgnoringSafeArea(.all))
     }
-}
-
-class Host: UIHostingController<ContentView> {
-    
-}
+} 
 
 struct MovieVerticalView_Previews: PreviewProvider {
     static var previews: some View {

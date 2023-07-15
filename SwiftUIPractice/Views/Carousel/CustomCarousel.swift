@@ -157,9 +157,4 @@ struct CustomCarousel<Content: View, Item, ID>: View where Item: RandomAccessCol
         lastStoredOffset = offset
     }
 }
-
-struct CustomCarousel_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+ 
