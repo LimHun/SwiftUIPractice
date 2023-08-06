@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
- 
-struct RebaseTest: View { 
-    var body: some View { 
-        Text("Rebase") 
+
+struct RebaseTest: View {
+    var body: some View {
+        VStack {
+            Text("Rebase3")
+            Text("Rebase3")
+            Text("Rebase3")
+            Text("Rebase3")
+        } 
     }
 }
 
