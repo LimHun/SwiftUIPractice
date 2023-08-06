@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RebaseTest: View {
+struct RebaseTest: View { 
     var body: some View { 
         Text("Rebase")
     }
