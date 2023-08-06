@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct RebaseTest: View {
-    var body: some View {
-        Text("브런치B")
+    var body: some View { 
+        Text("Rebase")
     }
 }
 
