@@ -9,7 +9,12 @@ import SwiftUI
 
 struct RebaseTest: View {
     var body: some View {
-        Text("Rebase3")
+        VStack {
+            Text("Rebase3")
+            Text("Rebase3")
+            Text("Rebase3")
+            Text("Rebase3")
+        }
     }
 }
 
