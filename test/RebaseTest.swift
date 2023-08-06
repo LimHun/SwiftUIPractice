@@ -14,7 +14,7 @@ struct RebaseTest: View {
             Text("Rebase3")
             Text("Rebase3")
             Text("Rebase3")
-        } 
+        }
     }
 }
 
