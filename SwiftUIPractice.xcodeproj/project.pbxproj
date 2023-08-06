@@ -130,6 +130,7 @@
 		40D2DA7B28D76BC60023F733 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F577152883A44A00AC1285 /* Preview Assets.xcassets */; };
 		40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2DA7D28D9EF5E0023F733 /* RollingText.swift */; };
 		40D2DA8028D9EF730023F733 /* RollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D2DA7F28D9EF730023F733 /* RollingView.swift */; };
+		40DC540D2A7F858C00CCBD7F /* RebaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DC540C2A7F858C00CCBD7F /* RebaseTest.swift */; };
 		40E58B1029B4DACE000EFA03 /* OnBoardingSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B0F29B4DACE000EFA03 /* OnBoardingSlideView.swift */; };
 		40E58B1329B4DC43000EFA03 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */; };
 		40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */; };
@@ -283,6 +284,7 @@
 		40CDCDE228C650F200A35FF4 /* ResponsiveContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsiveContent.swift; sourceTree = "<group>"; };
 		40D2DA7D28D9EF5E0023F733 /* RollingText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingText.swift; sourceTree = "<group>"; };
 		40D2DA7F28D9EF730023F733 /* RollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollingView.swift; sourceTree = "<group>"; };
+		40DC540C2A7F858C00CCBD7F /* RebaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RebaseTest.swift; sourceTree = "<group>"; };
 		40E58B0F29B4DACE000EFA03 /* OnBoardingSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingSlideView.swift; sourceTree = "<group>"; };
 		40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
@@ -1025,6 +1027,14 @@
 			path = Rolling;
 			sourceTree = "<group>";
 		};
+		40DC540B2A7F857B00CCBD7F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				40DC540C2A7F858C00CCBD7F /* RebaseTest.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		40E58B0E29B4DAAC000EFA03 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -1047,6 +1057,7 @@
 		40F577022883A44800AC1285 = {
 			isa = PBXGroup;
 			children = (
+				40DC540B2A7F857B00CCBD7F /* test */,
 				40C19C1428C386A900988606 /* README.md */,
 				40F76131294F00FA0019FC2E /* GoogleService-Info.plist */,
 				40F7612A294EC77F0019FC2E /* Lottie */,
@@ -1321,6 +1332,7 @@
 				40FEBA5C2A02AC790050246A /* SpotifyHeaderAnimationView.swift in Sources */,
 				40F7613A294F02F10019FC2E /* LoginView.swift in Sources */,
 				40F7611E294EC5010019FC2E /* IntroView.swift in Sources */,
+				40DC540D2A7F858C00CCBD7F /* RebaseTest.swift in Sources */,
 				407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */,
 				40F76114294BE8390019FC2E /* TimerView.swift in Sources */,
 				40E58B1029B4DACE000EFA03 /* OnBoardingSlideView.swift in Sources */,
