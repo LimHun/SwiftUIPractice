@@ -14,47 +14,55 @@ struct CustomViewType: Identifiable {
 
 struct PracticeList: View {
     
-    let practiceViews: [Any] = [SpotifyHeaderAnimationView.self,
-                                 ShimmerView.self,
-                                 ListColorChange.self,
-                                 VideoGridView.self,
-                                 CarouselView.self,
-                                 StockView.self,
-                                 TouchAnimationView.self,
-                                 TikTokView.self,
-                                 MovieVerticalView.self,
-                                 ReelsApp.self,
-                                 StickyContentView.self,
-                                 ResponsiveContent.self,
-                                 FoodDeliveryHome.self,
-                                 RollingView.self,
-                                 VideoPlayerTest.self,
-                                 VideoNavi.self,
-                                 AutoFocusTextFeild.self,
-                                 CoreLoactionUI.self, 
-                                 MultiView.self,
-                                 LandingScreenView.self,
-                                 GestureTest.self,
-                                 EnvironmentTest.self,
-                                 ProSwiftUIView.self,
-                                 SnapCarouselView.self,
-                                 BottomSheet.self,
-                                 SplashScreen.self,
-                                 TimerView.self,
-                                 IntroView.self,
-                                 OTPView.self,
-                                 ExPhotoPickerView.self,
-                                 TaskManagementApp.self,
-                                 DropDownView.self,
-                                 NativePopovers.self,
-                                 SpotifyResponvieUI.self,
-                                 OnBoardingScreen.self,
-                                 OnBoardingSlideView.self,
-                                 TextTapView.self,
-                                 MovableGridsView.self]
+    let practiceViews: [Any] = [
+        ParallaxScrollEffectView.self,
+        ParallaxScrollEffectView2.self,
+        SpotifyHeaderAnimationView.self,
+        ShimmerView.self,
+        ListColorChange.self,
+        VideoGridView.self,
+        CarouselView.self,
+        StockView.self,
+        TouchAnimationView.self,
+        TikTokView.self,
+        MovieVerticalView.self,
+        ReelsApp.self,
+        StickyContentView.self,
+        ResponsiveContent.self,
+        FoodDeliveryHome.self,
+        RollingView.self,
+        VideoPlayerTest.self,
+        VideoNavi.self,
+        AutoFocusTextFeild.self,
+        CoreLoactionUI.self, 
+        MultiView.self,
+        LandingScreenView.self,
+        GestureTest.self,
+        EnvironmentTest.self,
+        ProSwiftUIView.self,
+        SnapCarouselView.self,
+        BottomSheet.self,
+        SplashScreen.self,
+        TimerView.self,
+        IntroView.self,
+        OTPView.self,
+        ExPhotoPickerView.self,
+        TaskManagementApp.self,
+        DropDownView.self,
+        NativePopovers.self,
+        SpotifyResponvieUI.self,
+        OnBoardingScreen.self,
+        OnBoardingSlideView.self,
+        TextTapView.self,
+        MovableGridsView.self
+    ]
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
+        case is ParallaxScrollEffectView2.Type:
+            return (AnyView(ParallaxScrollEffectView2()), true)
+        case is ParallaxScrollEffectView.Type:
+            return (AnyView(ParallaxScrollEffectView()), true)
         case is SpotifyHeaderAnimationView.Type:
             return (AnyView(SpotifyHeaderAnimationView()), true)
         case is ShimmerView.Type:

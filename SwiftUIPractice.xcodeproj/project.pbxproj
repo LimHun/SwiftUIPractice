@@ -58,6 +58,9 @@
 		4057CCB028DB3C4A00942641 /* VideoNavi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4057CCAF28DB3C4A00942641 /* VideoNavi.swift */; };
 		406D2E9929C2188400589BAE /* TextTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406D2E9829C2188400589BAE /* TextTapView.swift */; };
 		407777C228DCA8F800145D3A /* AutoFocusTextFeild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */; };
+		4079AE0E2B4AB80A007A29FD /* ParallaxScrollEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE0D2B4AB80A007A29FD /* ParallaxScrollEffectView.swift */; };
+		4079AE102B4AB850007A29FD /* ParallaxScrollEffectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE0F2B4AB850007A29FD /* ParallaxScrollEffectContentView.swift */; };
+		4079AE122B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE112B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift */; };
 		4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */; };
 		408E524029514B1D00B83E0F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E523F29514B1D00B83E0F /* ProfileView.swift */; };
 		408E52422956D0EE00B83E0F /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */; };
@@ -212,6 +215,9 @@
 		4057CCAF28DB3C4A00942641 /* VideoNavi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavi.swift; sourceTree = "<group>"; };
 		406D2E9829C2188400589BAE /* TextTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTapView.swift; sourceTree = "<group>"; };
 		407777C128DCA8F800145D3A /* AutoFocusTextFeild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFocusTextFeild.swift; sourceTree = "<group>"; };
+		4079AE0D2B4AB80A007A29FD /* ParallaxScrollEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectView.swift; sourceTree = "<group>"; };
+		4079AE0F2B4AB850007A29FD /* ParallaxScrollEffectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectContentView.swift; sourceTree = "<group>"; };
+		4079AE112B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectContentView2.swift; sourceTree = "<group>"; };
 		4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSwiftUIView.swift; sourceTree = "<group>"; };
 		408E523F29514B1D00B83E0F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
@@ -629,6 +635,16 @@
 			path = AutoFocusTextFeild;
 			sourceTree = "<group>";
 		};
+		4079AE0C2B4AB7F8007A29FD /* ParallaxScrollEffect */ = {
+			isa = PBXGroup;
+			children = (
+				4079AE0D2B4AB80A007A29FD /* ParallaxScrollEffectView.swift */,
+				4079AE0F2B4AB850007A29FD /* ParallaxScrollEffectContentView.swift */,
+				4079AE112B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift */,
+			);
+			path = ParallaxScrollEffect;
+			sourceTree = "<group>";
+		};
 		4083BD5B28EDD59D00A81220 /* TestProSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +656,7 @@
 		408787A32A62C9CC00A8F381 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4079AE0C2B4AB7F8007A29FD /* ParallaxScrollEffect */,
 				4046FAF72A599743000728CE /* InfiniteCarousel */,
 				40309C752A57A88200F21E57 /* MovableGrids */,
 				40FEBA592A02AC540050246A /* SpotifyHeaderAnimation */,
@@ -1348,6 +1365,7 @@
 				40C554E128E3400700825FBF /* StateBindingTest.swift in Sources */,
 				40A1C7E328C24C3200AAFF2F /* MediaFile.swift in Sources */,
 				406D2E9929C2188400589BAE /* TextTapView.swift in Sources */,
+				4079AE0E2B4AB80A007A29FD /* ParallaxScrollEffectView.swift in Sources */,
 				40F577222883A48300AC1285 /* ListColorChange.swift in Sources */,
 				403571572984A37200B26C5C /* Album.swift in Sources */,
 				40A1C7B128BAA23A00AAFF2F /* CarouselView.swift in Sources */,
@@ -1418,6 +1436,7 @@
 				40FDC34128F0EE6500FEB6CA /* ActionButton.swift in Sources */,
 				4046FB012A5A3E92000728CE /* OffsetReader.swift in Sources */,
 				40A1C79F28BA980F00AAFF2F /* VideoManager.swift in Sources */,
+				4079AE122B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift in Sources */,
 				4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */,
 				40CDCDDF28C64E0600A35FF4 /* ResponsiveView.swift in Sources */,
 				40A1C79E28BA980F00AAFF2F /* ModelData.swift in Sources */,
@@ -1437,6 +1456,7 @@
 				40A36AF52950AC7700F4AFFE /* ViewExtensions.swift in Sources */,
 				40D2DA7E28D9EF5E0023F733 /* RollingText.swift in Sources */,
 				408E52452957263A00B83E0F /* OTPVerificationView.swift in Sources */,
+				4079AE102B4AB850007A29FD /* ParallaxScrollEffectContentView.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
 				40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */,
 				4017CE8028D5B3BA00048A90 /* FoodDeliveryHome.swift in Sources */,
@@ -1579,7 +1599,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1611,7 +1631,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
