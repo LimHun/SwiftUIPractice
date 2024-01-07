@@ -16,6 +16,7 @@ struct PracticeList: View {
     
     let practiceViews: [Any] = [
         ParallaxScrollEffectView.self,
+        ParallaxScrollEffectView2.self,
         SpotifyHeaderAnimationView.self,
         ShimmerView.self,
         ListColorChange.self,
@@ -58,6 +59,8 @@ struct PracticeList: View {
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
+        case is ParallaxScrollEffectView2.Type:
+            return (AnyView(ParallaxScrollEffectView2()), true)
         case is ParallaxScrollEffectView.Type:
             return (AnyView(ParallaxScrollEffectView()), true)
         case is SpotifyHeaderAnimationView.Type:

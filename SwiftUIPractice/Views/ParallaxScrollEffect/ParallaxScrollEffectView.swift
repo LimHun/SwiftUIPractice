@@ -16,6 +16,15 @@ struct ParallaxScrollEffectView: View {
     }
 }
 
+struct ParallaxScrollEffectView2: View {
+    var body: some View {
+        NavigationStack {
+            ParallaxScrollEffectContentView2()
+                .navigationTitle("Parallax Scroll")
+        }
+    }
+}
+
 #Preview {
     ParallaxScrollEffectView()
 }

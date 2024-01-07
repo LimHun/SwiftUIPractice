@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ParallaxScrollEffectContentView: View {
+struct ParallaxScrollEffectContentView2: View {
     var body: some View {
         ScrollView(.vertical) {
             LazyVStack(spacing: 15) {
@@ -15,7 +15,7 @@ struct ParallaxScrollEffectContentView: View {
                 
                 DummySection(title: "Sales", isLong: true)
                 
-                ParallaxImageView(usesFullWidth: true) { size in
+                ParallaxImageView2(usesFullWidth: true) { size in
                     Image(.movie1)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -27,7 +27,49 @@ struct ParallaxScrollEffectContentView: View {
                 
                 DummySection(title: "Sales", isLong: true)
                 
-                ParallaxImageView(usesFullWidth: true) { size in
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
+                    Image(.movie2)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: size.width, height: size.height)
+                }
+                .frame(height: 200)
+                ParallaxImageView2(usesFullWidth: true) { size in
                     Image(.movie2)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -39,7 +81,7 @@ struct ParallaxScrollEffectContentView: View {
                 
                 DummySection(title: "Sales", isLong: true)
                 
-                ParallaxImageView(usesFullWidth: true) { size in
+                ParallaxImageView2(usesFullWidth: true) { size in
                     Image(.movie3)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -71,7 +113,7 @@ struct ParallaxScrollEffectContentView: View {
     }
 }
 
-struct ParallaxImageView<Content: View>: View {
+struct ParallaxImageView2<Content: View>: View {
     var maximumMovement: CGFloat = 100
     private var content: (CGSize) -> Content
     var usesFullWidth: Bool = false
@@ -100,23 +142,32 @@ struct ParallaxImageView<Content: View>: View {
             let cappedProgress = max(min(progress, 1.0), -1.0)
             let movementOffset = cappedProgress * -maximumMovement
             
+            let screen = UIScreen.main.bounds
+            let frame = $0.frame(in: .global)
+            
+            // 가시적인 높이 계산
+            let visibleHeight = min(max(frame.maxY, 0), screen.height) - max(frame.minY, 0)
+            
+            // 0으로 나누기 방지
+            let visiblePercentage = frame.height > 0 ? (visibleHeight / frame.height) * 100 : 0
+            
+            
+            
             content(size)
                 .offset(y: movementOffset)
                 .frame(width: stretchedSize.width, height: stretchedSize.height)
                 .frame(width: size.width, height: size.height)
                 .overlay(alignment: .top) {
-                    VStack {
-                        Text("\(cappedProgress)")
-                            .font(.title)
-                            .foregroundStyle(.white)
-                        Text("\(scrollViewHeight)")
+                    VStack{
+                        Text("\(Int(visiblePercentage))%")
                             .font(.title)
                             .foregroundStyle(.white)
                         Spacer()
-                        Text("\(cappedProgress)")
+                        Text("\(Int(visiblePercentage))%")
                             .font(.title)
                             .foregroundStyle(.white)
                     }
+                    
                 }
                 .clipped()
         }
@@ -126,5 +177,5 @@ struct ParallaxImageView<Content: View>: View {
 }
 
 #Preview {
-    ParallaxScrollEffectView()
+    ParallaxScrollEffectContentView2()
 }
