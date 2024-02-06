@@ -61,6 +61,8 @@
 		4079AE0E2B4AB80A007A29FD /* ParallaxScrollEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE0D2B4AB80A007A29FD /* ParallaxScrollEffectView.swift */; };
 		4079AE102B4AB850007A29FD /* ParallaxScrollEffectContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE0F2B4AB850007A29FD /* ParallaxScrollEffectContentView.swift */; };
 		4079AE122B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4079AE112B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift */; };
+		4081AA592B50296C00354FDD /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081AA582B50296C00354FDD /* TextField.swift */; };
+		4081AA5B2B54BFD100354FDD /* TEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4081AA5A2B54BFD100354FDD /* TEst.swift */; };
 		4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */; };
 		408E524029514B1D00B83E0F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E523F29514B1D00B83E0F /* ProfileView.swift */; };
 		408E52422956D0EE00B83E0F /* ReusableProfileContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */; };
@@ -139,6 +141,7 @@
 		40E58B1329B4DC43000EFA03 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */; };
 		40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */; };
 		40E58B1729B4E27F000EFA03 /* OnBoardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */; };
+		40F363DA2B58BDB60080C702 /* Bingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F363D92B58BDB60080C702 /* Bingo.swift */; };
 		40F5770F2883A44800AC1285 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */; };
 		40F5771B2883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40F577192883A44A00AC1285 /* SwiftUIPractice.xcdatamodeld */; };
 		40F577222883A48300AC1285 /* ListColorChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F577212883A48300AC1285 /* ListColorChange.swift */; };
@@ -219,6 +222,8 @@
 		4079AE0D2B4AB80A007A29FD /* ParallaxScrollEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectView.swift; sourceTree = "<group>"; };
 		4079AE0F2B4AB850007A29FD /* ParallaxScrollEffectContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectContentView.swift; sourceTree = "<group>"; };
 		4079AE112B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollEffectContentView2.swift; sourceTree = "<group>"; };
+		4081AA582B50296C00354FDD /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		4081AA5A2B54BFD100354FDD /* TEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEst.swift; sourceTree = "<group>"; };
 		4083BD5C28EDD5C300A81220 /* ProSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSwiftUIView.swift; sourceTree = "<group>"; };
 		408E523F29514B1D00B83E0F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		408E52412956D0EE00B83E0F /* ReusableProfileContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProfileContent.swift; sourceTree = "<group>"; };
@@ -297,6 +302,7 @@
 		40E58B1229B4DC43000EFA03 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		40E58B1429B4DCE5000EFA03 /* OffsetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPageTabView.swift; sourceTree = "<group>"; };
 		40E58B1629B4E27F000EFA03 /* OnBoardingContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentView.swift; sourceTree = "<group>"; };
+		40F363D92B58BDB60080C702 /* Bingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bingo.swift; sourceTree = "<group>"; };
 		40F5770B2883A44800AC1285 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F5770E2883A44800AC1285 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		40F577122883A44A00AC1285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -647,6 +653,14 @@
 			path = ParallaxScrollEffect;
 			sourceTree = "<group>";
 		};
+		4081AA572B50295100354FDD /* SwiftUITextField */ = {
+			isa = PBXGroup;
+			children = (
+				4081AA582B50296C00354FDD /* TextField.swift */,
+			);
+			path = SwiftUITextField;
+			sourceTree = "<group>";
+		};
 		4083BD5B28EDD59D00A81220 /* TestProSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -658,6 +672,7 @@
 		408787A32A62C9CC00A8F381 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4081AA572B50295100354FDD /* SwiftUITextField */,
 				40BD1B3F2B4AEAB1006E5A6E /* SFSafariView */,
 				4079AE0C2B4AB7F8007A29FD /* ParallaxScrollEffect */,
 				4046FAF72A599743000728CE /* InfiniteCarousel */,
@@ -700,6 +715,7 @@
 				40CCA7C628E9C63300C4A2CB /* CloseTest */,
 				4083BD5B28EDD59D00A81220 /* TestProSwiftUI */,
 				40A1C7DE28BE71DC00AAFF2F /* Videos */,
+				40F363D92B58BDB60080C702 /* Bingo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -969,6 +985,7 @@
 			isa = PBXGroup;
 			children = (
 				40BD1B402B4AEACB006E5A6E /* SafariView.swift */,
+				4081AA5A2B54BFD100354FDD /* TEst.swift */,
 			);
 			path = SFSafariView;
 			sourceTree = "<group>";
@@ -1384,6 +1401,7 @@
 				40CDCDDA28C64CF500A35FF4 /* Trending.swift in Sources */,
 				4046FAF92A59975E000728CE /* InfiniteCarouselView.swift in Sources */,
 				40CCA7CF28E9CC1E00C4A2CB /* LoadCounterViewModel.swift in Sources */,
+				40F363DA2B58BDB60080C702 /* Bingo.swift in Sources */,
 				40A1C79C28BA980F00AAFF2F /* VideoCard.swift in Sources */,
 				40309C792A57A8B400F21E57 /* MovableGridsView.swift in Sources */,
 				40C19C0A28C254AD00988606 /* Reel.swift in Sources */,
@@ -1430,6 +1448,7 @@
 				40B368DD29F95E07001836D2 /* ShimmerEffect.swift in Sources */,
 				4005C3F528F2DAAC0025DAE9 /* ServerMode.swift in Sources */,
 				40FDC34628F0F38F00FEB6CA /* ReelsModel.swift in Sources */,
+				4081AA592B50296C00354FDD /* TextField.swift in Sources */,
 				403BEEB2290843A5008B0CD7 /* CustomCorner.swift in Sources */,
 				402805CA28C485EA00FDA092 /* CustomCornner.swift in Sources */,
 				4046FAFB2A5A2E03000728CE /* InfiniteCarouselHome.swift in Sources */,
@@ -1470,6 +1489,7 @@
 				408E52452957263A00B83E0F /* OTPVerificationView.swift in Sources */,
 				4079AE102B4AB850007A29FD /* ParallaxScrollEffectContentView.swift in Sources */,
 				40A1C7AB28BAA0EE00AAFF2F /* Movie.swift in Sources */,
+				4081AA5B2B54BFD100354FDD /* TEst.swift in Sources */,
 				40A1C7CC28BCF7C700AAFF2F /* TikTokVideo.swift in Sources */,
 				4017CE8028D5B3BA00048A90 /* FoodDeliveryHome.swift in Sources */,
 				40FEBA5E2A02AC8A0050246A /* SpotifyAlbum.swift in Sources */,

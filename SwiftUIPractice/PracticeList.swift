@@ -15,6 +15,10 @@ struct CustomViewType: Identifiable {
 struct PracticeList: View {
     
     let practiceViews: [Any] = [
+        DynamicTabView.self,
+        Bingo.self,
+        Test.self,
+        TextFieldView.self,
         SafariView.self,
         ParallaxScrollEffectView.self,
         ParallaxScrollEffectView2.self,
@@ -60,6 +64,14 @@ struct PracticeList: View {
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
+        case is DynamicTabView.Type:
+            return (AnyView(DynamicTabView()), true)
+        case is Bingo.Type:
+            return (AnyView(Bingo()), true)
+        case is Test.Type:
+            return (AnyView(Test()), true)
+        case is TextFieldView.Type:
+            return (AnyView(TextFieldView()), true)
         case is SafariView.Type:
             return (AnyView(SafariView(url: URL(string: "https://product.kyobobook.co.kr/detail/S000001913217")!)), true)
         case is ParallaxScrollEffectView2.Type:

@@ -13,18 +13,28 @@ struct SafariView: View {
     
     @State var isSafari: Bool = false
     var body: some View {
-        VStack {
-            Button {
-                isSafari.toggle()
-            } label: {
-                Text("웹뷰열기")
-                    .font(.headline)
-                    .foregroundStyle(.foreground)
+        ZStack {
+            Color.red.ignoresSafeArea()
+            VStack {
+                Button {
+                    isSafari.toggle()
+                } label: {
+                    Text("웹뷰열기")
+                        .font(.headline)
+                        .foregroundStyle(.foreground)
+                }
             }
+            
         }
-        .fullScreenCover(isPresented: $isSafari) {
+        .sheet(isPresented: $isSafari, content: {
             SafariViewController(url: url)
-        }
+        })
+//        .sheet(item: $isSafari) { _ in
+//            SafariViewController(url: url)
+//        }
+//        .fullScreenCover(isPresented: $isSafari) {
+//            SafariViewController(url: url)
+//        }
     }
 }
 
