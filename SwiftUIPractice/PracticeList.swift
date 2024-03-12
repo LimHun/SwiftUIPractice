@@ -15,6 +15,7 @@ struct CustomViewType: Identifiable {
 struct PracticeList: View {
     
     let practiceViews: [Any] = [
+        SnapCarouselCardView.self,
         DynamicTabView.self,
         Bingo.self,
         Test.self,
@@ -64,6 +65,8 @@ struct PracticeList: View {
     
     func buildView(types: [Any], index: Int) -> (AnyView, isNaviBar: Bool) {
         switch types[index].self {
+        case is SnapCarouselCardView.Type:
+            return (AnyView(SnapCarouselCardView()), true)
         case is DynamicTabView.Type:
             return (AnyView(DynamicTabView()), true)
         case is Bingo.Type:
