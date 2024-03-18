@@ -12,6 +12,10 @@
 		4017CE7C28D4F8C300048A90 /* MilkShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7B28D4F8C300048A90 /* MilkShake.swift */; };
 		4017CE7E28D4FB5E00048A90 /* FoodDeliveryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7D28D4FB5E00048A90 /* FoodDeliveryTab.swift */; };
 		4017CE8028D5B3BA00048A90 /* FoodDeliveryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */; };
+		401BCD7E2BA88CAD00BA2FE3 /* TinderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401BCD7D2BA88CAD00BA2FE3 /* TinderHome.swift */; };
+		401BCD802BA88F6000BA2FE3 /* TinderUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401BCD7F2BA88F6000BA2FE3 /* TinderUser.swift */; };
+		401BCD822BA88FAA00BA2FE3 /* TinderVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401BCD812BA88FAA00BA2FE3 /* TinderVM.swift */; };
+		401BCD842BA8917000BA2FE3 /* TinderStackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401BCD832BA8917000BA2FE3 /* TinderStackCardView.swift */; };
 		401C77B82949E4F5000209ED /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401C77B72949E4F5000209ED /* SplashScreen.swift */; };
 		401C77BB2949E7E7000209ED /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 401C77BA2949E7E7000209ED /* SDWebImageSwiftUI */; };
 		401C77BD2949F0BA000209ED /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 401C77BC2949F0BA000209ED /* logo.gif */; };
@@ -176,6 +180,10 @@
 		4017CE7B28D4F8C300048A90 /* MilkShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkShake.swift; sourceTree = "<group>"; };
 		4017CE7D28D4FB5E00048A90 /* FoodDeliveryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryTab.swift; sourceTree = "<group>"; };
 		4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryHome.swift; sourceTree = "<group>"; };
+		401BCD7D2BA88CAD00BA2FE3 /* TinderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderHome.swift; sourceTree = "<group>"; };
+		401BCD7F2BA88F6000BA2FE3 /* TinderUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUser.swift; sourceTree = "<group>"; };
+		401BCD812BA88FAA00BA2FE3 /* TinderVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderVM.swift; sourceTree = "<group>"; };
+		401BCD832BA8917000BA2FE3 /* TinderStackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderStackCardView.swift; sourceTree = "<group>"; };
 		401C77B72949E4F5000209ED /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		401C77BC2949F0BA000209ED /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		401C77BF2949F62F000209ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -371,6 +379,41 @@
 			isa = PBXGroup;
 			children = (
 				4017CE7F28D5B3BA00048A90 /* FoodDeliveryHome.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		401BCD792BA88BF800BA2FE3 /* Tinder */ = {
+			isa = PBXGroup;
+			children = (
+				401BCD7C2BA88C9F00BA2FE3 /* View */,
+				401BCD7B2BA88C9400BA2FE3 /* Model */,
+				401BCD7A2BA88C8D00BA2FE3 /* ViewModel */,
+			);
+			path = Tinder;
+			sourceTree = "<group>";
+		};
+		401BCD7A2BA88C8D00BA2FE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				401BCD812BA88FAA00BA2FE3 /* TinderVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		401BCD7B2BA88C9400BA2FE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				401BCD7F2BA88F6000BA2FE3 /* TinderUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		401BCD7C2BA88C9F00BA2FE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				401BCD7D2BA88CAD00BA2FE3 /* TinderHome.swift */,
+				401BCD832BA8917000BA2FE3 /* TinderStackCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -703,6 +746,7 @@
 		408787A32A62C9CC00A8F381 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				401BCD792BA88BF800BA2FE3 /* Tinder */,
 				4026DBDF2B9F55400061693E /* SnapCarouselCard */,
 				4026DBDE2B9F547D0061693E /* New Group */,
 				4081AA572B50295100354FDD /* SwiftUITextField */,
@@ -1395,6 +1439,7 @@
 				40A61EE22961A27D001FEE84 /* ExPhotoPickerView.swift in Sources */,
 				40A1C7A028BA980F00AAFF2F /* VideoView.swift in Sources */,
 				408E524A295978AE00B83E0F /* CreateNewPost.swift in Sources */,
+				401BCD7E2BA88CAD00BA2FE3 /* TinderHome.swift in Sources */,
 				408E524C295978E100B83E0F /* Post.swift in Sources */,
 				40B368E229F9F090001836D2 /* UINavigationController+Extension.swift in Sources */,
 				40A1C7AF28BAA1D800AAFF2F /* Tab.swift in Sources */,
@@ -1402,6 +1447,7 @@
 				402C2F372967273C00BFED6E /* Ubuntu.swift in Sources */,
 				40C19C0F28C3259A00988606 /* ReelsTabBarButton.swift in Sources */,
 				403571532984934A00B26C5C /* SpotifyResponvieUI.swift in Sources */,
+				401BCD802BA88F6000BA2FE3 /* TinderUser.swift in Sources */,
 				403E1F3928E49C6E003D757B /* EnvironmentTest.swift in Sources */,
 				402C2F44296B148F00BFED6E /* AddTaskNew.swift in Sources */,
 				402C2F42296AF9D200BFED6E /* TaskCategory.swift in Sources */,
@@ -1471,6 +1517,7 @@
 				408E524E2959904600B83E0F /* PostsView.swift in Sources */,
 				40E58B1529B4DCE5000EFA03 /* OffsetPageTabView.swift in Sources */,
 				402805C828C4839900FDA092 /* StickyContentView.swift in Sources */,
+				401BCD842BA8917000BA2FE3 /* TinderStackCardView.swift in Sources */,
 				402805C628C4825C00FDA092 /* StickyHeaderView.swift in Sources */,
 				40FDC34428F0EF7500FEB6CA /* ReelsViewModel.swift in Sources */,
 				40A1C7C128BAFAF500AAFF2F /* SearchView.swift in Sources */,
@@ -1501,6 +1548,7 @@
 				4046FB012A5A3E92000728CE /* OffsetReader.swift in Sources */,
 				40A1C79F28BA980F00AAFF2F /* VideoManager.swift in Sources */,
 				4079AE122B4ACB7F007A29FD /* ParallaxScrollEffectContentView2.swift in Sources */,
+				401BCD822BA88FAA00BA2FE3 /* TinderVM.swift in Sources */,
 				40BD1B412B4AEACB006E5A6E /* SafariView.swift in Sources */,
 				4083BD5D28EDD5C300A81220 /* ProSwiftUIView.swift in Sources */,
 				40CDCDDF28C64E0600A35FF4 /* ResponsiveView.swift in Sources */,
